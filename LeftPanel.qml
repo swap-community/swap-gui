@@ -31,7 +31,8 @@ import QtQuick.Layouts 1.1
 import QtGraphicalEffects 1.0
 import moneroComponents.Wallet 1.0
 import moneroComponents.NetworkType 1.0
-import "components"
+import moneroComponents.Clipboard 1.0
+import "components" as MoneroComponents
 
 Rectangle {
     id: panel
@@ -46,6 +47,8 @@ Rectangle {
     property alias daemonProgressBar : daemonProgressBar
     property alias minutesToUnlockTxt: unlockedBalanceLabel.text
     property int titleBarHeight: 50
+    property string copyValue: ""
+    Clipboard { id: clipboard }
 
     signal dashboardClicked()
     signal historyClicked()
@@ -174,6 +177,23 @@ Rectangle {
                         }
                         return defaultSize;
                     }
+
+                    MouseArea {
+                        hoverEnabled: true
+                        anchors.fill: parent
+                        cursorShape: Qt.PointingHandCursor
+                        onEntered: {
+                            parent.color = MoneroComponents.Style.orange
+                        }
+                        onExited: {
+                            parent.color = MoneroComponents.Style.white
+                        }
+                        onClicked: {
+                                console.log("Copied to clipboard");
+                                clipboard.setText(parent.text);
+                                appWindow.showStatusMessage(qsTr("Copied to clipboard"),3)
+                        }
+                    }
                 }
 
                 Text {
@@ -195,9 +215,26 @@ Rectangle {
                         }
                         return defaultSize;
                     }
+
+                    MouseArea {
+                        hoverEnabled: true
+                        anchors.fill: parent
+                        cursorShape: Qt.PointingHandCursor
+                        onEntered: {
+                            parent.color = MoneroComponents.Style.orange
+                        }
+                        onExited: {
+                            parent.color = MoneroComponents.Style.white
+                        }
+                        onClicked: {
+                                console.log("Copied to clipboard");
+                                clipboard.setText(parent.text);
+                                appWindow.showStatusMessage(qsTr("Copied to clipboard"),3)
+                        }
+                    }
                 }
 
-                Label {
+                MoneroComponents.Label {
                     id: unlockedBalanceLabel
                     visible: true
                     text: qsTr("Unlocked balance") + translationManager.emptyString
@@ -207,7 +244,7 @@ Rectangle {
                     anchors.topMargin: 120
                 }
 
-                Label {
+                MoneroComponents.Label {
                     visible: !isMobile
                     id: balanceLabel
                     text: qsTr("Balance") + translationManager.emptyString
@@ -305,7 +342,7 @@ Rectangle {
             }
 
             // ------------- Transfer tab ---------------
-            MenuButton {
+            MoneroComponents.MenuButton {
                 id: transferButton
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -330,7 +367,7 @@ Rectangle {
 
             // ------------- AddressBook tab ---------------
 
-            MenuButton {
+            MoneroComponents.MenuButton {
                 id: addressBookButton
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -355,7 +392,7 @@ Rectangle {
             }
 
             // ------------- Receive tab ---------------
-            MenuButton {
+            MoneroComponents.MenuButton {
                 id: receiveButton
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -379,7 +416,7 @@ Rectangle {
 
             // ------------- History tab ---------------
 
-            MenuButton {
+            MoneroComponents.MenuButton {
                 id: historyButton
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -402,7 +439,7 @@ Rectangle {
             }
 
             // ------------- Advanced tab ---------------
-            MenuButton {
+            MoneroComponents.MenuButton {
                 id: advancedButton
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -424,7 +461,7 @@ Rectangle {
             }
 
             // ------------- TxKey tab ---------------
-            MenuButton {
+            MoneroComponents.MenuButton {
                 id: txkeyButton
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -447,7 +484,7 @@ Rectangle {
                 height: 1
             }
             // ------------- Sign/verify tab ---------------
-            MenuButton {
+            MoneroComponents.MenuButton {
                 id: signButton
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -470,7 +507,7 @@ Rectangle {
                 height: 1
             }
             // ------------- Settings tab ---------------
-            MenuButton {
+            MoneroComponents.MenuButton {
                 id: settingsButton
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -492,7 +529,7 @@ Rectangle {
                 height: 1
             }
             // ------------- Sign/verify tab ---------------
-            MenuButton {
+            MoneroComponents.MenuButton {
                 id: keysButton
                 anchors.left: parent.left
                 anchors.right: parent.right
@@ -530,7 +567,7 @@ Rectangle {
             color: "transparent"
         }
 
-        NetworkStatusItem {
+        MoneroComponents.NetworkStatusItem {
             id: networkStatus
             anchors.left: parent.left
             anchors.right: parent.right
@@ -541,7 +578,7 @@ Rectangle {
             height: 48 * scaleRatio
         }
 
-        ProgressBar {
+        MoneroComponents.ProgressBar {
             id: progressBar
             anchors.left: parent.left
             anchors.right: parent.right
@@ -551,7 +588,7 @@ Rectangle {
             visible: networkStatus.connected
         }
 
-        ProgressBar {
+        MoneroComponents.ProgressBar {
             id: daemonProgressBar
             anchors.left: parent.left
             anchors.right: parent.right
