@@ -1025,6 +1025,7 @@ ApplicationWindow {
         property string daemonUsername: ""
         property string daemonPassword: ""
         property bool transferShowAdvanced: false
+        property bool receiveShowAdvanced: false
         property string blockchainDataDir: ""
         property bool useRemoteNode: true
         property string remoteNodeAddress: "node.swap.fyi:19950"
