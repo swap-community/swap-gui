@@ -1,4 +1,0 @@
-[submodule "monero"]
-	path = monero
-	url = https://github.com/freehavenprotocol/swap_rebase_beta.git
-	branch = swap-v1.0
