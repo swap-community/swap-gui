@@ -1,6 +1,6 @@
 #!/bin/bash
-MONERO_URL=https://github.com/monero-project/monero.git
-MONERO_BRANCH=master
+MONERO_URL=https://github.com/swap-dev/swap.git
+MONERO_BRANCH=swap-v1.0
 
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -8,45 +8,21 @@ ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $ROOT_DIR/utils.sh
 
 INSTALL_DIR=$ROOT_DIR/wallet
-MONERO_DIR=$ROOT_DIR/monero
+MONERO_DIR=$ROOT_DIR/swap
 BUILD_LIBWALLET=false
 
-# init and update monero submodule
+# init and update swap submodule
 if [ ! -d $MONERO_DIR/src ]; then
-    git submodule init monero
+    git submodule init swap
 fi
-git submodule update --remote
-git -C $MONERO_DIR fetch
-git -C $MONERO_DIR checkout v0.13.0.4
 
-# get monero core tag
+# get swap core tag
 get_tag
-# create local monero branch
+# create local swap branch
 git -C $MONERO_DIR checkout -B $VERSIONTAG
 
 git -C $MONERO_DIR submodule init
 git -C $MONERO_DIR submodule update
-
-# Merge monero PR dependencies
-
-# Workaround for git username requirements
-# Save current user settings and revert back when we are done with merging PR's
-OLD_GIT_USER=$(git -C $MONERO_DIR config --local user.name)
-OLD_GIT_EMAIL=$(git -C $MONERO_DIR config --local user.email)
-git -C $MONERO_DIR config user.name "Monero GUI"
-git -C $MONERO_DIR config user.email "gui@monero.local"
-# check for PR requirements in most recent commit message (i.e requires #xxxx)
-for PR in $(git log --format=%B -n 1 | grep -io "requires #[0-9]*" | sed 's/[^0-9]*//g'); do
-    echo "Merging monero push request #$PR"
-    # fetch pull request and merge
-    git -C $MONERO_DIR fetch origin pull/$PR/head:PR-$PR
-    git -C $MONERO_DIR merge --quiet PR-$PR  -m "Merge monero PR #$PR"
-    BUILD_LIBWALLET=true
-done
-
-# revert back to old git config
-$(git -C $MONERO_DIR config user.name "$OLD_GIT_USER")
-$(git -C $MONERO_DIR config user.email "$OLD_GIT_EMAIL")
 
 # Build libwallet if it doesnt exist
 if [ ! -f $MONERO_DIR/lib/libwallet_merged.a ]; then 
@@ -54,7 +30,7 @@ if [ ! -f $MONERO_DIR/lib/libwallet_merged.a ]; then
     BUILD_LIBWALLET=true
 # Build libwallet if no previous version file exists
 elif [ ! -f $MONERO_DIR/version.sh ]; then 
-    echo "monero/version.h not found - Building libwallet"
+    echo "swap/version.h not found - Building libwallet"
     BUILD_LIBWALLET=true
 ## Compare previously built version with submodule + merged PR's version. 
 else
@@ -70,7 +46,7 @@ else
         echo "Building new libwallet version $GUI_MONERO_VERSION"
         BUILD_LIBWALLET=true
     else
-        echo "latest libwallet ($GUI_MONERO_VERSION) is already built. Remove monero/lib/libwallet_merged.a to force rebuild"
+        echo "latest libwallet ($GUI_MONERO_VERSION) is already built. Remove swap/lib/libwallet_merged.a to force rebuild"
     fi
 fi
 
@@ -117,7 +93,7 @@ else
 fi
 
 
-echo "cleaning up existing monero build dir, libs and includes"
+echo "cleaning up existing swap build dir, libs and includes"
 rm -fr $MONERO_DIR/build
 rm -fr $MONERO_DIR/lib
 rm -fr $MONERO_DIR/include
@@ -217,7 +193,7 @@ eval $make_exec  -j$CPU_CORE_COUNT
 eval $make_exec  install -j$CPU_CORE_COUNT
 popd
 
-# Build monerod
+# Build swapd
 # win32 need to build daemon manually with msys2 toolchain
 if [ "$platform" != "mingw32" ] && [ "$ANDROID" != true ]; then
     pushd $MONERO_DIR/build/$BUILD_TYPE/src/daemon
