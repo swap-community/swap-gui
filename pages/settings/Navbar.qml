@@ -130,56 +130,6 @@ Rectangle {
                 color: grid.borderColor
             }
             ColumnLayout {
-                // UI
-                id: navUI
-                Layout.preferredWidth: navUIText.width + grid.textMargin
-                Layout.preferredHeight: 32
-                Layout.minimumWidth: 72 * scaleRatio
-                spacing: 0
-
-                Rectangle { 
-                    color: grid.borderColor
-                    Layout.preferredHeight: 1
-                    Layout.fillWidth: true
-                }
-
-                Rectangle {
-                    color: settingsStateView.state === "UI" ? grid.borderColor : "transparent"
-                    height: 30 * scaleRatio
-                    Layout.fillWidth: true
-
-                    Text {
-                        id: navUIText
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        anchors.verticalCenter: parent.verticalCenter
-                        font.family: grid.fontFamily
-                        font.pixelSize: grid.fontSize
-                        font.bold: grid.fontBold
-                        text: qsTr("Layout") + translationManager.emptyString
-                        color: grid.fontColor
-                    }
-
-                    MouseArea {
-                        anchors.fill: parent
-                        hoverEnabled: true
-                        cursorShape: Qt.PointingHandCursor
-
-                        onClicked: { settingsStateView.state = "UI" }
-                    }
-                }
-
-                Rectangle { 
-                    color: grid.borderColor
-                    Layout.preferredHeight: 1
-                    Layout.fillWidth: true
-                }
-            }
-            Rectangle{
-                Layout.preferredWidth: 1
-                Layout.preferredHeight: 32
-                color: grid.borderColor
-            }
-            ColumnLayout {
                 // NODE
                 id: navNode
                 Layout.preferredWidth: navNodeText.width + grid.textMargin
