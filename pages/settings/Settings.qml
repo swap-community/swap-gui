@@ -84,9 +84,6 @@ ColumnLayout {
                 name: "Wallet"
                 PropertyChanges { target: settingsStateView; currentView: settingsStateView.settingsWalletView }
             }, State {
-                name: "UI"
-                PropertyChanges { target: settingsStateView; currentView: settingsStateView.settingsLayoutView }
-            }, State {
                 name: "Node"
                 PropertyChanges { target: settingsStateView; currentView: settingsStateView.settingsNodeView }
             }, State {
