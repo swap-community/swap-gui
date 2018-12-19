@@ -76,10 +76,10 @@ ApplicationWindow {
     property bool remoteNodeConnected: false
     property bool androidCloseTapped: false;
     // Default daemon addresses
-    readonly property string localDaemonAddress : persistentSettings.nettype == NetworkType.MAINNET ? "localhost:18081" : persistentSettings.nettype == NetworkType.TESTNET ? "localhost:28081" : "localhost:38081"
+    readonly property string localDaemonAddress : persistentSettings.nettype == NetworkType.MAINNET ? "localhost:19950" : persistentSettings.nettype == NetworkType.TESTNET ? "localhost:29950" : "localhost:39950"
     property string currentDaemonAddress;
     property bool startLocalNodeCancelled: false
-    property int estimatedBlockchainSize: 50 // GB
+    property int estimatedBlockchainSize: 5 // GB
 
     // true if wallet ever synchronized
     property bool walletInitialized : false
@@ -432,7 +432,7 @@ ApplicationWindow {
             console.log("New block found - updating history")
             currentWallet.history.refresh(currentWallet.currentSubaddressAccount)
             timeToUnlock = currentWallet.history.minutesToUnlock
-            leftPanel.minutesToUnlockTxt = (timeToUnlock > 0)? (timeToUnlock == 20)? qsTr("Unlocked balance (waiting for block)") : qsTr("Unlocked balance (~%1 min)").arg(timeToUnlock) : qsTr("Unlocked balance");
+            leftPanel.minutesToUnlockTxt = (timeToUnlock > 0)? qsTr("Unlocked balance (~%1 min)").arg(timeToUnlock) : qsTr("Unlocked balance");
         }
     }
 
@@ -587,7 +587,7 @@ ApplicationWindow {
 
     function onWalletMoneySent(txId, amount) {
         // refresh transaction history here
-        console.log("monero sent found")
+        console.log("swap sent found")
         currentWallet.refresh()
         currentWallet.history.refresh(currentWallet.currentSubaddressAccount) // this will refresh model
     }
@@ -799,7 +799,7 @@ ApplicationWindow {
                     txid_text += ", "
                 txid_text += txid[i]
             }
-            informationPopup.text  = (viewOnly)? qsTr("Transaction saved to file: %1").arg(path) : qsTr("Monero sent successfully: %1 transaction(s) ").arg(txid.length) + txid_text + translationManager.emptyString
+            informationPopup.text  = (viewOnly)? qsTr("Transaction saved to file: %1").arg(path) : qsTr("Swap sent successfully: %1 transaction(s) ").arg(txid.length) + txid_text + translationManager.emptyString
             informationPopup.icon  = StandardIcon.Information
             if (transactionDescription.length > 0) {
                 for (var i = 0; i < txid.length; ++i)
@@ -870,10 +870,10 @@ ApplicationWindow {
             } else if (received > 0) {
                 received = received / 1e12
                 if (in_pool) {
-                    informationPopup.text = qsTr("This address received %1 monero, but the transaction is not yet mined").arg(received);
+                    informationPopup.text = qsTr("This address received %1 swap, but the transaction is not yet mined").arg(received);
                 }
                 else {
-                    informationPopup.text = qsTr("This address received %1 monero, with %2 confirmation(s).").arg(received).arg(confirmations);
+                    informationPopup.text = qsTr("This address received %1 swap, with %2 confirmation(s).").arg(received).arg(confirmations);
                 }
             }
             else {
@@ -1019,7 +1019,7 @@ ApplicationWindow {
         property bool   allow_background_mining : false
         property bool   miningIgnoreBattery : true
         property var    nettype: NetworkType.MAINNET
-        property string daemon_address: nettype == NetworkType.TESTNET ? "localhost:28081" : nettype == NetworkType.STAGENET ? "localhost:38081" : "localhost:19950"
+        property string daemon_address: nettype == NetworkType.TESTNET ? "localhost:29950" : nettype == NetworkType.STAGENET ? "localhost:39950" : "localhost:19950"
         property string payment_id
         property int    restore_height : 0
         property bool   is_recovering : false

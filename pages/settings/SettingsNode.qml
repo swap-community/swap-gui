@@ -230,7 +230,7 @@ Rectangle{
                     textMargin: 0
                     leftPadding: 0
                     topPadding: 0
-                    text: qsTr("Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.") + translationManager.emptyString
+                    text: qsTr("Uses a third-party server to connect to the Swap network. Less secure, but easier on your computer.") + translationManager.emptyString
                     width: parent.width - (remoteNodeIcon.width + remoteNodeIcon.anchors.leftMargin + anchors.leftMargin)
                     readOnly: true
 
@@ -276,7 +276,7 @@ Rectangle{
             MoneroComponents.WarningBox {
                 Layout.topMargin: 26 * scaleRatio
                 Layout.bottomMargin: 6 * scaleRatio
-                text: qsTr("To find a remote node, type 'Monero remote node' into your favorite search engine. Please ensure the node is run by a trusted third-party.") + translationManager.emptyString
+                text: qsTr("To find a remote node, type 'Swap remote node' into your favorite search engine. Please ensure the node is run by a trusted third-party.") + translationManager.emptyString
             }
 
             MoneroComponents.RemoteNodeEdit {
@@ -295,7 +295,7 @@ Rectangle{
 
                 property var rna: persistentSettings.remoteNodeAddress
                 daemonAddrText: rna.search(":") != -1 ? rna.split(":")[0].trim() : ""
-                daemonPortText: rna.search(":") != -1 ? (rna.split(":")[1].trim() == "") ? "18081" : rna.split(":")[1] : ""
+                daemonPortText: rna.search(":") != -1 ? (rna.split(":")[1].trim() == "") ? "19950" : rna.split(":")[1] : ""
                 onEditingFinished: {
                     persistentSettings.remoteNodeAddress = remoteNodeEdit.getAddress();
                     console.log("setting remote node to " + persistentSettings.remoteNodeAddress)
@@ -437,7 +437,7 @@ Rectangle{
                         daemonPortText: {
                             var node_split = persistentSettings.bootstrapNodeAddress.split(":");
                             if(node_split.length == 2){
-                                (node_split[1].trim() == "") ? "18081" : node_split[1];
+                                (node_split[1].trim() == "") ? "19950" : node_split[1];
                             } else {
                                 return ""
                             }
