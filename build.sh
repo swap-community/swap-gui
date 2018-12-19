@@ -111,7 +111,7 @@ if ! QMAKE=$(find_command qmake qmake-qt5); then
     echo "Failed to find suitable qmake command."
     exit 1
 fi
-$QMAKE ../monero-wallet-gui.pro "$CONFIG" || exit
+$QMAKE ../swap-wallet-gui.pro "$CONFIG" || exit
 $MAKE || exit 
 
 # Copy swapd to bin folder
