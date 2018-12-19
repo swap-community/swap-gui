@@ -489,31 +489,6 @@ Rectangle {
                 height: 1
             }
 
-            // ------------- Mining tab ---------------
-            MoneroComponents.MenuButton {
-                id: miningButton
-                visible: !isAndroid && !isIOS
-                anchors.left: parent.left
-                anchors.right: parent.right
-                text: qsTr("Mining") + translationManager.emptyString
-                symbol: qsTr("M") + translationManager.emptyString
-                dotColor: "#FFD781"
-                under: advancedButton
-                onClicked: {
-                    parent.previousButton.checked = false
-                    parent.previousButton = miningButton
-                    panel.miningClicked()
-                }
-            }
-
-            Rectangle {
-                visible: miningButton.present
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.leftMargin: 16
-                color: miningButton.checked || settingsButton.checked ? "#1C1C1C" : "#313131"
-                height: 1
-            }
             // ------------- TxKey tab ---------------
             MoneroComponents.MenuButton {
                 id: txkeyButton
@@ -531,29 +506,6 @@ Rectangle {
             }
             Rectangle {
                 visible: txkeyButton.present
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.leftMargin: 16
-                color: "#313131"
-                height: 1
-            }
-            // ------------- Shared RingDB tab ---------------
-            MoneroComponents.MenuButton {
-                id: sharedringdbButton
-                anchors.left: parent.left
-                anchors.right: parent.right
-                text: qsTr("Shared RingDB") + translationManager.emptyString
-                symbol: qsTr("G") + translationManager.emptyString
-                dotColor: "#FFD781"
-                under: advancedButton
-                onClicked: {
-                    parent.previousButton.checked = false
-                    parent.previousButton = sharedringdbButton
-                    panel.sharedringdbClicked()
-                }
-            }
-            Rectangle {
-                visible: sharedringdbButton.present
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.leftMargin: 16
