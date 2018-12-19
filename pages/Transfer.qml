@@ -234,11 +234,11 @@ Rectangle {
               labelButtonText: qsTr("Resolve") + translationManager.emptyString
               placeholderText: {
                   if(persistentSettings.nettype == NetworkType.MAINNET){
-                      return "4.. / 8.. / OpenAlias";
+                      return "fh.. / fs.. / fi.. / OpenAlias";
                   } else if (persistentSettings.nettype == NetworkType.STAGENET){
-                      return "5.. / 7..";
+                      return "fh.. / fs.. / fi.. / OpenAlias";
                   } else if(persistentSettings.nettype == NetworkType.TESTNET){
-                      return "9.. / B..";
+                      return "TN.. / TD.. / TX.. / OpenAlias";
                   }
               }
               wrapMode: Text.WrapAnywhere
@@ -618,7 +618,7 @@ Rectangle {
                 informationPopup.open();
             } else {
                 informationPopup.title = qsTr("Information") + translationManager.emptyString
-                informationPopup.text  = qsTr("Monero sent successfully") + translationManager.emptyString
+                informationPopup.text  = qsTr("Swap sent successfully") + translationManager.emptyString
                 informationPopup.icon  = StandardIcon.Information
                 informationPopup.onCloseCallback = null
                 informationPopup.open();

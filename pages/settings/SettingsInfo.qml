@@ -97,7 +97,7 @@ Rectangle {
             MoneroComponents.TextBlock {
                 id: guiMoneroVersion
                 font.pixelSize: 14
-                text: qsTr("Embedded Monero version: ") + translationManager.emptyString
+                text: qsTr("Embedded Swap version: ") + translationManager.emptyString
             }
 
             MoneroComponents.TextBlock {
