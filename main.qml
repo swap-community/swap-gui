@@ -47,7 +47,7 @@ import "js/Windows.js" as Windows
 
 ApplicationWindow {
     id: appWindow
-    title: "Monero"
+    title: "Swap"
 
     property var currentItem
     property bool hideBalanceForced: false
@@ -724,7 +724,7 @@ ApplicationWindow {
         currentWallet.startRefresh();
         daemonRunning = false;
         informationPopup.title = qsTr("Daemon failed to start") + translationManager.emptyString;
-        informationPopup.text  = qsTr("Please check your wallet and daemon log for errors. You can also try to start %1 manually.").arg((isWindows)? "monerod.exe" : "monerod")
+        informationPopup.text  = qsTr("Please check your wallet and daemon log for errors. You can also try to start %1 manually.").arg((isWindows)? "swapd.exe" : "swapd")
         informationPopup.icon  = StandardIcon.Critical
         informationPopup.onCloseCallback = null
         informationPopup.open();
@@ -1356,7 +1356,7 @@ ApplicationWindow {
         property bool   is_trusted_daemon : false
         property bool   is_recovering : false
         property bool   is_recovering_from_device : false
-        property bool   customDecorations : true
+        property bool   customDecorations : false
         property string daemonFlags
         property int logLevel: 0
         property string logCategories: ""
@@ -1367,9 +1367,9 @@ ApplicationWindow {
         property bool historyShowAdvanced: false
         property bool historyHumanDates: true
         property string blockchainDataDir: ""
-        property bool useRemoteNode: false
-        property string remoteNodeAddress: ""
-        property string bootstrapNodeAddress: ""
+        property bool useRemoteNode: true
+        property string remoteNodeAddress: "node.swap.fyi:19950"
+        property string bootstrapNodeAddress: "node.swap.fyi:19950"
         property string remoteNodeRegion: ""
         property bool segregatePreForkOutputs: true
         property bool keyReuseMitigation2: true
