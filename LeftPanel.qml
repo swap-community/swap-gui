@@ -609,29 +609,6 @@ Rectangle {
                 anchors.leftMargin: 16
             }
 
-            // ------------- Mining tab ---------------
-            MoneroComponents.MenuButton {
-                id: miningButton
-                visible: !isAndroid && !isIOS && appWindow.walletMode >= 2
-                anchors.left: parent.left
-                anchors.right: parent.right
-                text: qsTr("Mining") + translationManager.emptyString
-                symbol: qsTr("M") + translationManager.emptyString
-                dotColor: "#FFD781"
-                under: advancedButton
-                onClicked: {
-                    parent.previousButton.checked = false
-                    parent.previousButton = miningButton
-                    panel.miningClicked()
-                }
-            }
-
-            MoneroComponents.MenuButtonDivider {
-                visible: miningButton.present && appWindow.walletMode >= 2
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.leftMargin: 16
-            }
 
             // ------------- TxKey tab ---------------
             MoneroComponents.MenuButton {
@@ -652,30 +629,6 @@ Rectangle {
 
             MoneroComponents.MenuButtonDivider {
                 visible: txkeyButton.present && appWindow.walletMode >= 2
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.leftMargin: 16
-            }
-
-            // ------------- Shared RingDB tab ---------------
-            MoneroComponents.MenuButton {
-                id: sharedringdbButton
-                visible: appWindow.walletMode >= 2
-                anchors.left: parent.left
-                anchors.right: parent.right
-                text: qsTr("Shared RingDB") + translationManager.emptyString
-                symbol: qsTr("G") + translationManager.emptyString
-                dotColor: "#FFD781"
-                under: advancedButton
-                onClicked: {
-                    parent.previousButton.checked = false
-                    parent.previousButton = sharedringdbButton
-                    panel.sharedringdbClicked()
-                }
-            }
-
-            MoneroComponents.MenuButtonDivider {
-                visible: sharedringdbButton.present && appWindow.walletMode >= 2
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.leftMargin: 16
