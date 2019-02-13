@@ -38,6 +38,8 @@ import moneroComponents.Wallet 1.0
 import "components" as MoneroComponents
 import "./pages"
 import "./pages/settings"
+import "./pages/merchant"
+import "components" as MoneroComponents
 
 Rectangle {
     id: root
@@ -56,6 +58,7 @@ Rectangle {
 
     property Transfer transferView: Transfer { }
     property Receive receiveView: Receive { }
+    property Merchant merchantView: Merchant { }
     property TxKey txkeyView: TxKey { }
     property SharedRingDB sharedringdbView: SharedRingDB { }
     property History historyView: History { }
@@ -64,7 +67,7 @@ Rectangle {
     property Mining miningView: Mining { }
     property AddressBook addressBookView: AddressBook { }
     property Keys keysView: Keys { }
-
+    property Account accountView: Account { }
 
     signal paymentClicked(string address, string paymentId, string amount, int mixinCount, int priority, string description)
     signal sweepUnmixableClicked()
@@ -72,11 +75,16 @@ Rectangle {
     signal getProofClicked(string txid, string address, string message);
     signal checkProofClicked(string txid, string address, string message, string signature);
 
+    Rectangle {
+        // grey background on merchantView
+        visible: currentView === merchantView
+        color: MoneroComponents.Style.moneroGrey
+        anchors.fill: parent
+    }
+
     Image {
-        anchors.left: parent.left
-        anchors.right: parent.right
-        anchors.top: parent.top
-        anchors.bottom: parent.bottom
+        anchors.fill: parent
+        visible: currentView !== merchantView
         source: "../images/middlePanelBg.jpg"
     }
 
@@ -108,9 +116,6 @@ Rectangle {
 
         states: [
             State {
-                name: "Dashboard"
-                PropertyChanges {  }
-            }, State {
                 name: "History"
                 PropertyChanges { target: root; currentView: historyView }
                 PropertyChanges { target: historyView; model: appWindow.currentWallet ? appWindow.currentWallet.historyModel : null }
@@ -123,6 +128,10 @@ Rectangle {
                name: "Receive"
                PropertyChanges { target: root; currentView: receiveView }
                PropertyChanges { target: mainFlickable; contentHeight: receiveView.receiveHeight + 100 }
+            }, State {
+                name: "Merchant"
+                PropertyChanges { target: root; currentView: merchantView }
+                PropertyChanges { target: mainFlickable; contentHeight: merchantView.merchantHeight + 100 }
             }, State {
                name: "TxKey"
                PropertyChanges { target: root; currentView: txkeyView }
@@ -138,7 +147,7 @@ Rectangle {
             }, State {
                 name: "Sign"
                PropertyChanges { target: root; currentView: signView }
-               PropertyChanges { target: mainFlickable; contentHeight: 1200 * scaleRatio  }
+               PropertyChanges { target: mainFlickable; contentHeight: 1000 * scaleRatio  }
             }, State {
                 name: "Settings"
                PropertyChanges { target: root; currentView: settingsView }
@@ -151,12 +160,17 @@ Rectangle {
                 name: "Keys"
                 PropertyChanges { target: root; currentView: keysView }
                 PropertyChanges { target: mainFlickable; contentHeight: keysView.keysHeight }
-            }
+            }, State {
+	           name: "Account"
+	           PropertyChanges { target: root; currentView: accountView }
+	           PropertyChanges { target: mainFlickable; contentHeight: minHeight }
+            }	
         ]
 
     // color stripe at the top
     Row {
         id: styledRow
+        visible: currentView !== merchantView
         height: 4
         anchors.top: parent.top
         anchors.left: parent.left
@@ -172,8 +186,8 @@ Rectangle {
 
     ColumnLayout {
         anchors.fill: parent
-        anchors.margins: 18
-        anchors.topMargin: appWindow.persistentSettings.customDecorations ? 50 : 0
+        anchors.margins: currentView !== merchantView ? 20 * scaleRatio : 0
+        anchors.topMargin: appWindow.persistentSettings.customDecorations ? 50 * scaleRatio : 0
         spacing: 0
 
         Flickable {
@@ -187,7 +201,9 @@ Rectangle {
                 anchors.left: parent.right
                 anchors.leftMargin: 3
                 anchors.top: parent.top
+                anchors.topMargin: 4
                 anchors.bottom: parent.bottom
+                anchors.bottomMargin: persistentSettings.customDecorations ? 4 : 0 
             }
 
             onFlickingChanged: {

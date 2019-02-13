@@ -39,12 +39,13 @@ Rectangle {
 
     ColumnLayout {
         id: mainLayout
+        Layout.fillWidth: true
+        anchors.margins: (isMobile)? 17 * scaleRatio : 20 * scaleRatio
+        anchors.topMargin: 40 * scaleRatio
         anchors.left: parent.left
         anchors.top: parent.top
         anchors.right: parent.right
-        anchors.margins: 40 * scaleRatio
         spacing: 20 * scaleRatio
-        Layout.fillWidth: true
 
         MoneroComponents.Label {
             id: soloTitleLabel
@@ -52,11 +53,9 @@ Rectangle {
             text: qsTr("Solo mining") + translationManager.emptyString
         }
 
-        MoneroComponents.Label {
-            id: soloLocalDaemonsLabel
-            fontSize: 18 * scaleRatio
-            color: "#D02020"
-            text: qsTr("(only available for local daemons)") + translationManager.emptyString
+        MoneroComponents.WarningBox {
+            Layout.bottomMargin: 8 * scaleRatio
+            text: qsTr("Mining is only available on local daemons.") + translationManager.emptyString
             visible: !walletManager.isDaemonLocal(appWindow.currentDaemonAddress)
         }
 
@@ -100,14 +99,14 @@ Rectangle {
                 id: soloMinerThreadsLine
                 Layout.preferredWidth:  200 * scaleRatio
                 text: "1"
-                validator: IntValidator { bottom: 1; top: numberMiningThreadsAvailable }
+                validator: IntValidator { bottom: 1; top: idealThreadCount }
             }
         }
 
         Text {
             id: numAvailableThreadsText
-            text: qsTr("Max # of CPU threads available for mining: ") + numberMiningThreadsAvailable + translationManager.emptyString
-            wrapMode: Text.wrapMode
+            text: qsTr("Max # of CPU threads available for mining: ") + idealThreadCount + translationManager.emptyString
+            wrapMode: Text.WordWrap
             Layout.leftMargin: 125 * scaleRatio
             font.family: MoneroComponents.Style.fontRegular.name
             font.pixelSize: 14 * scaleRatio
@@ -123,7 +122,7 @@ Rectangle {
                 text: qsTr("Use recommended # of threads") + translationManager.emptyString
                 enabled: startSoloMinerButton.enabled
                 onClicked: {
-                        soloMinerThreadsLine.text = Math.floor(numberMiningThreadsAvailable / 2);
+                        soloMinerThreadsLine.text = Math.floor(idealThreadCount / 2);
                         appWindow.showStatusMessage(qsTr("Set to use recommended # of threads"),3)
                 }
             }
@@ -134,7 +133,7 @@ Rectangle {
                 text: qsTr("Use all threads") + translationManager.emptyString
                 enabled: startSoloMinerButton.enabled
                 onClicked: {
-                    soloMinerThreadsLine.text = numberMiningThreadsAvailable
+                    soloMinerThreadsLine.text = idealThreadCount
                     appWindow.showStatusMessage(qsTr("Set to use all threads"),3)
                 }
             }
@@ -229,7 +228,7 @@ Rectangle {
     }
 
     function updateStatusText() {
-        if (walletManager.isMining()) {
+        if (appWindow.isMining) {
             statusText.text = qsTr("Mining at %1 H/s").arg(walletManager.miningHashRate()) + translationManager.emptyString;
         }
         else {
@@ -238,8 +237,9 @@ Rectangle {
     }
 
     function update() {
+        appWindow.isMining = walletManager.isMining()
         updateStatusText()
-        startSoloMinerButton.enabled = !walletManager.isMining()
+        startSoloMinerButton.enabled = !appWindow.isMining
         stopSoloMinerButton.enabled = !startSoloMinerButton.enabled
     }
 

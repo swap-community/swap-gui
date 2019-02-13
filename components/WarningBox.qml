@@ -7,6 +7,7 @@ import "." as MoneroComponents
 Rectangle {
     id: root
     property alias text: content.text
+    property alias textColor: content.color
     property int fontSize: 15 * scaleRatio
 
     Layout.fillWidth: true
@@ -16,9 +17,9 @@ Rectangle {
     radius: 4
     border.color: MoneroComponents.Style.inputBorderColorInActive
     border.width: 1
-    
+
     signal linkActivated;
-    
+
     RowLayout {
         id: warningLayout
         spacing: 0
@@ -43,7 +44,8 @@ Rectangle {
             font.family: MoneroComponents.Style.fontRegular.name
             font.pixelSize: root.fontSize
             horizontalAlignment: TextInput.AlignLeft
-            selectByMouse: false
+            selectionColor: MoneroComponents.Style.dimmedFontColor
+            selectByMouse: true
             textFormat: Text.RichText
             wrapMode: Text.WordWrap
             textMargin: 0
