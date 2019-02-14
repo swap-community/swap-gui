@@ -259,6 +259,9 @@ Rectangle {
                       var address_ok = walletManager.addressValid(parts[1], appWindow.persistentSettings.nettype)
                       if (parts[0] === "true") {
                           if (address_ok) {
+                              // prepend openalias to description
+                              descriptionLine.text = descriptionLine.text ? addressLine.text + " " + descriptionLine.text : addressLine.text
+                              descriptionCheckbox.checked = true
                               addressLine.text = parts[1]
                           }
                           else
@@ -299,7 +302,7 @@ Rectangle {
               fontSize: paymentIdLine.labelFontSize
               iconOnTheLeft: false
               Layout.fillWidth: true
-              text: qsTr("Payment ID <font size='2'>( Optional, deprecated )</font>") + translationManager.emptyString
+              text: qsTr("Payment ID <font size='2'>( Optional )</font>") + translationManager.emptyString
               onClicked: {
                   if (!paymentIdCheckbox.checked) {
                     paymentIdLine.text = "";
