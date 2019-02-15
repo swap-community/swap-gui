@@ -463,7 +463,7 @@ OTHER_FILES += \
 DISTFILES += \
     notes.txt \
     swap/src/wallet/CMakeLists.txt \
-    components/MobileHeader.qml
+    components/MobileHeader.qml \
     pages/merchant/Merchant.qml \
     pages/merchant/MerchantCheckbox.qml
 
