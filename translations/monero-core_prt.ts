@@ -20,7 +20,7 @@
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="66"/>
-        <source>4.. / 8..</source>
+        <source>fh.. / fs..</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -368,7 +368,7 @@
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="93"/>
-        <source>WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+        <source>WARNING: Do not reuse your Swap keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
         <translation>G&apos;YARRGGHHHHH: Ye best not be reusin&apos; yer XM-ARGHHH keys on anoth&apos;r fork, UNLESS thee fork has key reuse mit&apos;gations built in upon thee! Doin&apos; so will be harmin&apos; ye privacy!</translation>
     </message>
     <message>
@@ -625,8 +625,8 @@
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="82"/>
-        <source>Mining with your computer helps strengthen the Monero network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Monero. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>Minin&apos; wit&apos; yer comput&apos;r be helpin&apos; put wind in thee Monero sails. Thee more that ye buckos be minin&apos;, thee hard&apos;r it be fer thee ship to be sunk&apos;n, an&apos; every little rapscalli&apos;n helps.&lt;br&gt; &lt;br&gt;Minin&apos; also be givin&apos; ye a small chance to happ&apos;n upon some o&apos; thee treasur&apos;d XM-ARGHHH. Yer comput&apos;r will be creatin&apos; hash&apos;s lookin&apos; fer thee block solut&apos;ons. If ye dig up a block, ye shall be receivin&apos; thee treasure. Good fortun&apos; &apos;n good luck ye scurvy swine!</translation>
+        <source>Mining with your computer helps strengthen the Swap network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Swap. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+        <translation>Minin&apos; wit&apos; yer comput&apos;r be helpin&apos; put wind in thee Swap sails. Thee more that ye buckos be minin&apos;, thee hard&apos;r it be fer thee ship to be sunk&apos;n, an&apos; every little rapscalli&apos;n helps.&lt;br&gt; &lt;br&gt;Minin&apos; also be givin&apos; ye a small chance to happ&apos;n upon some o&apos; thee treasur&apos;d XM-ARGHHH. Yer comput&apos;r will be creatin&apos; hash&apos;s lookin&apos; fer thee block solut&apos;ons. If ye dig up a block, ye shall be receivin&apos; thee treasure. Good fortun&apos; &apos;n good luck ye scurvy swine!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="95"/>
@@ -882,12 +882,12 @@
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="139"/>
-        <source>With more Monero</source>
+        <source>With more Swap</source>
         <translation>Wit&apos; more XM-ARGHHH</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="140"/>
-        <source>With not enough Monero</source>
+        <source>With not enough Swap</source>
         <translation>Wit&apos; not enuf XM-ARGHHH</translation>
     </message>
     <message>
@@ -924,7 +924,7 @@
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="369"/>
-        <source>Create new address</source>
+        <source>Create new subaddress</source>
         <translation>Create new addr&apos;ss!</translation>
     </message>
     <message>
@@ -1056,7 +1056,7 @@
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="88"/>
-        <source>Embedded Monero version: </source>
+        <source>Embedded Swap version: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1172,12 +1172,12 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="232"/>
-        <source>Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.</source>
+        <source>Uses a third-party server to connect to the Swap network. Less secure, but easier on your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="277"/>
-        <source>To find a remote node, type &apos;Monero remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
+        <source>To find a remote node, type &apos;Swap remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1339,8 +1339,8 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="106"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by Monero wallets as well as wallets from Monero clones which reuse the Monero keys.</source>
-        <translation>T&apos;is page be allowin&apos; ye to inter&apos;ct wit&apos; thee shar&apos;d ring datab&apos;se. T&apos;is datab&apos;se be meant fer use by ye XM-ARGHHH wall&apos;ts as well as wall&apos;ts from Monero clones which be reusin&apos; thee Monero keys.</translation>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by Swap wallets as well as wallets from Swap clones which reuse the Swap keys.</source>
+        <translation>T&apos;is page be allowin&apos; ye to inter&apos;ct wit&apos; thee shar&apos;d ring datab&apos;se. T&apos;is datab&apos;se be meant fer use by ye XM-ARGHHH wall&apos;ts as well as wall&apos;ts from Swap clones which be reusin&apos; thee Swap keys.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="119"/>
@@ -1356,8 +1356,8 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="122"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the monero-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
-        <translation>In ord&apos;r to be obscurin&apos; which inputs in a XM-ARGHHH transact&apos;on are bein&apos; spent, a third party shant be abl&apos; to dig&apos;st which inputs in thee ring argh already be known to be spent. Bein&apos; abl&apos; to do so would be weakenin&apos; thee protect&apos;on afford&apos;d by ring signat&apos;res. If all but one o&apos; thee inputs are known to be already spent, then thee input bein&apos; actually spent becomes appar&apos;nt, thereby nullifyin&apos; thee effect o&apos; thee ring signat&apos;res, one o&apos; thee three main lay&apos;rs o&apos; privacy protecti&apos;n XM-ARGHHH uses.&lt;br&gt;To help ye transactions to be avoidin&apos; those inputs, a list o&apos; known spent ones can be us&apos;d to avoid usin&apos; them in new transact&apos;ons. Such a list be maintain&apos;d by thee Monero project and be availabl&apos; on thee getmonero.org website, and ye can be importin&apos; t&apos;is list &apos;ere.&lt;br&gt;Alternativ&apos;ly, ye can be scannin&apos; thee blockchain (and thee blockchain o&apos; the key-reusin&apos; Monero clones) yaself usin&apos; thee monero-blockchain-mark-spent-outputs tool an be creatin&apos; a list o&apos; known spent outputs.&lt;br&gt;</translation>
+        <source>In order to obscure which inputs in a Swap transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Swap uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Swap project and is available on the getswap.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Swap clones) yourself using the swap-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <translation>In ord&apos;r to be obscurin&apos; which inputs in a XM-ARGHHH transact&apos;on are bein&apos; spent, a third party shant be abl&apos; to dig&apos;st which inputs in thee ring argh already be known to be spent. Bein&apos; abl&apos; to do so would be weakenin&apos; thee protect&apos;on afford&apos;d by ring signat&apos;res. If all but one o&apos; thee inputs are known to be already spent, then thee input bein&apos; actually spent becomes appar&apos;nt, thereby nullifyin&apos; thee effect o&apos; thee ring signat&apos;res, one o&apos; thee three main lay&apos;rs o&apos; privacy protecti&apos;n XM-ARGHHH uses.&lt;br&gt;To help ye transactions to be avoidin&apos; those inputs, a list o&apos; known spent ones can be us&apos;d to avoid usin&apos; them in new transact&apos;ons. Such a list be maintain&apos;d by thee Swap project and be availabl&apos; on thee getswap.org website, and ye can be importin&apos; t&apos;is list &apos;ere.&lt;br&gt;Alternativ&apos;ly, ye can be scannin&apos; thee blockchain (and thee blockchain o&apos; the key-reusin&apos; Swap clones) yaself usin&apos; thee swap-blockchain-mark-spent-outputs tool an be creatin&apos; a list o&apos; known spent outputs.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="143"/>
@@ -1427,12 +1427,12 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="263"/>
-        <source>In order to avoid nullifying the protection afforded by Monero&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Monero clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Monero and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Monero clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Monero safely.&lt;br&gt;If you do not use a key-reusing Monero clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>In ord&apos;r to be avoidin&apos; nullifyin&apos; thee protection afford&apos;d by XM-ARGHHH&apos;s ring sign&apos;tures, an output shan&apos;t be spent with diff&apos;rent rings on diff&apos;rent blockchains. While t&apos;is may norm&apos;lly not be argh concern, it can become one when thar be a key-reusin&apos; Monero clone allowin&apos; you to spend existing outputs. In t&apos;is case, ye need to ensur&apos; t&apos;is existin&apos; outputs be usin&apos; thee same ring on both chains.&lt;br&gt;T&apos;is shal&apos; be done automatica&apos;ly by Monero an&apos; any key-reusin&apos; software which not be tryin&apos; to activ&apos;ly strip ye of ye treasur&apos;d privacy.&lt;br&gt;If ye are usin&apos; a key-reusin&apos; Monero clone too, an&apos; t&apos;is clone does not be includ&apos; t&apos;is protection, ye can stil&apos; ensur&apos; ye transactions be protect&apos;d by spendin&apos; on thee clone first, then be manually addin&apos; thee ring on t&apos;is page, which be allowin&apos; ye to then be spendin&apos; y&apos; XM-ARGHHH safely.&lt;br&gt;If ye do not be usin&apos; a key-reusin&apos; Monero clone without these safety featur&apos;s, then ye do not be needin&apos; to do anythin&apos; as it is all automat&apos;d.&lt;br&gt;</translation>
+        <source>In order to avoid nullifying the protection afforded by Swap&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Swap clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Swap and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Swap clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Swap safely.&lt;br&gt;If you do not use a key-reusing Swap clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <translation>In ord&apos;r to be avoidin&apos; nullifyin&apos; thee protection afford&apos;d by XM-ARGHHH&apos;s ring sign&apos;tures, an output shan&apos;t be spent with diff&apos;rent rings on diff&apos;rent blockchains. While t&apos;is may norm&apos;lly not be argh concern, it can become one when thar be a key-reusin&apos; Swap clone allowin&apos; you to spend existing outputs. In t&apos;is case, ye need to ensur&apos; t&apos;is existin&apos; outputs be usin&apos; thee same ring on both chains.&lt;br&gt;T&apos;is shal&apos; be done automatica&apos;ly by Swap an&apos; any key-reusin&apos; software which not be tryin&apos; to activ&apos;ly strip ye of ye treasur&apos;d privacy.&lt;br&gt;If ye are usin&apos; a key-reusin&apos; Swap clone too, an&apos; t&apos;is clone does not be includ&apos; t&apos;is protection, ye can stil&apos; ensur&apos; ye transactions be protect&apos;d by spendin&apos; on thee clone first, then be manually addin&apos; thee ring on t&apos;is page, which be allowin&apos; ye to then be spendin&apos; y&apos; XM-ARGHHH safely.&lt;br&gt;If ye do not be usin&apos; a key-reusin&apos; Swap clone without these safety featur&apos;s, then ye do not be needin&apos; to do anythin&apos; as it is all automat&apos;d.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="285"/>
-        <source>This records rings used by outputs spent on Monero on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <source>This records rings used by outputs spent on Swap on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
         <translation>T&apos;is records rings us&apos;d by thee outputs sp&apos;nt on XM-ARGHHH on a key reusin&apos; chain, so thee same ring may be reus&apos;d to avoid privacy issu&apos;s.</translation>
     </message>
     <message>
@@ -1943,7 +1943,7 @@ Ringsize: </source>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="552"/>
-        <source>Monero sent successfully</source>
+        <source>Swap sent successfully</source>
         <translation>XM-ARGHHH be sent succ&apos;ssf&apos;lly</translation>
     </message>
     <message>
@@ -2095,13 +2095,13 @@ Fer the case wit&apos; Spend Proof, you don&apos;t be needin&apos; to specify th
     <name>WizardConfigure</name>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="79"/>
-        <source>We’re almost there - let’s just configure some Monero preferences</source>
+        <source>We’re almost there - let’s just configure some Swap preferences</source>
         <translation>We alm&apos;st be thar - let&apos;s just be configurin&apos; some XM-ARGHHH pref&apos;rences</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="97"/>
-        <source>Kickstart the Monero blockchain?</source>
-        <translation>Hastily Raise thee sails to kickstart thee Monero blockchain?</translation>
+        <source>Kickstart the Swap blockchain?</source>
+        <translation>Hastily Raise thee sails to kickstart thee Swap blockchain?</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="113"/>
@@ -2115,8 +2115,8 @@ Fer the case wit&apos; Spend Proof, you don&apos;t be needin&apos; to specify th
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="140"/>
-        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Monero instance. However, storing the full blockchain is beneficial to the security of the Monero network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
-        <translation>Ye disk conservation mode be usin&apos; substantial&apos;y less disk-space, but thee same amount o&apos; bandwidth as a regular Monero instance. Howev&apos;r, storin&apos; thee full blockchain be beneficial to thee security of thee Monero netw&apos;rk. If ye be on argh device wit&apos; limit&apos;d disk space, then t&apos;is option be appropriat&apos; fer ye.</translation>
+        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Swap instance. However, storing the full blockchain is beneficial to the security of the Swap network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
+        <translation>Ye disk conservation mode be usin&apos; substantial&apos;y less disk-space, but thee same amount o&apos; bandwidth as a regular Swap instance. Howev&apos;r, storin&apos; thee full blockchain be beneficial to thee security of thee Swap netw&apos;rk. If ye be on argh device wit&apos; limit&apos;d disk space, then t&apos;is option be appropriat&apos; fer ye.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="153"/>
@@ -2125,8 +2125,8 @@ Fer the case wit&apos; Spend Proof, you don&apos;t be needin&apos; to specify th
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="169"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Minin&apos; be securin&apos; thee Monero netw&apos;rk, an&apos; also be payin&apos; a small reward fer thee hardw&apos;rk done. T&apos;is option will let ye Monero mine when ye comput&apos;r o&apos; ship be on mains power and be idle. It shal&apos; stop minin&apos; when ye continue workin&apos;.</translation>
+        <source>Mining secures the Swap network, and also pays a small reward for the work done. This option will let Swap mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>Minin&apos; be securin&apos; thee Swap netw&apos;rk, an&apos; also be payin&apos; a small reward fer thee hardw&apos;rk done. T&apos;is option will let ye Swap mine when ye comput&apos;r o&apos; ship be on mains power and be idle. It shal&apos; stop minin&apos; when ye continue workin&apos;.</translation>
     </message>
 </context>
 <context>
@@ -2157,7 +2157,7 @@ Fer the case wit&apos; Spend Proof, you don&apos;t be needin&apos; to specify th
     <name>WizardDaemonSettings</name>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="114"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
+        <source>To be able to communicate with the Swap network your wallet needs to be connected to a Swap node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2190,7 +2190,7 @@ Fer the case wit&apos; Spend Proof, you don&apos;t be needin&apos; to specify th
     <name>WizardDonation</name>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="93"/>
-        <source>Monero development is solely supported by donations</source>
+        <source>Swap development is solely supported by donations</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2205,8 +2205,8 @@ Fer the case wit&apos; Spend Proof, you don&apos;t be needin&apos; to specify th
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 XMR and add a 0.0025 XMR to support Monero development.</source>
-        <translation>Fer every XM-ARGHHH transact&apos;on, a wee transaction fee be charg&apos;d. T&apos;is option be lettin&apos; ye add an additional amount, as a percent&apos;ge o&apos; that fee, to ye transaction to supp&apos;rt Monero developm&apos;nt. For instanc&apos;, a 50% autodonation be takin&apos; a transaction fee o&apos; 0.005 XMR and addin&apos; a 0.0025 XMR to support thee Monero development ye tight-arsed lobst&apos;r.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Swap development. For instance, a 50% autodonation take a transaction fee of 0.005 XWP and add a 0.0025 XWP to support Swap development.</source>
+        <translation>Fer every XM-ARGHHH transact&apos;on, a wee transaction fee be charg&apos;d. T&apos;is option be lettin&apos; ye add an additional amount, as a percent&apos;ge o&apos; that fee, to ye transaction to supp&apos;rt Swap developm&apos;nt. For instanc&apos;, a 50% autodonation be takin&apos; a transaction fee o&apos; 0.005 XWP and addin&apos; a 0.0025 XWP to support thee Swap development ye tight-arsed lobst&apos;r.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2215,8 +2215,8 @@ Fer the case wit&apos; Spend Proof, you don&apos;t be needin&apos; to specify th
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="190"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Ye min&apos;ng be securin&apos; thee Monero network, an also be payin&apos; a wee bounty fer thee sails rais&apos;d. T&apos;is option shall be lettin&apos; XM-ARGhhh mine when ye comput&apos;r is on mains power an&apos; be idle. It shall stop min&apos;ng when ye continue workin&apos;.</translation>
+        <source>Mining secures the Swap network, and also pays a small reward for the work done. This option will let Swap mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>Ye min&apos;ng be securin&apos; thee Swap network, an also be payin&apos; a wee bounty fer thee sails rais&apos;d. T&apos;is option shall be lettin&apos; XM-ARGhhh mine when ye comput&apos;r is on mains power an&apos; be idle. It shall stop min&apos;ng when ye continue workin&apos;.</translation>
     </message>
 </context>
 <context>
@@ -2429,7 +2429,7 @@ Fer the case wit&apos; Spend Proof, you don&apos;t be needin&apos; to specify th
     <name>WizardOptions</name>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="76"/>
-        <source>Welcome to Monero!</source>
+        <source>Welcome to Swap!</source>
         <translation>Welc&apos;me to XM-ARGHHH!</translation>
     </message>
     <message>
@@ -2519,7 +2519,7 @@ Fer the case wit&apos; Spend Proof, you don&apos;t be needin&apos; to specify th
     <name>WizardWelcome</name>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="73"/>
-        <source>Welcome to Monero!</source>
+        <source>Welcome to Swap!</source>
         <translation>Welcome to XM-ARGHHH!</translation>
     </message>
     <message>
@@ -2687,7 +2687,7 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="791"/>
-        <source>Monero sent successfully: %1 transaction(s) </source>
+        <source>Swap sent successfully: %1 transaction(s) </source>
         <translation>XM-ARGHHH sent successfully: %1 transaction(s) </translation>
     </message>
     <message>
@@ -2716,7 +2716,7 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="865"/>
-        <source>This address received %1 monero, with %2 confirmation(s).</source>
+        <source>This address received %1 swap, with %2 confirmation(s).</source>
         <translation>T&apos;is address receiv&apos;d %1 XM-ARGHHH, wit&apos; %2 confirmation(s).</translation>
     </message>
     <message>
@@ -2791,8 +2791,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1776"/>
-        <source>New version of monero-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>Thar be argh new version o&apos; thee monero-wallet-gui availabl&apos;: %1&lt;br&gt;%2</translation>
+        <source>New version of swap-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>Thar be argh new version o&apos; thee swap-wallet-gui availabl&apos;: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1808"/>
@@ -2833,7 +2833,7 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="862"/>
-        <source>This address received %1 monero, but the transaction is not yet mined</source>
+        <source>This address received %1 swap, but the transaction is not yet mined</source>
         <translation>T&apos;is address be receiv&apos;d %1 XM-ARGHHH, but thee transaction no be yet min&apos;d</translation>
     </message>
     <message>
@@ -2863,7 +2863,7 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1284"/>
-        <source>Monero</source>
+        <source>Swap</source>
         <translation>XM-ARGHHH!</translation>
     </message>
     <message>

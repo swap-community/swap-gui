@@ -20,8 +20,8 @@
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="66"/>
-        <source>4.. / 8..</source>
-        <translation>4.. / 8..</translation>
+        <source>fh.. / fs..</source>
+        <translation>fh.. / fs..</translation>
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="74"/>
@@ -373,7 +373,7 @@
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="93"/>
-        <source>WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+        <source>WARNING: Do not reuse your Swap keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -625,8 +625,8 @@
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="82"/>
-        <source>Mining with your computer helps strengthen the Monero network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Monero. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>Minadi per via komputilo helpas plisekurigi la Monero-reton. Ju pli da homoj minas, des mapli atakebla iĝas la reto, kaj ĉiu malgranda helpo utilas. &lt;br&gt; &lt;br&gt;La minado ankaŭ donas al vi etan ŝancon ricevi rekompencon je Moneroj. Via komputilo kreos haketojn, serĉante bloksolvojn. Se vi trovas blokon, vi ricevos la asociitan rekompencon. Bonŝancon!</translation>
+        <source>Mining with your computer helps strengthen the Swap network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Swap. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+        <translation>Minadi per via komputilo helpas plisekurigi la Swap-reton. Ju pli da homoj minas, des mapli atakebla iĝas la reto, kaj ĉiu malgranda helpo utilas. &lt;br&gt; &lt;br&gt;La minado ankaŭ donas al vi etan ŝancon ricevi rekompencon je Swapj. Via komputilo kreos haketojn, serĉante bloksolvojn. Se vi trovas blokon, vi ricevos la asociitan rekompencon. Bonŝancon!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="95"/>
@@ -882,13 +882,13 @@
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="139"/>
-        <source>With more Monero</source>
-        <translation>Kun pli da Monero</translation>
+        <source>With more Swap</source>
+        <translation>Kun pli da Swap</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="140"/>
-        <source>With not enough Monero</source>
-        <translation>Kun malsufiĉe da Monero</translation>
+        <source>With not enough Swap</source>
+        <translation>Kun malsufiĉe da Swap</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="142"/>
@@ -924,7 +924,7 @@
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="369"/>
-        <source>Create new address</source>
+        <source>Create new subaddress</source>
         <translation>Krei novan adreson</translation>
     </message>
     <message>
@@ -1056,7 +1056,7 @@
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="88"/>
-        <source>Embedded Monero version: </source>
+        <source>Embedded Swap version: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1172,12 +1172,12 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="232"/>
-        <source>Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.</source>
+        <source>Uses a third-party server to connect to the Swap network. Less secure, but easier on your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="277"/>
-        <source>To find a remote node, type &apos;Monero remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
+        <source>To find a remote node, type &apos;Swap remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1339,8 +1339,8 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="106"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by Monero wallets as well as wallets from Monero clones which reuse the Monero keys.</source>
-        <translation>Ĉi tiu paĝo ebligas vin interagi kun la komuna ringdatumbazo. Tiu datumbazo uziĝos de Monero-monujoj kaj de monujoj el Monero-klonoj kiuj reuzas la Monero-ŝlosilojn.</translation>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by Swap wallets as well as wallets from Swap clones which reuse the Swap keys.</source>
+        <translation>Ĉi tiu paĝo ebligas vin interagi kun la komuna ringdatumbazo. Tiu datumbazo uziĝos de Swap-monujoj kaj de monujoj el Swap-klonoj kiuj reuzas la Swap-ŝlosilojn.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="119"/>
@@ -1407,7 +1407,7 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="122"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the monero-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <source>In order to obscure which inputs in a Swap transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Swap uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Swap project and is available on the getswap.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Swap clones) yourself using the swap-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1427,13 +1427,13 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="263"/>
-        <source>In order to avoid nullifying the protection afforded by Monero&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Monero clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Monero and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Monero clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Monero safely.&lt;br&gt;If you do not use a key-reusing Monero clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <source>In order to avoid nullifying the protection afforded by Swap&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Swap clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Swap and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Swap clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Swap safely.&lt;br&gt;If you do not use a key-reusing Swap clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="285"/>
-        <source>This records rings used by outputs spent on Monero on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>Tio registras la ringojn kiuj uziĝis por elspezi Moneron sur ŝlosilreuzanta ĉeno, tiel ke la sama ringo uziĝu denove, por malhelpi privatecproblemojn.</translation>
+        <source>This records rings used by outputs spent on Swap on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <translation>Tio registras la ringojn kiuj uziĝis por elspezi Swapn sur ŝlosilreuzanta ĉeno, tiel ke la sama ringo uziĝu denove, por malhelpi privatecproblemojn.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="296"/>
@@ -1895,8 +1895,8 @@ Ringsize: </source>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="552"/>
-        <source>Monero sent successfully</source>
-        <translation>Sukcese sendis Moneron</translation>
+        <source>Swap sent successfully</source>
+        <translation>Sukcese sendis Swapn</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="175"/>
@@ -2095,12 +2095,12 @@ Kaze de Elspezpruvo, vi ne bezonas precizi la ricevantan adreson.</translation>
     <name>WizardConfigure</name>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="79"/>
-        <source>We’re almost there - let’s just configure some Monero preferences</source>
-        <translation>Preskaŭ preta - ni agordu kelkajn preferojn por Monero Core</translation>
+        <source>We’re almost there - let’s just configure some Swap preferences</source>
+        <translation>Preskaŭ preta - ni agordu kelkajn preferojn por Swap Core</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="97"/>
-        <source>Kickstart the Monero blockchain?</source>
+        <source>Kickstart the Swap blockchain?</source>
         <translation>Ĉu komenci la Moneran blokĉenon?</translation>
     </message>
     <message>
@@ -2115,7 +2115,7 @@ Kaze de Elspezpruvo, vi ne bezonas precizi la ricevantan adreson.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="140"/>
-        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Monero instance. However, storing the full blockchain is beneficial to the security of the Monero network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
+        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Swap instance. However, storing the full blockchain is beneficial to the security of the Swap network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
         <translation>La diskokonservado-reĝimo uzas multe malpli da diskospaco, sed saman kvanton de retkapacito kiel normala Monera nodo. Tamen, konservi la tutan blokĉenon helpas plisekurigi la Monerreton.Se vi uzas aparaton kun malmulte da diskospaco, tiu ĉi opcio taŭgas por vi.</translation>
     </message>
     <message>
@@ -2125,8 +2125,8 @@ Kaze de Elspezpruvo, vi ne bezonas precizi la ricevantan adreson.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="169"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>La minado sekurigas la Monero-reton kaj vi ricevas rekompenceton por la laboro. Tiu ĉi opcio ŝaltos la minadon kiam via komputilo uzas la kurentprovizon kaj estas senokupa. La minado haltos kiam vi denove uzos la komputilon.</translation>
+        <source>Mining secures the Swap network, and also pays a small reward for the work done. This option will let Swap mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>La minado sekurigas la Swap-reton kaj vi ricevas rekompenceton por la laboro. Tiu ĉi opcio ŝaltos la minadon kiam via komputilo uzas la kurentprovizon kaj estas senokupa. La minado haltos kiam vi denove uzos la komputilon.</translation>
     </message>
 </context>
 <context>
@@ -2157,8 +2157,8 @@ Kaze de Elspezpruvo, vi ne bezonas precizi la ricevantan adreson.</translation>
     <name>WizardDaemonSettings</name>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="114"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation>Por ebligi komunikon kun la Monero-reto, via monujo bezonas konektiĝi kun Monera nodo. Oni rekomendas bonteni vian propran nodon por plej bona privateco.
+        <source>To be able to communicate with the Swap network your wallet needs to be connected to a Swap node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
+        <translation>Por ebligi komunikon kun la Swap-reto, via monujo bezonas konektiĝi kun Monera nodo. Oni rekomendas bonteni vian propran nodon por plej bona privateco.
 &lt;br&gt;&lt;br&gt; Se vi ne povas starigi vian propran nodon, ekzistas la opcio konektiĝi al fora nodo.</translation>
     </message>
     <message>
@@ -2191,8 +2191,8 @@ Kaze de Elspezpruvo, vi ne bezonas precizi la ricevantan adreson.</translation>
     <name>WizardDonation</name>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="93"/>
-        <source>Monero development is solely supported by donations</source>
-        <translation>La programado de Monero estas nur subtenata per donacoj.</translation>
+        <source>Swap development is solely supported by donations</source>
+        <translation>La programado de Swap estas nur subtenata per donacoj.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="113"/>
@@ -2206,8 +2206,8 @@ Kaze de Elspezpruvo, vi ne bezonas precizi la ricevantan adreson.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 XMR and add a 0.0025 XMR to support Monero development.</source>
-        <translation>Por ĉiu transakcio, oni devas pagi malgrandan transakcikoston. Tiu ĉi opcio ebligas aldonan sumon (procento de la baza kosto) al via transakcio por subteni la programadon de Monero. Ekzemple, 50% aŭtomata donaco aldonas 0.0025 XMR al transakcikosto de 0.005 XMR.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Swap development. For instance, a 50% autodonation take a transaction fee of 0.005 XWP and add a 0.0025 XWP to support Swap development.</source>
+        <translation>Por ĉiu transakcio, oni devas pagi malgrandan transakcikoston. Tiu ĉi opcio ebligas aldonan sumon (procento de la baza kosto) al via transakcio por subteni la programadon de Swap. Ekzemple, 50% aŭtomata donaco aldonas 0.0025 XWP al transakcikosto de 0.005 XWP.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2216,7 +2216,7 @@ Kaze de Elspezpruvo, vi ne bezonas precizi la ricevantan adreson.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="190"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <source>Mining secures the Swap network, and also pays a small reward for the work done. This option will let Swap mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
         <translation>La minado sekurigas la Monerreton kaj vi ricevas rekompenceton por la laboro. Tiu ĉi opcio ŝaltos minadon kiam via komputilo estos ŝaltita sed senokupa. La minado haltos kiam vi denove uzos la komputilon.</translation>
     </message>
 </context>
@@ -2429,8 +2429,8 @@ Kaze de Elspezpruvo, vi ne bezonas precizi la ricevantan adreson.</translation>
     <name>WizardOptions</name>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="76"/>
-        <source>Welcome to Monero!</source>
-        <translation>Bonvenon al Monero!</translation>
+        <source>Welcome to Swap!</source>
+        <translation>Bonvenon al Swap!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="87"/>
@@ -2519,8 +2519,8 @@ Kaze de Elspezpruvo, vi ne bezonas precizi la ricevantan adreson.</translation>
     <name>WizardWelcome</name>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="73"/>
-        <source>Welcome to Monero!</source>
-        <translation>Bonvenon al Monero!</translation>
+        <source>Welcome to Swap!</source>
+        <translation>Bonvenon al Swap!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="83"/>
@@ -2568,8 +2568,8 @@ Kaze de Elspezpruvo, vi ne bezonas precizi la ricevantan adreson.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="862"/>
-        <source>This address received %1 monero, but the transaction is not yet mined</source>
-        <translation>Tiu ĉi adreso ricevis %1 moneron; sed la transakcio ankoraŭ ne estas minata</translation>
+        <source>This address received %1 swap, but the transaction is not yet mined</source>
+        <translation>Tiu ĉi adreso ricevis %1 swapn; sed la transakcio ankoraŭ ne estas minata</translation>
     </message>
     <message>
         <location filename="../main.qml" line="869"/>
@@ -2770,8 +2770,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1776"/>
-        <source>New version of monero-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>Nova versio de monero-wallet-gui disponeblas:  %1&lt;br&gt;%2</translation>
+        <source>New version of swap-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>Nova versio de swap-wallet-gui disponeblas:  %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="679"/>
@@ -2821,8 +2821,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="791"/>
-        <source>Monero sent successfully: %1 transaction(s) </source>
-        <translation>Sukcese sendis Moneron: %1 transakcio(j)</translation>
+        <source>Swap sent successfully: %1 transaction(s) </source>
+        <translation>Sukcese sendis Swapn: %1 transakcio(j)</translation>
     </message>
     <message>
         <location filename="../main.qml" line="824"/>
@@ -2832,8 +2832,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="865"/>
-        <source>This address received %1 monero, with %2 confirmation(s).</source>
-        <translation>Tiu adreso ricevis %1 monerojn, kun %2 konfirmo(j)</translation>
+        <source>This address received %1 swap, with %2 confirmation(s).</source>
+        <translation>Tiu adreso ricevis %1 swapjn, kun %2 konfirmo(j)</translation>
     </message>
     <message>
         <location filename="../main.qml" line="888"/>
@@ -2857,8 +2857,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1284"/>
-        <source>Monero</source>
-        <translation>Monero</translation>
+        <source>Swap</source>
+        <translation>Swap</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1434"/>

@@ -20,8 +20,8 @@
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="66"/>
-        <source>4.. / 8..</source>
-        <translation>4.. / 8..</translation>
+        <source>fh.. / fs..</source>
+        <translation>fh.. / fs..</translation>
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="74"/>
@@ -373,8 +373,8 @@
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="93"/>
-        <source>WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
-        <translation>PERINGATAN: Jangan menggunakan kembali kunci Monero Anda di fork lain, KECUALI fork ini memiliki mitigasi built-in yang dapat digunakan kembali. Melakukan hal tersebut akan membahayakan privasi Anda.</translation>
+        <source>WARNING: Do not reuse your Swap keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+        <translation>PERINGATAN: Jangan menggunakan kembali kunci Swap Anda di fork lain, KECUALI fork ini memiliki mitigasi built-in yang dapat digunakan kembali. Melakukan hal tersebut akan membahayakan privasi Anda.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="196"/>
@@ -625,8 +625,8 @@
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="82"/>
-        <source>Mining with your computer helps strengthen the Monero network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Monero. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>Pertambangan dengan komputer Anda menolong mempertahankan jaringan Monero. Makin banyak orang-orang pertambangan, makin sulit menyerangkan jaringan, dan setiap komputer membantu, memang yang kecil.&lt;br&gt; &lt;br&gt;Pertambangan juga memberikan Anda sebuah kesempatan supaya memenangkan sedikit Monero. Komputer Anda akan menebak untuk kunci blok Monero. Jika Anda menemukan kunci yang pas, Anda akan menang sedikit Monero. Semoga sukses!</translation>
+        <source>Mining with your computer helps strengthen the Swap network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Swap. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+        <translation>Pertambangan dengan komputer Anda menolong mempertahankan jaringan Swap. Makin banyak orang-orang pertambangan, makin sulit menyerangkan jaringan, dan setiap komputer membantu, memang yang kecil.&lt;br&gt; &lt;br&gt;Pertambangan juga memberikan Anda sebuah kesempatan supaya memenangkan sedikit Swap. Komputer Anda akan menebak untuk kunci blok Swap. Jika Anda menemukan kunci yang pas, Anda akan menang sedikit Swap. Semoga sukses!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="95"/>
@@ -882,13 +882,13 @@
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="139"/>
-        <source>With more Monero</source>
-        <translation>Dengan lebih banyak Monero</translation>
+        <source>With more Swap</source>
+        <translation>Dengan lebih banyak Swap</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="140"/>
-        <source>With not enough Monero</source>
-        <translation>Dengan jumlah Monero yang tidak mencukupi</translation>
+        <source>With not enough Swap</source>
+        <translation>Dengan jumlah Swap yang tidak mencukupi</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="142"/>
@@ -924,7 +924,7 @@
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="369"/>
-        <source>Create new address</source>
+        <source>Create new subaddress</source>
         <translation>Buat alamat baru</translation>
     </message>
     <message>
@@ -1056,8 +1056,8 @@
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="88"/>
-        <source>Embedded Monero version: </source>
-        <translation>Versi Monero tertanam: </translation>
+        <source>Embedded Swap version: </source>
+        <translation>Versi Swap tertanam: </translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="117"/>
@@ -1178,13 +1178,13 @@ File cache dompet lama akan diganti namanya dan dapat dikembalikan nanti.</trans
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="232"/>
-        <source>Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.</source>
-        <translation>Menggunakan server pihak ketiga untuk terhubung ke jaringan Monero. Kurang begitu aman, tetapi lebih mudah di sisi komputer Anda.</translation>
+        <source>Uses a third-party server to connect to the Swap network. Less secure, but easier on your computer.</source>
+        <translation>Menggunakan server pihak ketiga untuk terhubung ke jaringan Swap. Kurang begitu aman, tetapi lebih mudah di sisi komputer Anda.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="277"/>
-        <source>To find a remote node, type &apos;Monero remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
-        <translation>Untuk menemukan simpul jarak jauh, ketik &apos;simpul jarak jauh Monero &apos; ke mesin pencari favorit Anda. Pastikan simpul tersebut dijalankan oleh pihak ketiga yang tepercaya.</translation>
+        <source>To find a remote node, type &apos;Swap remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
+        <translation>Untuk menemukan simpul jarak jauh, ketik &apos;simpul jarak jauh Swap &apos; ke mesin pencari favorit Anda. Pastikan simpul tersebut dijalankan oleh pihak ketiga yang tepercaya.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="291"/>
@@ -1345,8 +1345,8 @@ File cache dompet lama akan diganti namanya dan dapat dikembalikan nanti.</trans
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="106"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by Monero wallets as well as wallets from Monero clones which reuse the Monero keys.</source>
-        <translation>Halaman ini memungkinkan Anda untuk berinteraksi dengan basis data cincin bersama. Basis data ini dimaksudkan untuk digunakan oleh dompet Monero serta dompet dari klon Monero yang menggunakan kembali kunci Monero.</translation>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by Swap wallets as well as wallets from Swap clones which reuse the Swap keys.</source>
+        <translation>Halaman ini memungkinkan Anda untuk berinteraksi dengan basis data cincin bersama. Basis data ini dimaksudkan untuk digunakan oleh dompet Swap serta dompet dari klon Swap yang menggunakan kembali kunci Swap.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="119"/>
@@ -1402,7 +1402,7 @@ File cache dompet lama akan diganti namanya dan dapat dikembalikan nanti.</trans
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="122"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the monero-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <source>In order to obscure which inputs in a Swap transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Swap uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Swap project and is available on the getswap.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Swap clones) yourself using the swap-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1433,13 +1433,13 @@ File cache dompet lama akan diganti namanya dan dapat dikembalikan nanti.</trans
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="263"/>
-        <source>In order to avoid nullifying the protection afforded by Monero&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Monero clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Monero and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Monero clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Monero safely.&lt;br&gt;If you do not use a key-reusing Monero clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>Untuk menghindari penghapusan perlindungan yang diberikan oleh tanda-tanda cincin Monero &apos;, output tidak boleh digunakan dengan cincin yang berbeda pada blockchain yang berbeda. Meskipun ini biasanya tidak menimbulkan masalah, ini bisa menjadi satu ketika kloning Monero menggunakan kembali memungkinkan Anda untuk menghabiskan output yang ada. Dalam hal ini, Anda perlu memastikan bahwa output yang ada menggunakan cincin yang sama pada kedua rantai. &lt;br&gt; Ini akan dilakukan secara otomatis oleh Monero dan perangkat lunak yang menggunakan kembali kunci yang tidak mencoba untuk secara aktif menghapus privasi Anda.&lt; Jika Anda menggunakan klone Monero yang menggunakan kembali kunci juga, dan klon ini tidak termasuk perlindungan ini, Anda masih dapat memastikan transaksi Anda dilindungi dengan membelanjakan klon terlebih dahulu, lalu tambahkan cincin secara manual di halaman ini, yang memungkinkan Anda untuk kemudian menghabiskan Monero Anda dengan aman.&lt;br&gt;Jika Anda tidak menggunakan klon Monero yang menggunakan ulang kunci tanpa fitur keamanan ini, maka Anda tidak perlu melakukan apa pun karena semuanya otomatis.&lt;br&gt;</translation>
+        <source>In order to avoid nullifying the protection afforded by Swap&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Swap clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Swap and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Swap clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Swap safely.&lt;br&gt;If you do not use a key-reusing Swap clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <translation>Untuk menghindari penghapusan perlindungan yang diberikan oleh tanda-tanda cincin Swap &apos;, output tidak boleh digunakan dengan cincin yang berbeda pada blockchain yang berbeda. Meskipun ini biasanya tidak menimbulkan masalah, ini bisa menjadi satu ketika kloning Swap menggunakan kembali memungkinkan Anda untuk menghabiskan output yang ada. Dalam hal ini, Anda perlu memastikan bahwa output yang ada menggunakan cincin yang sama pada kedua rantai. &lt;br&gt; Ini akan dilakukan secara otomatis oleh Swap dan perangkat lunak yang menggunakan kembali kunci yang tidak mencoba untuk secara aktif menghapus privasi Anda.&lt; Jika Anda menggunakan klone Swap yang menggunakan kembali kunci juga, dan klon ini tidak termasuk perlindungan ini, Anda masih dapat memastikan transaksi Anda dilindungi dengan membelanjakan klon terlebih dahulu, lalu tambahkan cincin secara manual di halaman ini, yang memungkinkan Anda untuk kemudian menghabiskan Swap Anda dengan aman.&lt;br&gt;Jika Anda tidak menggunakan klon Swap yang menggunakan ulang kunci tanpa fitur keamanan ini, maka Anda tidak perlu melakukan apa pun karena semuanya otomatis.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="285"/>
-        <source>This records rings used by outputs spent on Monero on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>Catatan cincin ini digunakan oleh keluaran yang dihabiskan pada Monero pada sebuah rantai penggunaan kembali kunci, sehingga cincin yang sama dapat digunakan kembali untuk menghindari masalah privasi.</translation>
+        <source>This records rings used by outputs spent on Swap on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <translation>Catatan cincin ini digunakan oleh keluaran yang dihabiskan pada Swap pada sebuah rantai penggunaan kembali kunci, sehingga cincin yang sama dapat digunakan kembali untuk menghindari masalah privasi.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="296"/>
@@ -1844,8 +1844,8 @@ File cache dompet lama akan diganti namanya dan dapat dikembalikan nanti.</trans
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="552"/>
-        <source>Monero sent successfully</source>
-        <translation>Monero berhasil dikirimkan</translation>
+        <source>Swap sent successfully</source>
+        <translation>Swap berhasil dikirimkan</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="399"/>
@@ -2098,13 +2098,13 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardConfigure</name>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="79"/>
-        <source>We’re almost there - let’s just configure some Monero preferences</source>
-        <translation>Hampir selesai - marilah kita pilih preferensi dalam Monero</translation>
+        <source>We’re almost there - let’s just configure some Swap preferences</source>
+        <translation>Hampir selesai - marilah kita pilih preferensi dalam Swap</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="97"/>
-        <source>Kickstart the Monero blockchain?</source>
-        <translation>Mulailah rantaiblok Monero?</translation>
+        <source>Kickstart the Swap blockchain?</source>
+        <translation>Mulailah rantaiblok Swap?</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="113"/>
@@ -2118,8 +2118,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="140"/>
-        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Monero instance. However, storing the full blockchain is beneficial to the security of the Monero network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
-        <translation>Cara penghematan bisa mengurangi ruang hard disk untuk Monero, tetapi tidak mengurangi jumlah data. Menyimpan blockchain lengkap bermanfaat untuk jaringan. Jika perangkat Anda hanya memiliki kapasitas disk yang kecil, pilihan ini sesuai untuk Anda.</translation>
+        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Swap instance. However, storing the full blockchain is beneficial to the security of the Swap network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
+        <translation>Cara penghematan bisa mengurangi ruang hard disk untuk Swap, tetapi tidak mengurangi jumlah data. Menyimpan blockchain lengkap bermanfaat untuk jaringan. Jika perangkat Anda hanya memiliki kapasitas disk yang kecil, pilihan ini sesuai untuk Anda.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="153"/>
@@ -2128,8 +2128,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="169"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Pertambangan menjaminkan sekuritas jaringan Monero, dan juga mengeluarkan hadiah kecil kepada yang menambang dengan sukses. Pilihan ini mengizinkan Monero untuk pertambangan kapan komputer Anda menggunakan daya listrik dan Anda tidak bekerja. Pertambangan berhenti sewaktu saat Anda bekerja lagi.</translation>
+        <source>Mining secures the Swap network, and also pays a small reward for the work done. This option will let Swap mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>Pertambangan menjaminkan sekuritas jaringan Swap, dan juga mengeluarkan hadiah kecil kepada yang menambang dengan sukses. Pilihan ini mengizinkan Swap untuk pertambangan kapan komputer Anda menggunakan daya listrik dan Anda tidak bekerja. Pertambangan berhenti sewaktu saat Anda bekerja lagi.</translation>
     </message>
 </context>
 <context>
@@ -2160,8 +2160,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardDaemonSettings</name>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="114"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation>Agar dapat berkomunikasi dengan jaringan Monero, dompet Anda harus terhubung ke simpul Monero. Untuk privasi terbaik, disarankan untuk menjalankan simpul Anda sendiri.&lt;br&gt;&lt;br&gt; Jika Anda tidak memiliki opsi untuk menjalankan simpul Anda sendiri, ada opsi untuk terhubung ke simpul jarak jauh.</translation>
+        <source>To be able to communicate with the Swap network your wallet needs to be connected to a Swap node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
+        <translation>Agar dapat berkomunikasi dengan jaringan Swap, dompet Anda harus terhubung ke simpul Swap. Untuk privasi terbaik, disarankan untuk menjalankan simpul Anda sendiri.&lt;br&gt;&lt;br&gt; Jika Anda tidak memiliki opsi untuk menjalankan simpul Anda sendiri, ada opsi untuk terhubung ke simpul jarak jauh.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="126"/>
@@ -2193,8 +2193,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardDonation</name>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="93"/>
-        <source>Monero development is solely supported by donations</source>
-        <translation>Pengembangan Monero sepenuhnya berasal dari sumbangan</translation>
+        <source>Swap development is solely supported by donations</source>
+        <translation>Pengembangan Swap sepenuhnya berasal dari sumbangan</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="113"/>
@@ -2208,8 +2208,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 XMR and add a 0.0025 XMR to support Monero development.</source>
-        <translation>Dengan setiap transaksi, biaya kecil dibebankan. Pilihan ini membolehkan Anda menaiki persen biaya itu kepada yang membangunkan Monero. Contoh, pilihan 50% dengan biaya 0.005XMR akan tambah lagi 0.0025XMR kepada yang membangunkan Monero.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Swap development. For instance, a 50% autodonation take a transaction fee of 0.005 XWP and add a 0.0025 XWP to support Swap development.</source>
+        <translation>Dengan setiap transaksi, biaya kecil dibebankan. Pilihan ini membolehkan Anda menaiki persen biaya itu kepada yang membangunkan Swap. Contoh, pilihan 50% dengan biaya 0.005XWP akan tambah lagi 0.0025XWP kepada yang membangunkan Swap.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2218,8 +2218,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="190"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Pertambangan menjaminkan sekuritas jaringan Monero, dan juga mengeluarkan hadiah kecil kepada yang menambang dengan sukses. Pilihan ini mengizinkan Monero untuk pertambangan kapan komputer Anda menggunakan daya listrik dan Anda tidak bekerja. Pertambangan berhenti sewaktu saat Anda bekerja lagi.</translation>
+        <source>Mining secures the Swap network, and also pays a small reward for the work done. This option will let Swap mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>Pertambangan menjaminkan sekuritas jaringan Swap, dan juga mengeluarkan hadiah kecil kepada yang menambang dengan sukses. Pilihan ini mengizinkan Swap untuk pertambangan kapan komputer Anda menggunakan daya listrik dan Anda tidak bekerja. Pertambangan berhenti sewaktu saat Anda bekerja lagi.</translation>
     </message>
 </context>
 <context>
@@ -2431,8 +2431,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardOptions</name>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="76"/>
-        <source>Welcome to Monero!</source>
-        <translation>Selamat datang di dunia Monero!</translation>
+        <source>Welcome to Swap!</source>
+        <translation>Selamat datang di dunia Swap!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="87"/>
@@ -2521,8 +2521,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardWelcome</name>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="73"/>
-        <source>Welcome to Monero!</source>
-        <translation>Selamat datang di dunia Monero!</translation>
+        <source>Welcome to Swap!</source>
+        <translation>Selamat datang di dunia Swap!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="83"/>
@@ -2656,7 +2656,7 @@ Fee: </source>
     <message>
         <location filename="../main.qml" line="782"/>
         <source>Couldn&apos;t send the money: </source>
-        <translation>Tidak bisa mengirim uang monero: </translation>
+        <translation>Tidak bisa mengirim uang swap: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="785"/>
@@ -2671,13 +2671,13 @@ Fee: </source>
     </message>
     <message>
         <location filename="../main.qml" line="862"/>
-        <source>This address received %1 monero, but the transaction is not yet mined</source>
-        <translation>Alamat ini menerima %1 monero, tetapi transaksinya belum termasuk dalam blok</translation>
+        <source>This address received %1 swap, but the transaction is not yet mined</source>
+        <translation>Alamat ini menerima %1 swap, tetapi transaksinya belum termasuk dalam blok</translation>
     </message>
     <message>
         <location filename="../main.qml" line="865"/>
-        <source>This address received %1 monero, with %2 confirmation(s).</source>
-        <translation>Alamat ini menerima %1 monero, dengan %2 konfirmasi.</translation>
+        <source>This address received %1 swap, with %2 confirmation(s).</source>
+        <translation>Alamat ini menerima %1 swap, dengan %2 konfirmasi.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1725"/>
@@ -2701,8 +2701,8 @@ Fee: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1776"/>
-        <source>New version of monero-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>Versi baru untuk monero-wallet-gui tersedia: %1&lt;br&gt;%2</translation>
+        <source>New version of swap-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>Versi baru untuk swap-wallet-gui tersedia: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="869"/>
@@ -2761,8 +2761,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="791"/>
-        <source>Monero sent successfully: %1 transaction(s) </source>
-        <translation>Monero berhasil dikirim: %1 transaksi</translation>
+        <source>Swap sent successfully: %1 transaction(s) </source>
+        <translation>Swap berhasil dikirim: %1 transaksi</translation>
     </message>
     <message>
         <location filename="../main.qml" line="821"/>
@@ -2859,8 +2859,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1284"/>
-        <source>Monero</source>
-        <translation>Monero</translation>
+        <source>Swap</source>
+        <translation>Swap</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1434"/>

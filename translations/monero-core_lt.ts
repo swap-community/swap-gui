@@ -20,8 +20,8 @@
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="66"/>
-        <source>4.. / 8..</source>
-        <translation>4.. / 8..</translation>
+        <source>fh.. / fs..</source>
+        <translation>fh.. / fs..</translation>
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="74"/>
@@ -395,8 +395,8 @@
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="93"/>
-        <source>WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
-        <translation>ĮSPĖJIMAS: Pakartotinai nenaudokite savo Monero raktų kitoje atšakoje, NEBENT ši atšaka turi pakartotinio naudojimo švelninimo priemones. Panaudojus jūsų privatumas gali būti pažeistas.</translation>
+        <source>WARNING: Do not reuse your Swap keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+        <translation>ĮSPĖJIMAS: Pakartotinai nenaudokite savo Swap raktų kitoje atšakoje, NEBENT ši atšaka turi pakartotinio naudojimo švelninimo priemones. Panaudojus jūsų privatumas gali būti pažeistas.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="166"/>
@@ -625,8 +625,8 @@
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="82"/>
-        <source>Mining with your computer helps strengthen the Monero network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Monero. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>Kasimas jūsų kompiuteriu padeda sustiprinti Monero tinklą. Kuo daugiau žmonių kasa - tuo sunkiau atakuoti tinklą.&lt;br&gt; &lt;br&gt; Kasimas suteikia Jums mažą galimybę gauti šiek tiek Monero. Jūsų kompiuteris kurs &apos;hašus&apos; ir taip bandys atrasti blokų sprendimus. Jeigu rasite bloką, gausite atitinkamą atlygį. Sėkmės!</translation>
+        <source>Mining with your computer helps strengthen the Swap network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Swap. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+        <translation>Kasimas jūsų kompiuteriu padeda sustiprinti Swap tinklą. Kuo daugiau žmonių kasa - tuo sunkiau atakuoti tinklą.&lt;br&gt; &lt;br&gt; Kasimas suteikia Jums mažą galimybę gauti šiek tiek Swap. Jūsų kompiuteris kurs &apos;hašus&apos; ir taip bandys atrasti blokų sprendimus. Jeigu rasite bloką, gausite atitinkamą atlygį. Sėkmės!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="95"/>
@@ -882,13 +882,13 @@
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="139"/>
-        <source>With more Monero</source>
-        <translation>Su daugiau Monero</translation>
+        <source>With more Swap</source>
+        <translation>Su daugiau Swap</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="140"/>
-        <source>With not enough Monero</source>
-        <translation>Su nepakankamai Monero</translation>
+        <source>With not enough Swap</source>
+        <translation>Su nepakankamai Swap</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="142"/>
@@ -924,7 +924,7 @@
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="369"/>
-        <source>Create new address</source>
+        <source>Create new subaddress</source>
         <translation>Sukurti naują adresą</translation>
     </message>
     <message>
@@ -1056,8 +1056,8 @@
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="88"/>
-        <source>Embedded Monero version: </source>
-        <translation>Integruota Monero versija: </translation>
+        <source>Embedded Swap version: </source>
+        <translation>Integruota Swap versija: </translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="117"/>
@@ -1179,13 +1179,13 @@ Sena piniginės talpyklos rinkmena bus pervadinta ir vėliau galės būti atstat
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="232"/>
-        <source>Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.</source>
-        <translation>Naudoja trečiosios šalies serverį prisijungti prie &quot;Monero&quot; tinklo. Mažiau saugus, bet reikalauja mažiau vietos diske.</translation>
+        <source>Uses a third-party server to connect to the Swap network. Less secure, but easier on your computer.</source>
+        <translation>Naudoja trečiosios šalies serverį prisijungti prie &quot;Swap&quot; tinklo. Mažiau saugus, bet reikalauja mažiau vietos diske.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="277"/>
-        <source>To find a remote node, type &apos;Monero remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
-        <translation>Norėdami rasti nuotolinį mazgą, įveskite &quot;Monero remote node&quot; savo mėgstamoje paieškos sistemoje. Įsitikinkite, kad mazgas yra patikimo tiekėjo.</translation>
+        <source>To find a remote node, type &apos;Swap remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
+        <translation>Norėdami rasti nuotolinį mazgą, įveskite &quot;Swap remote node&quot; savo mėgstamoje paieškos sistemoje. Įsitikinkite, kad mazgas yra patikimo tiekėjo.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="291"/>
@@ -1346,8 +1346,8 @@ Sena piniginės talpyklos rinkmena bus pervadinta ir vėliau galės būti atstat
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="106"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by Monero wallets as well as wallets from Monero clones which reuse the Monero keys.</source>
-        <translation>Šis puslapis leidžia sąveikauti su bendrai naudojama žiedų duomenų baze. Ši duomenų bazė yra skirta naudoti Monero piniginėse, taip pat Monero klonų piniginėse, kurios pakartotinai naudoja Monero raktus.</translation>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by Swap wallets as well as wallets from Swap clones which reuse the Swap keys.</source>
+        <translation>Šis puslapis leidžia sąveikauti su bendrai naudojama žiedų duomenų baze. Ši duomenų bazė yra skirta naudoti Swap piniginėse, taip pat Swap klonų piniginėse, kurios pakartotinai naudoja Swap raktus.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="119"/>
@@ -1363,7 +1363,7 @@ Sena piniginės talpyklos rinkmena bus pervadinta ir vėliau galės būti atstat
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="122"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the monero-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <source>In order to obscure which inputs in a Swap transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Swap uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Swap project and is available on the getswap.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Swap clones) yourself using the swap-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1434,12 +1434,12 @@ Sena piniginės talpyklos rinkmena bus pervadinta ir vėliau galės būti atstat
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="263"/>
-        <source>In order to avoid nullifying the protection afforded by Monero&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Monero clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Monero and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Monero clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Monero safely.&lt;br&gt;If you do not use a key-reusing Monero clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <source>In order to avoid nullifying the protection afforded by Swap&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Swap clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Swap and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Swap clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Swap safely.&lt;br&gt;If you do not use a key-reusing Swap clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="285"/>
-        <source>This records rings used by outputs spent on Monero on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <source>This records rings used by outputs spent on Swap on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1957,8 +1957,8 @@ Ringsize: </source>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="552"/>
-        <source>Monero sent successfully</source>
-        <translation>Monero sėkmingai išsiųsti</translation>
+        <source>Swap sent successfully</source>
+        <translation>Swap sėkmingai išsiųsti</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="634"/>
@@ -2109,13 +2109,13 @@ Jei naudojate &quot;Išleidimo įrodymas&quot;, jums nereikia nurodyti gavėjo a
     <name>WizardConfigure</name>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="79"/>
-        <source>We’re almost there - let’s just configure some Monero preferences</source>
-        <translation>Mes jau beveik baigėme.- liko tik keli Monero nustatymai</translation>
+        <source>We’re almost there - let’s just configure some Swap preferences</source>
+        <translation>Mes jau beveik baigėme.- liko tik keli Swap nustatymai</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="97"/>
-        <source>Kickstart the Monero blockchain?</source>
-        <translation>Pradėti Monero blokų grandinę?</translation>
+        <source>Kickstart the Swap blockchain?</source>
+        <translation>Pradėti Swap blokų grandinę?</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="113"/>
@@ -2129,8 +2129,8 @@ Jei naudojate &quot;Išleidimo įrodymas&quot;, jums nereikia nurodyti gavėjo a
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="140"/>
-        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Monero instance. However, storing the full blockchain is beneficial to the security of the Monero network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
-        <translation>Disko konservavimo režimas naudoja žymiai mažiau disko vietos, tačiau tokio paties pralaidumo kaip normalus &quot;Monero&quot;. Tačiau saugoti visą blokų grandinę naudinga &quot;Monero&quot; tinklo saugumui. Jei esate įrenginyje, kuriame yra ribota disko vieta, ši parinktis jums tinkamiausia.</translation>
+        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Swap instance. However, storing the full blockchain is beneficial to the security of the Swap network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
+        <translation>Disko konservavimo režimas naudoja žymiai mažiau disko vietos, tačiau tokio paties pralaidumo kaip normalus &quot;Swap&quot;. Tačiau saugoti visą blokų grandinę naudinga &quot;Swap&quot; tinklo saugumui. Jei esate įrenginyje, kuriame yra ribota disko vieta, ši parinktis jums tinkamiausia.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="153"/>
@@ -2139,8 +2139,8 @@ Jei naudojate &quot;Išleidimo įrodymas&quot;, jums nereikia nurodyti gavėjo a
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="169"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Kasimas apsaugo &quot;Monero&quot; tinklą, taip pat moka nedidelį atlygį už atliktą darbą. Ši parinktis leis kasti Monero, kai jūsų kompiuteris yra prijungtas prie maitinimo tinklo ir yra nenaudojamas. Jei tęsite darbą, jis nustos kasti.</translation>
+        <source>Mining secures the Swap network, and also pays a small reward for the work done. This option will let Swap mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>Kasimas apsaugo &quot;Swap&quot; tinklą, taip pat moka nedidelį atlygį už atliktą darbą. Ši parinktis leis kasti Swap, kai jūsų kompiuteris yra prijungtas prie maitinimo tinklo ir yra nenaudojamas. Jei tęsite darbą, jis nustos kasti.</translation>
     </message>
 </context>
 <context>
@@ -2171,8 +2171,8 @@ Jei naudojate &quot;Išleidimo įrodymas&quot;, jums nereikia nurodyti gavėjo a
     <name>WizardDaemonSettings</name>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="114"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation>Tam, kad galėtumet komunikuoti Monero tinkle jums reikia piniginę prijungi prie Monero mazgo. Tam, kad užtikrinti geriausią privatumą rekomenduojame paleisti nuosavą mazgą.                          &lt;br&gt;&lt;br&gt;                        Jeigu neturite galimybės paleisti nuosavo mazgo, galite jungti prie nutolusio mazgo.</translation>
+        <source>To be able to communicate with the Swap network your wallet needs to be connected to a Swap node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
+        <translation>Tam, kad galėtumet komunikuoti Swap tinkle jums reikia piniginę prijungi prie Swap mazgo. Tam, kad užtikrinti geriausią privatumą rekomenduojame paleisti nuosavą mazgą.                          &lt;br&gt;&lt;br&gt;                        Jeigu neturite galimybės paleisti nuosavo mazgo, galite jungti prie nutolusio mazgo.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="126"/>
@@ -2204,8 +2204,8 @@ Jei naudojate &quot;Išleidimo įrodymas&quot;, jums nereikia nurodyti gavėjo a
     <name>WizardDonation</name>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="93"/>
-        <source>Monero development is solely supported by donations</source>
-        <translation>Monero vystymas yra remiamas tik aukomis</translation>
+        <source>Swap development is solely supported by donations</source>
+        <translation>Swap vystymas yra remiamas tik aukomis</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="113"/>
@@ -2219,8 +2219,8 @@ Jei naudojate &quot;Išleidimo įrodymas&quot;, jums nereikia nurodyti gavėjo a
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 XMR and add a 0.0025 XMR to support Monero development.</source>
-        <translation>Už kiekvieną pavedimą taikomas nedidelė rinkliava. Ši parinktis leidžia pridėti papildomą sumą, kaip šios rinkliavos procentą prie jūsų pavedimo. Pvz., 50% automatinis rėmimas už pavedimo rinkliavą sudaro 0,005 XMR ir pridedant 0,0025 XMR, kad būtų remiama &quot;Monero&quot; plėtra.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Swap development. For instance, a 50% autodonation take a transaction fee of 0.005 XWP and add a 0.0025 XWP to support Swap development.</source>
+        <translation>Už kiekvieną pavedimą taikomas nedidelė rinkliava. Ši parinktis leidžia pridėti papildomą sumą, kaip šios rinkliavos procentą prie jūsų pavedimo. Pvz., 50% automatinis rėmimas už pavedimo rinkliavą sudaro 0,005 XWP ir pridedant 0,0025 XWP, kad būtų remiama &quot;Swap&quot; plėtra.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2229,8 +2229,8 @@ Jei naudojate &quot;Išleidimo įrodymas&quot;, jums nereikia nurodyti gavėjo a
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="190"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Kasimas apsaugo &quot;Monero&quot; tinklą, taip pat moka nedidelį atlygį už atliktą darbą. Ši parinktis leis kasti Monero, kai jūsų kompiuteris yra prijungtas prie maitinimo tinklo ir yra nenaudojamas. Jei tęsite darbą, jis nustos kasti.</translation>
+        <source>Mining secures the Swap network, and also pays a small reward for the work done. This option will let Swap mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>Kasimas apsaugo &quot;Swap&quot; tinklą, taip pat moka nedidelį atlygį už atliktą darbą. Ši parinktis leis kasti Swap, kai jūsų kompiuteris yra prijungtas prie maitinimo tinklo ir yra nenaudojamas. Jei tęsite darbą, jis nustos kasti.</translation>
     </message>
 </context>
 <context>
@@ -2442,8 +2442,8 @@ Jei naudojate &quot;Išleidimo įrodymas&quot;, jums nereikia nurodyti gavėjo a
     <name>WizardOptions</name>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="76"/>
-        <source>Welcome to Monero!</source>
-        <translation>Sveiki atvykę į Monero!</translation>
+        <source>Welcome to Swap!</source>
+        <translation>Sveiki atvykę į Swap!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="87"/>
@@ -2532,8 +2532,8 @@ Jei naudojate &quot;Išleidimo įrodymas&quot;, jums nereikia nurodyti gavėjo a
     <name>WizardWelcome</name>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="73"/>
-        <source>Welcome to Monero!</source>
-        <translation>Sveiki atvykę į Monero!</translation>
+        <source>Welcome to Swap!</source>
+        <translation>Sveiki atvykę į Swap!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="83"/>
@@ -2715,8 +2715,8 @@ Išlaidų adreso rodyklė: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="791"/>
-        <source>Monero sent successfully: %1 transaction(s) </source>
-        <translation>Monero sėkmingai išsiųsti: %1 operacija (-os) </translation>
+        <source>Swap sent successfully: %1 transaction(s) </source>
+        <translation>Swap sėkmingai išsiųsti: %1 operacija (-os) </translation>
     </message>
     <message>
         <location filename="../main.qml" line="824"/>
@@ -2739,8 +2739,8 @@ Išlaidų adreso rodyklė: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="865"/>
-        <source>This address received %1 monero, with %2 confirmation(s).</source>
-        <translation>Šis adresas gavo%1 Monero, su%2 patvirtinimu (-ais).</translation>
+        <source>This address received %1 swap, with %2 confirmation(s).</source>
+        <translation>Šis adresas gavo%1 Swap, su%2 patvirtinimu (-ais).</translation>
     </message>
     <message>
         <location filename="../main.qml" line="876"/>
@@ -2814,8 +2814,8 @@ Išlaidų adreso rodyklė: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="1776"/>
-        <source>New version of monero-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>Yra nauja monero-wallet-gui versija: %1&lt;br&gt;%2</translation>
+        <source>New version of swap-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>Yra nauja swap-wallet-gui versija: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1808"/>
@@ -2856,8 +2856,8 @@ Išlaidų adreso rodyklė: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="862"/>
-        <source>This address received %1 monero, but the transaction is not yet mined</source>
-        <translation>Šis adresas gavo%1 Monero, tačiau pavedimas dar nėra iškastas</translation>
+        <source>This address received %1 swap, but the transaction is not yet mined</source>
+        <translation>Šis adresas gavo%1 Swap, tačiau pavedimas dar nėra iškastas</translation>
     </message>
     <message>
         <location filename="../main.qml" line="869"/>
@@ -2886,8 +2886,8 @@ Išlaidų adreso rodyklė: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="1284"/>
-        <source>Monero</source>
-        <translation>Monero</translation>
+        <source>Swap</source>
+        <translation>Swap</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1434"/>

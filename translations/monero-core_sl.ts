@@ -20,8 +20,8 @@
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="66"/>
-        <source>4.. / 8..</source>
-        <translation>4.. / 8..</translation>
+        <source>fh.. / fs..</source>
+        <translation>fh.. / fs..</translation>
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="74"/>
@@ -373,8 +373,8 @@
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="93"/>
-        <source>WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
-        <translation>OPOZORILO: Ne delite Monero ključev z drugimi forki, RAZEN če ta fork sam zagotavlja varnost pri deljeni uporabi ključev. Takšno ravnanje zmanjšuje vašo zasebnost.</translation>
+        <source>WARNING: Do not reuse your Swap keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+        <translation>OPOZORILO: Ne delite Swap ključev z drugimi forki, RAZEN če ta fork sam zagotavlja varnost pri deljeni uporabi ključev. Takšno ravnanje zmanjšuje vašo zasebnost.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="196"/>
@@ -625,8 +625,8 @@
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="82"/>
-        <source>Mining with your computer helps strengthen the Monero network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Monero. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>Rudarjenje na vašem računalniku krepi omrežje Monero. Več ljudi rudari, težje je napasti omrežje. Vsak prispevek pomaga.&lt;br&gt; &lt;br&gt;Z rudarjenjem imate tudi manjšo možnost pridobitve nekaj Monera. Vaš računalnik bo z računanjem zgoščenih vrednosti iskal rešitev za nastanek bloka. Če najdete blok, boste prejeli z njim povezano nagrado . Srečno!</translation>
+        <source>Mining with your computer helps strengthen the Swap network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Swap. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+        <translation>Rudarjenje na vašem računalniku krepi omrežje Swap. Več ljudi rudari, težje je napasti omrežje. Vsak prispevek pomaga.&lt;br&gt; &lt;br&gt;Z rudarjenjem imate tudi manjšo možnost pridobitve nekaj Monera. Vaš računalnik bo z računanjem zgoščenih vrednosti iskal rešitev za nastanek bloka. Če najdete blok, boste prejeli z njim povezano nagrado . Srečno!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="95"/>
@@ -882,12 +882,12 @@
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="139"/>
-        <source>With more Monero</source>
+        <source>With more Swap</source>
         <translation>Z več Monera</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="140"/>
-        <source>With not enough Monero</source>
+        <source>With not enough Swap</source>
         <translation>Z nedovolj Monera</translation>
     </message>
     <message>
@@ -924,7 +924,7 @@
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="369"/>
-        <source>Create new address</source>
+        <source>Create new subaddress</source>
         <translation>Ustvari nov naslov</translation>
     </message>
     <message>
@@ -1056,8 +1056,8 @@
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="88"/>
-        <source>Embedded Monero version: </source>
-        <translation>Vgrajena Monero verzija: </translation>
+        <source>Embedded Swap version: </source>
+        <translation>Vgrajena Swap verzija: </translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="117"/>
@@ -1178,13 +1178,13 @@ Stara datoteka predpomnilnika denarnice bo preimenovana in se jo lahko obnovi po
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="232"/>
-        <source>Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.</source>
-        <translation>Uporablja strežnik tretje osebe za vzpostavitev povezave v Monero omrežje. Je manj varno vendar enostavnejše.</translation>
+        <source>Uses a third-party server to connect to the Swap network. Less secure, but easier on your computer.</source>
+        <translation>Uporablja strežnik tretje osebe za vzpostavitev povezave v Swap omrežje. Je manj varno vendar enostavnejše.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="277"/>
-        <source>To find a remote node, type &apos;Monero remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
-        <translation>Da poiščete oddaljeno vozlišče, vnesite &apos;Monero remote node&apos; v vaš najljubši brskalnik. Prosim, da se prepričate, da vozlišče poganja zaupanja vredna stranka.</translation>
+        <source>To find a remote node, type &apos;Swap remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
+        <translation>Da poiščete oddaljeno vozlišče, vnesite &apos;Swap remote node&apos; v vaš najljubši brskalnik. Prosim, da se prepričate, da vozlišče poganja zaupanja vredna stranka.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="291"/>
@@ -1345,8 +1345,8 @@ Stara datoteka predpomnilnika denarnice bo preimenovana in se jo lahko obnovi po
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="106"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by Monero wallets as well as wallets from Monero clones which reuse the Monero keys.</source>
-        <translation>Ta stran omogoča, da interaktirate z deljeno bazo obročev (RingDB). Ta baza je namenjena Monero denarnicam in prav tako klonom Monera, ki si delijo Monero ključe</translation>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by Swap wallets as well as wallets from Swap clones which reuse the Swap keys.</source>
+        <translation>Ta stran omogoča, da interaktirate z deljeno bazo obročev (RingDB). Ta baza je namenjena Swap denarnicam in prav tako klonom Monera, ki si delijo Swap ključe</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="119"/>
@@ -1362,9 +1362,9 @@ Stara datoteka predpomnilnika denarnice bo preimenovana in se jo lahko obnovi po
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="122"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the monero-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
-        <translation>Da lahko v Monero transakciji zakrijete kateri inputi so plačani, tretja oseba ne sme vedeti, kateri inputi v obroču so že plačani. To bi zmanjšalo varnost, ki jo zagotavljajo obročni podpisi. Če je znano, da so vsi inputi razen enega izplačani, potem je zadnji input, ki se ga izplačuje očiten. S tem so obročni podpisi, eden izmed treh stebrov varne zasebnosti Monera, neefektivni.
-        Da se transakcije izognejo takšnim inputom, se uporablja lista znano že zapravljenih inputov, ki se jih ne uporablja v novih transakcijah. Takšno listo ureja Monero projekt in je dobavljiva na getmonero.org. To listo lahko uvoziš tukaj.&lt;br&gt; Alternativno lahko sam preiščeš blockchain (vključno z Monero kloni, ki si delijo ključe) z uporabo orodja monero-blockchain-mark-spent-outputs, ki ustvari listo znanih, že zapravljenih outputov.&lt;br&gt;</translation>
+        <source>In order to obscure which inputs in a Swap transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Swap uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Swap project and is available on the getswap.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Swap clones) yourself using the swap-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <translation>Da lahko v Swap transakciji zakrijete kateri inputi so plačani, tretja oseba ne sme vedeti, kateri inputi v obroču so že plačani. To bi zmanjšalo varnost, ki jo zagotavljajo obročni podpisi. Če je znano, da so vsi inputi razen enega izplačani, potem je zadnji input, ki se ga izplačuje očiten. S tem so obročni podpisi, eden izmed treh stebrov varne zasebnosti Monera, neefektivni.
+        Da se transakcije izognejo takšnim inputom, se uporablja lista znano že zapravljenih inputov, ki se jih ne uporablja v novih transakcijah. Takšno listo ureja Swap projekt in je dobavljiva na getswap.org. To listo lahko uvoziš tukaj.&lt;br&gt; Alternativno lahko sam preiščeš blockchain (vključno z Swap kloni, ki si delijo ključe) z uporabo orodja swap-blockchain-mark-spent-outputs, ki ustvari listo znanih, že zapravljenih outputov.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="143"/>
@@ -1439,13 +1439,13 @@ Stara datoteka predpomnilnika denarnice bo preimenovana in se jo lahko obnovi po
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="263"/>
-        <source>In order to avoid nullifying the protection afforded by Monero&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Monero clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Monero and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Monero clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Monero safely.&lt;br&gt;If you do not use a key-reusing Monero clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>V izogib izničenju varnosti s strani Monerovih obročnih podpisov, se outputa ne sme zapraviti z različnimi obroči na različnih blockchainih. To načeloma ni zaskrbljujoče, razen ko vam Monero klon omogoča zapravljanje že obstoječih outputov. V tem primeru je potrebno zagotoviti, da ti, že obsotječi outputi uporabljajo isti obroč na obeh verigah.&lt;br&gt; To bo izvedeno samodejno s strani Monera in vsakega softvera, ki vam ne želi, namerno zmanjšati zasebnost.&lt;br&gt;Če uporabljate Monero klon, ki si deli vaše ključe in ne vključuje te zaščite, lahko še vedno zagotovite, da so vaše transakcije varne. To storite, tako da jih najprej zapravite na klonu in nato ročno dodate obroč na tej strani, ki vam zatem omogoča varno plačevanje z Monerom.&lt;br&gt;V kolikor ne uporabljate takšnih Monero klonov, potem vam ni potrebno storiti ničesar, saj se vse izvede samodejno.&lt;br&gt;</translation>
+        <source>In order to avoid nullifying the protection afforded by Swap&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Swap clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Swap and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Swap clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Swap safely.&lt;br&gt;If you do not use a key-reusing Swap clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <translation>V izogib izničenju varnosti s strani Swapvih obročnih podpisov, se outputa ne sme zapraviti z različnimi obroči na različnih blockchainih. To načeloma ni zaskrbljujoče, razen ko vam Swap klon omogoča zapravljanje že obstoječih outputov. V tem primeru je potrebno zagotoviti, da ti, že obsotječi outputi uporabljajo isti obroč na obeh verigah.&lt;br&gt; To bo izvedeno samodejno s strani Monera in vsakega softvera, ki vam ne želi, namerno zmanjšati zasebnost.&lt;br&gt;Če uporabljate Swap klon, ki si deli vaše ključe in ne vključuje te zaščite, lahko še vedno zagotovite, da so vaše transakcije varne. To storite, tako da jih najprej zapravite na klonu in nato ročno dodate obroč na tej strani, ki vam zatem omogoča varno plačevanje z Swapm.&lt;br&gt;V kolikor ne uporabljate takšnih Swap klonov, potem vam ni potrebno storiti ničesar, saj se vse izvede samodejno.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="285"/>
-        <source>This records rings used by outputs spent on Monero on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>To shrani obroče tistih outputov, ki so bili zapravljeni na verigi, ki si deli Monero ključe. Tako se lahko isti obroč ponovno uporabi in s tem ohrani zasebnost.</translation>
+        <source>This records rings used by outputs spent on Swap on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <translation>To shrani obroče tistih outputov, ki so bili zapravljeni na verigi, ki si deli Swap ključe. Tako se lahko isti obroč ponovno uporabi in s tem ohrani zasebnost.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="296"/>
@@ -1480,12 +1480,12 @@ Stara datoteka predpomnilnika denarnice bo preimenovana in se jo lahko obnovi po
     <message>
         <location filename="../pages/SharedRingDB.qml" line="382"/>
         <source>I intend to spend on key-reusing fork(s)</source>
-        <translation>Nameravam plačevati na forku, ki si deli Monero ključe</translation>
+        <translation>Nameravam plačevati na forku, ki si deli Swap ključe</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="396"/>
         <source>I might want to spend on key-reusing fork(s)</source>
-        <translation>Morda nameravam plačevati na forku, ki si deli Monero ključe</translation>
+        <translation>Morda nameravam plačevati na forku, ki si deli Swap ključe</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="410"/>
@@ -1957,8 +1957,8 @@ Velikost obroča: </translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="552"/>
-        <source>Monero sent successfully</source>
-        <translation>Monero uspešno poslan</translation>
+        <source>Swap sent successfully</source>
+        <translation>Swap uspešno poslan</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="619"/>
@@ -2106,13 +2106,13 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardConfigure</name>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="79"/>
-        <source>We’re almost there - let’s just configure some Monero preferences</source>
-        <translation>Smo skoraj pri koncu. Samo še konfiguriramo Monero nastavitve</translation>
+        <source>We’re almost there - let’s just configure some Swap preferences</source>
+        <translation>Smo skoraj pri koncu. Samo še konfiguriramo Swap nastavitve</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="97"/>
-        <source>Kickstart the Monero blockchain?</source>
-        <translation>Spodbudimo nalaganje Monero blockchaina?</translation>
+        <source>Kickstart the Swap blockchain?</source>
+        <translation>Spodbudimo nalaganje Swap blockchaina?</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="113"/>
@@ -2126,8 +2126,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="140"/>
-        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Monero instance. However, storing the full blockchain is beneficial to the security of the Monero network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
-        <translation>Ohranjevalni način za disk potrebuje bistveno manj prostora, a enako mrežno pasovno širino kot običajen Monero program. A vendarle je hranjenje celotnega blockchaina koristno za varnost omrežja Monero. Če uporabljate napravo z omejenim diskovnim prostorom, je način za vas primeren.</translation>
+        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Swap instance. However, storing the full blockchain is beneficial to the security of the Swap network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
+        <translation>Ohranjevalni način za disk potrebuje bistveno manj prostora, a enako mrežno pasovno širino kot običajen Swap program. A vendarle je hranjenje celotnega blockchaina koristno za varnost omrežja Swap. Če uporabljate napravo z omejenim diskovnim prostorom, je način za vas primeren.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="153"/>
@@ -2136,8 +2136,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="169"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Rudarjenje zagotavlja varnost omrežja Monero, hkrati pa tudi izplača majhno nagrado za opravljeno delo. Ta opcija dovoli aplikaciji Monero rudariti, ko je vaš računalnik na glavnem napajanju ter nedejaven. Preneha rudariti, ko nadaljujete z delom.</translation>
+        <source>Mining secures the Swap network, and also pays a small reward for the work done. This option will let Swap mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>Rudarjenje zagotavlja varnost omrežja Swap, hkrati pa tudi izplača majhno nagrado za opravljeno delo. Ta opcija dovoli aplikaciji Swap rudariti, ko je vaš računalnik na glavnem napajanju ter nedejaven. Preneha rudariti, ko nadaljujete z delom.</translation>
     </message>
 </context>
 <context>
@@ -2168,8 +2168,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardDaemonSettings</name>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="114"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation>Da je mogoče komunicirati z omrežjem Monero, mora vaša denarnica biti povezana z vozliščem Monero. Za najboljšo zasebnost je priporočeno, da poganjate lastno vozlišče.                      &lt;br&gt;&lt;br&gt;                         Če nimate možnosti poganjati lastno vozlišče, se je možno povezati na oddaljeno vozlišče.</translation>
+        <source>To be able to communicate with the Swap network your wallet needs to be connected to a Swap node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
+        <translation>Da je mogoče komunicirati z omrežjem Swap, mora vaša denarnica biti povezana z vozliščem Swap. Za najboljšo zasebnost je priporočeno, da poganjate lastno vozlišče.                      &lt;br&gt;&lt;br&gt;                         Če nimate možnosti poganjati lastno vozlišče, se je možno povezati na oddaljeno vozlišče.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="126"/>
@@ -2201,7 +2201,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardDonation</name>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="93"/>
-        <source>Monero development is solely supported by donations</source>
+        <source>Swap development is solely supported by donations</source>
         <translation>Razvoj Monera je financiran izključno preko donacij</translation>
     </message>
     <message>
@@ -2216,8 +2216,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 XMR and add a 0.0025 XMR to support Monero development.</source>
-        <translation>Za vsako transakcijo je zaračunana majhna provizija. Ta opcija omogoči dodaten znesek k tej proviziji, kot odstotek te provizije. Na ta način vaše transakcije podpirajo razvoj sistema Monero. Na primer, 50% samodejna donacija bo transakciji s provizijo 0.005 XMR, dodala provizijo 0.0025 XMR, ki bo namenjena razvoju Monera.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Swap development. For instance, a 50% autodonation take a transaction fee of 0.005 XWP and add a 0.0025 XWP to support Swap development.</source>
+        <translation>Za vsako transakcijo je zaračunana majhna provizija. Ta opcija omogoči dodaten znesek k tej proviziji, kot odstotek te provizije. Na ta način vaše transakcije podpirajo razvoj sistema Swap. Na primer, 50% samodejna donacija bo transakciji s provizijo 0.005 XWP, dodala provizijo 0.0025 XWP, ki bo namenjena razvoju Monera.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2226,8 +2226,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="190"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Rudarjenje zagotavlja varnost omrežja Monero, hkrati pa tudi izplača majhno nagrado za opravljeno delo. Ta opcija dovoli aplikaciji Monero rudariti, ko je vaš računalnik na glavnem napajanju ter nedejaven. Preneha rudariti, ko nadaljujete z delom.</translation>
+        <source>Mining secures the Swap network, and also pays a small reward for the work done. This option will let Swap mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>Rudarjenje zagotavlja varnost omrežja Swap, hkrati pa tudi izplača majhno nagrado za opravljeno delo. Ta opcija dovoli aplikaciji Swap rudariti, ko je vaš računalnik na glavnem napajanju ter nedejaven. Preneha rudariti, ko nadaljujete z delom.</translation>
     </message>
 </context>
 <context>
@@ -2439,8 +2439,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardOptions</name>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="76"/>
-        <source>Welcome to Monero!</source>
-        <translation>Dobrodošli v Monero!</translation>
+        <source>Welcome to Swap!</source>
+        <translation>Dobrodošli v Swap!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="87"/>
@@ -2529,8 +2529,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardWelcome</name>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="73"/>
-        <source>Welcome to Monero!</source>
-        <translation>Dobrodošli v Monero!</translation>
+        <source>Welcome to Swap!</source>
+        <translation>Dobrodošli v Swap!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="83"/>
@@ -2670,8 +2670,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="791"/>
-        <source>Monero sent successfully: %1 transaction(s) </source>
-        <translation>Monero poslan uspešno: %1 transakcij(a) </translation>
+        <source>Swap sent successfully: %1 transaction(s) </source>
+        <translation>Swap poslan uspešno: %1 transakcij(a) </translation>
     </message>
     <message>
         <location filename="../main.qml" line="821"/>
@@ -2692,8 +2692,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="865"/>
-        <source>This address received %1 monero, with %2 confirmation(s).</source>
-        <translation>Ta naslov je prejel %1 monerov, s %2 potrditev.</translation>
+        <source>This address received %1 swap, with %2 confirmation(s).</source>
+        <translation>Ta naslov je prejel %1 swapv, s %2 potrditev.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="876"/>
@@ -2767,8 +2767,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1776"/>
-        <source>New version of monero-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>Na voljo je nova različica grafičnega vmesnika (monero-wallet-gui): %1&lt;br&gt;%2</translation>
+        <source>New version of swap-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>Na voljo je nova različica grafičnega vmesnika (swap-wallet-gui): %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1808"/>
@@ -2844,7 +2844,7 @@ Provizija: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="862"/>
-        <source>This address received %1 monero, but the transaction is not yet mined</source>
+        <source>This address received %1 swap, but the transaction is not yet mined</source>
         <translation>Ta naslov je prejel %1 monera(ov), ampak transakcija še ni v bloku</translation>
     </message>
     <message>
@@ -2874,8 +2874,8 @@ Provizija: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="1284"/>
-        <source>Monero</source>
-        <translation>Monero</translation>
+        <source>Swap</source>
+        <translation>Swap</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1434"/>

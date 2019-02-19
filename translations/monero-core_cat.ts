@@ -20,8 +20,8 @@
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="66"/>
-        <source>4.. / 8..</source>
-        <translation>4.. / 8..</translation>
+        <source>fh.. / fs..</source>
+        <translation>fh.. / fs..</translation>
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="74"/>
@@ -374,8 +374,8 @@
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="93"/>
-        <source>WARNING: Do not reuse your Monero keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
-        <translation>AVÍS: No reutilitzis les claus de Monero en una altra bifurcació, A MENYS que aquesta bifurcació incorpori mitigacions en la reutilització de claus. Fer-ho, perjudicarà la teva privacitat.</translation>
+        <source>WARNING: Do not reuse your Swap keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+        <translation>AVÍS: No reutilitzis les claus de Swap en una altra bifurcació, A MENYS que aquesta bifurcació incorpori mitigacions en la reutilització de claus. Fer-ho, perjudicarà la teva privacitat.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="196"/>
@@ -626,8 +626,8 @@
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="82"/>
-        <source>Mining with your computer helps strengthen the Monero network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Monero. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>El minat amb el teu ordinador ajuda a enfortir la xarxa Monero. Com més gent minant, més difícil és atacar la xarxa, i cada petit esforç ajuda.&lt;br&gt; &lt;br&gt;Minar també dóna la petita oportunitat de guanyar algún Monero. La teva màquina crearà hashes buscant solucions a blocs. Si troba un bloc, obtindrà la recompensa associada. Bona sort!</translation>
+        <source>Mining with your computer helps strengthen the Swap network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some Swap. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+        <translation>El minat amb el teu ordinador ajuda a enfortir la xarxa Swap. Com més gent minant, més difícil és atacar la xarxa, i cada petit esforç ajuda.&lt;br&gt; &lt;br&gt;Minar també dóna la petita oportunitat de guanyar algún Swap. La teva màquina crearà hashes buscant solucions a blocs. Si troba un bloc, obtindrà la recompensa associada. Bona sort!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="95"/>
@@ -888,7 +888,7 @@
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="369"/>
-        <source>Create new address</source>
+        <source>Create new subaddress</source>
         <translation>Crea nova adreça</translation>
     </message>
     <message>
@@ -918,13 +918,13 @@
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="139"/>
-        <source>With more Monero</source>
-        <translation>Amb més Monero</translation>
+        <source>With more Swap</source>
+        <translation>Amb més Swap</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="140"/>
-        <source>With not enough Monero</source>
-        <translation>Sense suficients Monero</translation>
+        <source>With not enough Swap</source>
+        <translation>Sense suficients Swap</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="142"/>
@@ -1057,8 +1057,8 @@
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="88"/>
-        <source>Embedded Monero version: </source>
-        <translation>Versió integrada de Monero: </translation>
+        <source>Embedded Swap version: </source>
+        <translation>Versió integrada de Swap: </translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="117"/>
@@ -1179,13 +1179,13 @@ El fitxer antic de la memòria cau del moneder serà renombrat i es podrà recup
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="232"/>
-        <source>Uses a third-party server to connect to the Monero network. Less secure, but easier on your computer.</source>
-        <translation>Utilitza un servidor de tercers per connectar-se a la xarxa de Monero. Menys segur, però més fàcil pel teu ordinador.</translation>
+        <source>Uses a third-party server to connect to the Swap network. Less secure, but easier on your computer.</source>
+        <translation>Utilitza un servidor de tercers per connectar-se a la xarxa de Swap. Menys segur, però més fàcil pel teu ordinador.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="277"/>
-        <source>To find a remote node, type &apos;Monero remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
-        <translation>Per trobar un node remot, escriviu &apos;Monero node remot&apos; al vostre cercador favorit. Assegureu-vos que el node és gestionat per un tercer de confiança.</translation>
+        <source>To find a remote node, type &apos;Swap remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
+        <translation>Per trobar un node remot, escriviu &apos;Swap node remot&apos; al vostre cercador favorit. Assegureu-vos que el node és gestionat per un tercer de confiança.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="291"/>
@@ -1346,8 +1346,8 @@ El fitxer antic de la memòria cau del moneder serà renombrat i es podrà recup
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="106"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by Monero wallets as well as wallets from Monero clones which reuse the Monero keys.</source>
-        <translation>Aquesta pàgina et permet interactuar amb la base de dades de signatures d&apos;anell compartida. Aquesta base de dades està pensada per a les monedes de Monero i també per a moneders de clons de Monero que reutilitzen les claus de Monero</translation>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by Swap wallets as well as wallets from Swap clones which reuse the Swap keys.</source>
+        <translation>Aquesta pàgina et permet interactuar amb la base de dades de signatures d&apos;anell compartida. Aquesta base de dades està pensada per a les monedes de Swap i també per a moneders de clons de Swap que reutilitzen les claus de Swap</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="119"/>
@@ -1363,8 +1363,8 @@ El fitxer antic de la memòria cau del moneder serà renombrat i es podrà recup
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="122"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the monero-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
-        <translation>Per ofuscar quins ingressos s&apos;estan gastant en una transacció de Monero, un tercer no hauria de poder dir quines entrades de les signatures d&apos;anell han estat gastades. Fer-ho debilitaria la protecció que ofereixen les signatures d&apos;anell. Si es coneixen tots menys un dels ingressos que es gasten, llavors l&apos;entrada es fa patent i, per tant, anul·la l&apos;efecte de les signatures d&apos;anell, una de les tres capes principals de protecció de la privacitat que utilitza Monero. &lt;br&gt;Per ajudar a evitar aquestes entrades en les transaccions, es pot utilitzar una llista de d&apos;entrades conegudes per evitar-ne l&apos;ús en noves operacions. Aquesta llista és mantinguda pel projecte Monero i està disponible al lloc web de getmonero.org, aquí podeu importar aquesta llista.&lt;br&gt;Alternativament, podeu escanejar la cadena de blocs (i la cadena de blocs dels clons que reutilitzen les claus de Monero) utilitzant l&apos;eina monero-blockchain-mark-spent-outputs per crear una llista de sortides gastades conegudes. &lt;br&gt;</translation>
+        <source>In order to obscure which inputs in a Swap transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Swap uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Swap project and is available on the getswap.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Swap clones) yourself using the swap-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <translation>Per ofuscar quins ingressos s&apos;estan gastant en una transacció de Swap, un tercer no hauria de poder dir quines entrades de les signatures d&apos;anell han estat gastades. Fer-ho debilitaria la protecció que ofereixen les signatures d&apos;anell. Si es coneixen tots menys un dels ingressos que es gasten, llavors l&apos;entrada es fa patent i, per tant, anul·la l&apos;efecte de les signatures d&apos;anell, una de les tres capes principals de protecció de la privacitat que utilitza Swap. &lt;br&gt;Per ajudar a evitar aquestes entrades en les transaccions, es pot utilitzar una llista de d&apos;entrades conegudes per evitar-ne l&apos;ús en noves operacions. Aquesta llista és mantinguda pel projecte Swap i està disponible al lloc web de getswap.org, aquí podeu importar aquesta llista.&lt;br&gt;Alternativament, podeu escanejar la cadena de blocs (i la cadena de blocs dels clons que reutilitzen les claus de Swap) utilitzant l&apos;eina swap-blockchain-mark-spent-outputs per crear una llista de sortides gastades conegudes. &lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="143"/>
@@ -1434,13 +1434,13 @@ El fitxer antic de la memòria cau del moneder serà renombrat i es podrà recup
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="263"/>
-        <source>In order to avoid nullifying the protection afforded by Monero&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Monero clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Monero and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Monero clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Monero safely.&lt;br&gt;If you do not use a key-reusing Monero clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>Per evitar anul·lar la protecció que ofereixen les signatures d&apos;anell de Monero, una sortida no s&apos;ha de gastar amb diferents anells en diferents cadenes de bloc. Tot i que això normalment no és preocupant, pot esdevenir-ho quan un clon de Monero que reutilitzi la clau us permet gastar els saldos existents. En aquest cas, has d&apos;assegurar-te que aquests saldos utilitzen el mateix anell en ambdós cadenes.&lt;br&gt;Monero ho farà automaticament i també qualsevol programari de reutilització de claus que no intenti activament mermar la teva privacitat.&lt;br&gt;Si utilitzes un clon del reutilitzador de claus de Monero, i aquest clon no inclou aquesta protecció, encara pots assegurar la protecció de les teves transaccions si ho gastes primer en el clon i després afegir l&apos;anell manualment en aquesta pàgina, la qual permet gastar els teus Monero de forma segura.&lt;br&gt;Si no utilitzes un clon del reutilitzador de claus de Monero sense aquestes característiques, llavors no cal que facis res, tot està automatitzat.</translation>
+        <source>In order to avoid nullifying the protection afforded by Swap&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Swap clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Swap and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Swap clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Swap safely.&lt;br&gt;If you do not use a key-reusing Swap clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <translation>Per evitar anul·lar la protecció que ofereixen les signatures d&apos;anell de Swap, una sortida no s&apos;ha de gastar amb diferents anells en diferents cadenes de bloc. Tot i que això normalment no és preocupant, pot esdevenir-ho quan un clon de Swap que reutilitzi la clau us permet gastar els saldos existents. En aquest cas, has d&apos;assegurar-te que aquests saldos utilitzen el mateix anell en ambdós cadenes.&lt;br&gt;Swap ho farà automaticament i també qualsevol programari de reutilització de claus que no intenti activament mermar la teva privacitat.&lt;br&gt;Si utilitzes un clon del reutilitzador de claus de Swap, i aquest clon no inclou aquesta protecció, encara pots assegurar la protecció de les teves transaccions si ho gastes primer en el clon i després afegir l&apos;anell manualment en aquesta pàgina, la qual permet gastar els teus Swap de forma segura.&lt;br&gt;Si no utilitzes un clon del reutilitzador de claus de Swap sense aquestes característiques, llavors no cal que facis res, tot està automatitzat.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="285"/>
-        <source>This records rings used by outputs spent on Monero on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>Això registra anells utilitzats en les sortides de Monero en una cadena de reutilització de claus, de manera que es pugui reutilitzar el mateix anell evitant minvar la privacitat.</translation>
+        <source>This records rings used by outputs spent on Swap on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <translation>Això registra anells utilitzats en les sortides de Swap en una cadena de reutilització de claus, de manera que es pugui reutilitzar el mateix anell evitant minvar la privacitat.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="296"/>
@@ -1946,8 +1946,8 @@ Mida d&apos;anell: </translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="552"/>
-        <source>Monero sent successfully</source>
-        <translation>Monero enviat amb èxit</translation>
+        <source>Swap sent successfully</source>
+        <translation>Swap enviat amb èxit</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="619"/>
@@ -2108,13 +2108,13 @@ For the case of outgoing payments, you can get a &apos;Spend Proof&apos; that pr
     <name>WizardConfigure</name>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="79"/>
-        <source>We’re almost there - let’s just configure some Monero preferences</source>
-        <translation>Ja gaire bé hi som - anem a configurar alguns aspectes de Monero</translation>
+        <source>We’re almost there - let’s just configure some Swap preferences</source>
+        <translation>Ja gaire bé hi som - anem a configurar alguns aspectes de Swap</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="97"/>
-        <source>Kickstart the Monero blockchain?</source>
-        <translation>Inicialitzar la cadena de blocs de Monero?</translation>
+        <source>Kickstart the Swap blockchain?</source>
+        <translation>Inicialitzar la cadena de blocs de Swap?</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="113"/>
@@ -2128,8 +2128,8 @@ For the case of outgoing payments, you can get a &apos;Spend Proof&apos; that pr
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="140"/>
-        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Monero instance. However, storing the full blockchain is beneficial to the security of the Monero network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
-        <translation>El mode de conservació de disc utilitza substancialment menys espai en disc, però el mateix ample de banda que una instància normal de Monero. Malgrat això, guardar la cadena completa és beneficiós per a la seguretat de la xarxa Monero. Si fas servir un dispositiu amb espai de disc limitat, aquesta opció et convé.</translation>
+        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Swap instance. However, storing the full blockchain is beneficial to the security of the Swap network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
+        <translation>El mode de conservació de disc utilitza substancialment menys espai en disc, però el mateix ample de banda que una instància normal de Swap. Malgrat això, guardar la cadena completa és beneficiós per a la seguretat de la xarxa Swap. Si fas servir un dispositiu amb espai de disc limitat, aquesta opció et convé.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="153"/>
@@ -2138,8 +2138,8 @@ For the case of outgoing payments, you can get a &apos;Spend Proof&apos; that pr
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="169"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Minar assegura la xarxa de Monero i a més a més paga una petita recompensa pel treball fet. Aquesta opció permet que Monero mini mentre el teu ordinador està ociós. El minat s&apos;aturarà quan tornis a utilitzar-lo.</translation>
+        <source>Mining secures the Swap network, and also pays a small reward for the work done. This option will let Swap mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>Minar assegura la xarxa de Swap i a més a més paga una petita recompensa pel treball fet. Aquesta opció permet que Swap mini mentre el teu ordinador està ociós. El minat s&apos;aturarà quan tornis a utilitzar-lo.</translation>
     </message>
 </context>
 <context>
@@ -2170,8 +2170,8 @@ For the case of outgoing payments, you can get a &apos;Spend Proof&apos; that pr
     <name>WizardDaemonSettings</name>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="114"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation>Per poder comunicar-te amb la xarxa de Monero el teu moneder s&apos;ha de poder connectar a un node de Monero. Per major privacitat es recomana tenir un node propi.                         &lt;br&gt;&lt;br&gt;                         Si no tens l&apos;opció de tenir un node propi, hi ha l&apos;opció de connectar-te a un node remot.</translation>
+        <source>To be able to communicate with the Swap network your wallet needs to be connected to a Swap node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
+        <translation>Per poder comunicar-te amb la xarxa de Swap el teu moneder s&apos;ha de poder connectar a un node de Swap. Per major privacitat es recomana tenir un node propi.                         &lt;br&gt;&lt;br&gt;                         Si no tens l&apos;opció de tenir un node propi, hi ha l&apos;opció de connectar-te a un node remot.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="126"/>
@@ -2203,8 +2203,8 @@ For the case of outgoing payments, you can get a &apos;Spend Proof&apos; that pr
     <name>WizardDonation</name>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="93"/>
-        <source>Monero development is solely supported by donations</source>
-        <translation>El desenvolupament de Monero es manté unicament per donacions</translation>
+        <source>Swap development is solely supported by donations</source>
+        <translation>El desenvolupament de Swap es manté unicament per donacions</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="113"/>
@@ -2218,8 +2218,8 @@ For the case of outgoing payments, you can get a &apos;Spend Proof&apos; that pr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 XMR and add a 0.0025 XMR to support Monero development.</source>
-        <translation>Per cada transacció es carrega una petita comissió. Aquesta opció permet afegir una quantitat adicional, com a percentatge d&apos;aquesta comissió, per a recolzar Monero. Per exemple, una autodonació del 50%  d&apos;una comissió de 0.005 XMR afegeix0.0025 XMR per recolzar el desenvolupament de Monero.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Swap development. For instance, a 50% autodonation take a transaction fee of 0.005 XWP and add a 0.0025 XWP to support Swap development.</source>
+        <translation>Per cada transacció es carrega una petita comissió. Aquesta opció permet afegir una quantitat adicional, com a percentatge d&apos;aquesta comissió, per a recolzar Swap. Per exemple, una autodonació del 50%  d&apos;una comissió de 0.005 XWP afegeix0.0025 XWP per recolzar el desenvolupament de Swap.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2228,8 +2228,8 @@ For the case of outgoing payments, you can get a &apos;Spend Proof&apos; that pr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="190"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Minar assegura la xarxa Monero i a més a més paga una petita recompensa per la feina feta. Aquesta opció permet que Monero mini quan l&apos;ordinador està ociós. El minat s&apos;aturarà quan continuis treballant amb ell.</translation>
+        <source>Mining secures the Swap network, and also pays a small reward for the work done. This option will let Swap mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>Minar assegura la xarxa Swap i a més a més paga una petita recompensa per la feina feta. Aquesta opció permet que Swap mini quan l&apos;ordinador està ociós. El minat s&apos;aturarà quan continuis treballant amb ell.</translation>
     </message>
 </context>
 <context>
@@ -2441,8 +2441,8 @@ For the case of outgoing payments, you can get a &apos;Spend Proof&apos; that pr
     <name>WizardOptions</name>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="76"/>
-        <source>Welcome to Monero!</source>
-        <translation>Benvinguts a Monero!</translation>
+        <source>Welcome to Swap!</source>
+        <translation>Benvinguts a Swap!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="87"/>
@@ -2531,8 +2531,8 @@ For the case of outgoing payments, you can get a &apos;Spend Proof&apos; that pr
     <name>WizardWelcome</name>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="73"/>
-        <source>Welcome to Monero!</source>
-        <translation>Benvingud@ a Monero!</translation>
+        <source>Welcome to Swap!</source>
+        <translation>Benvingud@ a Swap!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="83"/>
@@ -2710,8 +2710,8 @@ Comissió:</translation>
     </message>
     <message>
         <location filename="../main.qml" line="865"/>
-        <source>This address received %1 monero, with %2 confirmation(s).</source>
-        <translation>Aquesta adreça ha rebut %1 monero, amb %2 confirmacion(s).</translation>
+        <source>This address received %1 swap, with %2 confirmation(s).</source>
+        <translation>Aquesta adreça ha rebut %1 swap, amb %2 confirmacion(s).</translation>
     </message>
     <message>
         <location filename="../main.qml" line="358"/>
@@ -2769,13 +2769,13 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="791"/>
-        <source>Monero sent successfully: %1 transaction(s) </source>
-        <translation>Monero ha enviat amb èxit: %1 transaccions</translation>
+        <source>Swap sent successfully: %1 transaction(s) </source>
+        <translation>Swap ha enviat amb èxit: %1 transaccions</translation>
     </message>
     <message>
         <location filename="../main.qml" line="862"/>
-        <source>This address received %1 monero, but the transaction is not yet mined</source>
-        <translation>Aquesta adreça ha rebut %1 monero, però la transacció encara no ha estat minada</translation>
+        <source>This address received %1 swap, but the transaction is not yet mined</source>
+        <translation>Aquesta adreça ha rebut %1 swap, però la transacció encara no ha estat minada</translation>
     </message>
     <message>
         <location filename="../main.qml" line="869"/>
@@ -2854,8 +2854,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1284"/>
-        <source>Monero</source>
-        <translation>Monero</translation>
+        <source>Swap</source>
+        <translation>Swap</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1434"/>
@@ -2884,8 +2884,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1776"/>
-        <source>New version of monero-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>Nova versió de monero-wallet-gui disponible: %1&lt;br&gt;%2</translation>
+        <source>New version of swap-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>Nova versió de swap-wallet-gui disponible: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1808"/>
