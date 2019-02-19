@@ -229,7 +229,7 @@ Rectangle {
                 iconOnTheLeft: true
                 Layout.fillWidth: true
                 Layout.topMargin: 10 * scaleRatio
-                text: qsTr("Create new account") + translationManager.emptyString; 
+                text: qsTr("Create new subaddress") + translationManager.emptyString; 
                 onClicked: { 
                     inputDialog.labelText = qsTr("Set the label of the new address:") + translationManager.emptyString
                     inputDialog.inputText = qsTr("(Untitled)")
