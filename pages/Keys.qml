@@ -82,7 +82,7 @@ Rectangle {
             }
 
             MoneroComponents.WarningBox {
-                text: qsTr("WARNING: Copying your seed to clipboard can expose you to malicious software, which may record your seed and steal your Monero. Please write down your seed manually.") + translationManager.emptyString
+                text: qsTr("WARNING: Copying your seed to clipboard can expose you to malicious software, which may record your seed and steal your Swap. Please write down your seed manually.") + translationManager.emptyString
             }
 
             MoneroComponents.LineEditMulti {
