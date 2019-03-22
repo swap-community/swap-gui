@@ -35,12 +35,17 @@ ColumnLayout {
     id: item
 
     Layout.fillWidth: true
-    Layout.preferredHeight: childrenRect.height
 
     property alias text: input.text
     property alias labelText: inputLabel.text
     property alias labelButtonText: labelButton.text
     property alias placeholderText: placeholderLabel.text
+
+    property int inputPaddingLeft: 10 * scaleRatio
+    property int inputPaddingRight: 10 * scaleRatio
+    property int inputPaddingTop: 10 * scaleRatio
+    property int inputPaddingBottom: 10 * scaleRatio
+    property int inputRadius: 4
 
     property bool placeholderCenter: false
     property string placeholderFontFamily: MoneroComponents.Style.fontRegular.name
@@ -153,8 +158,12 @@ ColumnLayout {
         readOnly: false
         addressValidation: false
         Layout.fillWidth: true
-        topPadding: 10 * scaleRatio
-        bottomPadding: 10 * scaleRatio
+        
+        leftPadding: item.inputPaddingLeft
+        rightPadding: item.inputPaddingRight
+        topPadding: item.inputPaddingTop
+        bottomPadding: item.inputPaddingBottom
+
         wrapMode: item.wrapMode
         fontSize: item.fontSize
         fontBold: item.fontBold
@@ -182,7 +191,7 @@ ColumnLayout {
             color: "transparent"
             border.width: 1
             border.color: item.borderColor
-            radius: 4
+            radius: item.inputRadius
             anchors.fill: parent
             visible: !item.borderDisabled
         }

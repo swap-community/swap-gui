@@ -32,6 +32,7 @@ import QtQuick.Dialogs 1.2
 import moneroComponents.Clipboard 1.0
 import moneroComponents.PendingTransaction 1.0
 import moneroComponents.Wallet 1.0
+import moneroComponents.NetworkType 1.0
 import "../components"
 import "../components" as MoneroComponents
 import "." 1.0
@@ -47,6 +48,7 @@ Rectangle {
     color: "transparent"
     property int mixin: 10  // (ring size 11)
     property string warningContent: ""
+    property string sendButtonWarning: ""
     property string startLinkText: qsTr("<style type='text/css'>a {text-decoration: none; color: #FF6C3C; font-size: 14px;}</style><font size='2'> (</font><a href='#'>Start daemon</a><font size='2'>)</font>") + translationManager.emptyString
     property bool showAdvanced: false
 
@@ -83,6 +85,7 @@ Rectangle {
         addressLine.text = ""
         setPaymentId("");
         amountLine.text = ""
+        root.sendButtonWarning = ""
         setDescription("");
         priorityDropdown.currentIndex = 0
         updatePriorityDropdown()
@@ -144,7 +147,7 @@ Rectangle {
                       middlePanel.accountView.selectAndSend = true;
                       appWindow.showPageRequest("Account")
                   }
-                  placeholderText: qsTr("") + translationManager.emptyString
+                  placeholderText: "0.00"
                   width: 100 * scaleRatio
                   fontBold: true
                   inlineButtonText: qsTr("All") + translationManager.emptyString
@@ -216,7 +219,15 @@ Rectangle {
                 Address <font size='2'>  ( </font> <a href='#'>Address book</a><font size='2'> )</font>")
                 + translationManager.emptyString
               labelButtonText: qsTr("Resolve") + translationManager.emptyString
-              placeholderText: "fh.. / fs.."
+              placeholderText: {
+                  if(persistentSettings.nettype == NetworkType.MAINNET){
+                      return "fh.. / fs..";
+                  } else if (persistentSettings.nettype == NetworkType.STAGENET){
+                      return "fh.. / fs..";
+                  } else if(persistentSettings.nettype == NetworkType.TESTNET){
+                      return "TN.. / TD..";
+                  }
+              }
               wrapMode: Text.WrapAnywhere
               addressValidation: true
               onInputLabelLinkActivated: {
@@ -347,6 +358,12 @@ Rectangle {
           }
       }
 
+      MoneroComponents.WarningBox {
+          id: sendButtonWarningBox
+          text: root.sendButtonWarning
+          visible: root.sendButtonWarning !== ""
+      }
+
       RowLayout {
           StandardButton {
               id: sendButton
@@ -354,35 +371,8 @@ Rectangle {
               rightIconInactive: "../images/rightArrowInactive.png"
               Layout.topMargin: 4 * scaleRatio
               text: qsTr("Send") + translationManager.emptyString
-              // Send button is enabled when:
-              enabled : {
-                  // Currently opened wallet is not view-only
-                  if(appWindow.viewOnly){
-                      return false;
-                  }
-                  
-                  // There is no warning box displayed
-                  if(root.warningContent !== ''){
-                      return false;
-                  }
-                  
-                  // The transactional information is correct
-                  if(!pageRoot.checkInformation(amountLine.text, addressLine.text, paymentIdLine.text, appWindow.persistentSettings.nettype)){
-                      return false;
-                  }
-                  
-                  // There are sufficient unlocked funds available
-                  if(parseFloat(amountLine.text) > parseFloat(unlockedBalanceText)){
-                      return false;
-                  }
-
-                  // The amount does not start with a period (example: `.4`)
-                  // @TODO: replace with .startsWith() after Qt >=5.8
-                  if(amountLine.text.indexOf('.') === 0){
-                      return false;
-                  }
-
-                  return true;
+              enabled: {
+                updateSendButton()
               }
               onClicked: {
                   console.log("Transfer: paymentClicked")
@@ -434,6 +424,7 @@ Rectangle {
         enabled: !viewOnly || pageRoot.enabled
 
         RowLayout {
+            visible: appWindow.walletMode >= 2
             CheckBox2 {
                 id: showAdvancedCheckbox
                 checked: persistentSettings.transferShowAdvanced
@@ -445,7 +436,7 @@ Rectangle {
         }
 
         GridLayout {
-            visible: persistentSettings.transferShowAdvanced
+            visible: persistentSettings.transferShowAdvanced && appWindow.walletMode >= 2
             columns: (isMobile) ? 2 : 6
 
             StandardButton {
@@ -667,9 +658,11 @@ Rectangle {
     //TODO: enable send page when we're connected and daemon is synced
 
     function updateStatus() {
+        var messageNotConnected = qsTr("Wallet is not connected to daemon.");
+        if(appWindow.walletMode >= 2) messageNotConnected += root.startLinkText;
         pageRoot.enabled = true;
         if(typeof currentWallet === "undefined") {
-            root.warningContent = qsTr("Wallet is not connected to daemon.") + root.startLinkText
+            root.warningContent = messageNotConnected;
             return;
         }
 
@@ -681,7 +674,7 @@ Rectangle {
 
         switch (currentWallet.connected()) {
         case Wallet.ConnectionStatus_Disconnected:
-            root.warningContent = qsTr("Wallet is not connected to daemon.") + root.startLinkText
+            root.warningContent = messageNotConnected;
             break
         case Wallet.ConnectionStatus_WrongVersion:
             root.warningContent = qsTr("Connected daemon is not compatible with GUI. \n" +
@@ -689,7 +682,7 @@ Rectangle {
             break
         default:
             if(!appWindow.daemonSynced){
-                root.warningContent = qsTr("Waiting on daemon synchronization to finish")
+                root.warningContent = qsTr("Waiting on daemon synchronization to finish.")
             } else {
                 // everything OK, enable transfer page
                 // Light wallet is always ready
@@ -704,5 +697,35 @@ Rectangle {
         addressLine.text = address
         setPaymentId(paymentId);
         setDescription(description);
+    }
+
+    function updateSendButton(){
+        // reset message
+        root.sendButtonWarning = "";
+
+        // Currently opened wallet is not view-only
+        if(appWindow.viewOnly){
+            root.sendButtonWarning = qsTr("Wallet is view-only and sends are not possible.") + translationManager.emptyString;
+            return false;
+        }
+
+        // There are sufficient unlocked funds available
+        if(parseFloat(amountLine.text) > parseFloat(middlePanel.unlockedBalanceText)){
+            root.sendButtonWarning = qsTr("Amount is more than unlocked balance.") + translationManager.emptyString;
+            return false;
+        }
+
+        // There is no warning box displayed
+        if(root.warningContent !== ""){
+            return false;
+        }
+
+        // The transactional information is correct
+        if(!pageRoot.checkInformation(amountLine.text, addressLine.text, paymentIdLine.text, appWindow.persistentSettings.nettype)){
+            if(amountLine.text && addressLine.text)
+                root.sendButtonWarning = qsTr("Transaction information is incorrect.") + translationManager.emptyString;
+            return false;
+        }
+        return true;
     }
 }

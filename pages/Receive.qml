@@ -219,13 +219,12 @@ Rectangle {
                 height: 1
             }
 
-            MoneroComponents.CheckBox { 
-                id: addNewAccountCheckbox 
-                visible: !selectAndSend
+            MoneroComponents.CheckBox {
+                id: addNewAddressCheckbox
                 border: false
-                checkedIcon: "qrc:///images/plus-in-circle-medium-white.png" 
-                uncheckedIcon: "qrc:///images/plus-in-circle-medium-white.png" 
-                fontSize: 14 * scaleRatio 
+                checkedIcon: "qrc:///images/plus-in-circle-medium-white.png"
+                uncheckedIcon: "qrc:///images/plus-in-circle-medium-white.png"
+                fontSize: 14 * scaleRatio
                 iconOnTheLeft: true
                 Layout.fillWidth: true
                 Layout.topMargin: 10 * scaleRatio
@@ -325,6 +324,7 @@ Rectangle {
     }
 
     function clearFields() {
+        // @TODO: add fields
     }
 
     function onPageClosed() {

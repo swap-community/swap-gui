@@ -431,7 +431,7 @@ RESOURCES += qml.qrc
 CONFIG += qtquickcompiler
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
-QML_IMPORT_PATH =
+QML_IMPORT_PATH = fonts
 
 # Default rules for deployment.
 include(deployment.pri)
@@ -462,11 +462,7 @@ OTHER_FILES += \
 
 DISTFILES += \
     notes.txt \
-    swap/src/wallet/CMakeLists.txt \
-    components/MobileHeader.qml \
-    pages/merchant/Merchant.qml \
-    pages/merchant/MerchantCheckbox.qml
-
+    swap/src/wallet/CMakeLists.txt
 
 # windows application icon
 RC_ICONS = images/appicon.ico

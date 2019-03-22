@@ -435,6 +435,7 @@ Rectangle {
 
             MoneroComponents.MenuButton {
                 id: merchantButton
+                visible: appWindow.walletMode >= 2
                 anchors.left: parent.left
                 anchors.right: parent.right
                 text: qsTr("Merchant") + translationManager.emptyString
@@ -449,7 +450,7 @@ Rectangle {
             }
 
             Rectangle {
-                visible: merchantButton.present
+                visible: merchantButton.present && appWindow.walletMode >= 2
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.leftMargin: 16
@@ -484,6 +485,7 @@ Rectangle {
             // ------------- Advanced tab ---------------
             MoneroComponents.MenuButton {
                 id: advancedButton
+                visible: appWindow.walletMode >= 2
                 anchors.left: parent.left
                 anchors.right: parent.right
                 text: qsTr("Advanced") + translationManager.emptyString
@@ -494,8 +496,9 @@ Rectangle {
                     parent.previousButton = advancedButton
                 }
             }
+
             Rectangle {
-                visible: advancedButton.present
+                visible: advancedButton.present && appWindow.walletMode >= 2
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.leftMargin: 16
@@ -506,6 +509,7 @@ Rectangle {
             // ------------- TxKey tab ---------------
             MoneroComponents.MenuButton {
                 id: txkeyButton
+                visible: appWindow.walletMode >= 2
                 anchors.left: parent.left
                 anchors.right: parent.right
                 text: qsTr("Prove/check") + translationManager.emptyString
@@ -519,7 +523,7 @@ Rectangle {
                 }
             }
             Rectangle {
-                visible: txkeyButton.present
+                visible: txkeyButton.present && appWindow.walletMode >= 2
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.leftMargin: 16
@@ -527,10 +531,10 @@ Rectangle {
                 height: 1
             }
 
-
             // ------------- Sign/verify tab ---------------
             MoneroComponents.MenuButton {
                 id: signButton
+                visible: appWindow.walletMode >= 2
                 anchors.left: parent.left
                 anchors.right: parent.right
                 text: qsTr("Sign/verify") + translationManager.emptyString
@@ -544,7 +548,7 @@ Rectangle {
                 }
             }
             Rectangle {
-                visible: signButton.present
+                visible: signButton.present && appWindow.walletMode >= 2
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.leftMargin: 16
@@ -576,6 +580,7 @@ Rectangle {
             // ------------- Sign/verify tab ---------------
             MoneroComponents.MenuButton {
                 id: keysButton
+                visible: appWindow.walletMode >= 2
                 anchors.left: parent.left
                 anchors.right: parent.right
                 text: qsTr("Seed & Keys") + translationManager.emptyString
@@ -589,7 +594,7 @@ Rectangle {
                 }
             }
             Rectangle {
-                visible: settingsButton.present
+                visible: settingsButton.present && appWindow.walletMode >= 2
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.leftMargin: 16
