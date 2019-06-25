@@ -21,7 +21,6 @@ QtObject {
     property string moneroGrey: "#4C4C4C"
     property string warningColor: "orange"
 
-    property string errorColor: "#5785f8"
     property string defaultFontColor: blackTheme ? _b_defaultFontColor : _w_defaultFontColor
     property string dimmedFontColor: blackTheme ? _b_dimmedFontColor : _w_dimmedFontColor
     property string lightGreyFontColor: blackTheme ? _b_lightGreyFontColor : _w_lightGreyFontColor
@@ -29,8 +28,6 @@ QtObject {
     property string textSelectionColor: blackTheme ? _b_textSelectionColor : _w_textSelectionColor
     property string textSelectedColor: blackTheme ? _b_textSelectedColor : _w_textSelectedColor
 
-    property string buttonBackgroundColor: "#5785f8"
-    property string buttonBackgroundColorHover: "#1C60CD"
     property string inputBoxBackground: blackTheme ? _b_inputBoxBackground : _w_inputBoxBackground
     property string inputBoxBackgroundError: blackTheme ? _b_inputBoxBackgroundError : _w_inputBoxBackgroundError
     property string inputBoxColor: blackTheme ? _b_inputBoxColor : _w_inputBoxColor
