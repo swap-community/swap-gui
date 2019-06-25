@@ -1,7 +1,4 @@
 [submodule "swap"]
 	path = swap
-	url = https://github.com/swap-dev/swap.git
-	branch = swap-v1.0
-[submodule "swap"]
-	path = swap
-	url = http://github.com/swap-dev/swap
+	url = http://github.com/swap-dev/swap.git
+	branch = swap-v3.0dev

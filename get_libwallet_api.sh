@@ -1,6 +1,6 @@
 #!/bin/bash
 MONERO_URL=https://github.com/swap-dev/swap.git
-MONERO_BRANCH=swap-v1.0
+MONERO_BRANCH=swap-v3.0dev
 
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -17,7 +17,7 @@ if [ ! -d $MONERO_DIR/src ]; then
 fi
 git submodule update --remote
 git -C $MONERO_DIR fetch
-git -C $MONERO_DIR checkout origin/master
+git -C $MONERO_DIR checkout origin/swap-v3.0dev
 
 # get swap core tag
 pushd $MONERO_DIR
