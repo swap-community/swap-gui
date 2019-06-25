@@ -51,7 +51,6 @@ Rectangle {
     property alias progressBar : progressBar
     property alias daemonProgressBar : daemonProgressBar
     property alias minutesToUnlockTxt: unlockedBalanceLabel.text
-    property bool fiatBalance: false
     property int titleBarHeight: 50
     property string copyValue: ""
     Clipboard { id: clipboard }
@@ -65,7 +64,6 @@ Rectangle {
     signal addressBookClicked()
     signal miningClicked()
     signal signClicked()
-    signal keysClicked()
     signal merchantClicked()
     signal accountClicked()
 
@@ -82,7 +80,6 @@ Rectangle {
         else if(pos === "Sign") menuColumn.previousButton = signButton
         else if(pos === "Settings") menuColumn.previousButton = settingsButton
         else if(pos === "Advanced") menuColumn.previousButton = advancedButton
-        else if(pos === "Keys") menuColumn.previousButton = keysButton
         else if(pos === "Account") menuColumn.previousButton = accountButton
         menuColumn.previousButton.checked = true
     }
@@ -222,7 +219,7 @@ Rectangle {
                         hoverEnabled: true
                         cursorShape: Qt.PointingHandCursor
                         onClicked: {
-                            fiatBalance = !fiatBalance
+                            persistentSettings.fiatPriceToggle = !persistentSettings.fiatPriceToggle
                         }
                     }
                 }
@@ -238,7 +235,7 @@ Rectangle {
                 width: 50
 
                 MoneroComponents.TextPlain {
-                    visible: !(fiatBalance && persistentSettings.fiatPriceEnabled)
+                    visible: !(persistentSettings.fiatPriceToggle && persistentSettings.fiatPriceEnabled)
                     id: balanceText
                     themeTransition: false
                     anchors.left: parent.left
@@ -311,7 +308,7 @@ Rectangle {
 
                 MoneroComponents.TextPlain {
                     id: unlockedBalanceText
-                    visible: !(fiatBalance && persistentSettings.fiatPriceEnabled)
+                    visible: !(persistentSettings.fiatPriceToggle && persistentSettings.fiatPriceEnabled)
                     themeTransition: false
                     anchors.left: parent.left
                     anchors.leftMargin: 20
@@ -675,30 +672,6 @@ Rectangle {
 
             MoneroComponents.MenuButtonDivider {
                 visible: settingsButton.present
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.leftMargin: 16
-            }
-
-            // ------------- Sign/verify tab ---------------
-            MoneroComponents.MenuButton {
-                id: keysButton
-                visible: appWindow.walletMode >= 2
-                anchors.left: parent.left
-                anchors.right: parent.right
-                text: qsTr("Seed & Keys") + translationManager.emptyString
-                symbol: qsTr("Y") + translationManager.emptyString
-                dotColor: "#FFD781"
-                under: settingsButton
-                onClicked: {
-                    parent.previousButton.checked = false
-                    parent.previousButton = keysButton
-                    panel.keysClicked()
-                }
-            }
-
-            MoneroComponents.MenuButtonDivider {
-                visible: settingsButton.present && settingsButton.checked && appWindow.walletMode >= 2
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.leftMargin: 16

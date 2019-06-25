@@ -51,9 +51,7 @@ ApplicationWindow {
 
     property var currentItem
     property bool hideBalanceForced: false
-    property bool whatIsEnable: false
     property bool ctrlPressed: false
-    property bool osx: false
     property alias persistentSettings : persistentSettings
     property var currentWallet;
     property var transaction;
@@ -69,20 +67,17 @@ ApplicationWindow {
     property string walletName
     property bool viewOnly: false
     property bool foundNewBlock: false
-    property int timeToUnlock: 0
     property bool qrScannerEnabled: (typeof builtWithScanner != "undefined") && builtWithScanner
     property int blocksToSync: 1
     property var isMobile: (appWindow.width > 700 && !isAndroid) ? false : true
     property bool isMining: false
     property int walletMode: persistentSettings.walletMode
     property var cameraUi
-    property bool remoteNodeConnected: false
     property bool androidCloseTapped: false;
     property int userLastActive;  // epoch
     // Default daemon addresses
     readonly property string localDaemonAddress : "localhost:" + getDefaultDaemonRpcPort(persistentSettings.nettype)
     property string currentDaemonAddress;
-    property bool startLocalNodeCancelled: false
     property int disconnectedEpoch: 0
     property int estimatedBlockchainSize: 5 // GB
     property alias viewState: rootItem.state
@@ -157,7 +152,6 @@ ApplicationWindow {
         else if(seq === "Ctrl+I") middlePanel.state = "Sign"
         else if(seq === "Ctrl+G") middlePanel.state = "SharedRingDB"
         else if(seq === "Ctrl+E") middlePanel.state = "Settings"
-        else if(seq === "Ctrl+Y") leftPanel.keysClicked()
         else if(seq === "Ctrl+D") middlePanel.state = "Advanced"
         else if(seq === "Ctrl+T") middlePanel.state = "Account"
         else if(seq === "Ctrl+Tab" || seq === "Alt+Tab") {
@@ -472,14 +466,14 @@ ApplicationWindow {
         leftPanel.networkStatus.connected = status
 
         // update local daemon status.
-        if(!isMobile && walletManager.isDaemonLocal(appWindow.persistentSettings.daemon_address))
+        if(!isMobile && walletManager.isDaemonLocal(currentDaemonAddress))
             daemonRunning = status;
 
         // Update fee multiplier dropdown on transfer page
         middlePanel.transferView.updatePriorityDropdown();
 
         // If wallet isnt connected, advanced wallet mode and no daemon is running - Ask
-        if(!isMobile && appWindow.walletMode >= 2 && walletManager.isDaemonLocal(appWindow.persistentSettings.daemon_address) && !walletInitialized && status === Wallet.ConnectionStatus_Disconnected && !daemonManager.running(persistentSettings.nettype)){
+        if(!isMobile && appWindow.walletMode >= 2 && walletManager.isDaemonLocal(currentDaemonAddress) && !walletInitialized && status === Wallet.ConnectionStatus_Disconnected && !daemonManager.running(persistentSettings.nettype)){
             daemonManagerDialog.open();
         }
         // initialize transaction history once wallet is initialized first time;
@@ -594,7 +588,7 @@ ApplicationWindow {
             foundNewBlock = false;
             console.log("New block found - updating history")
             currentWallet.history.refresh(currentWallet.currentSubaddressAccount)
-            timeToUnlock = currentWallet.history.minutesToUnlock
+            var timeToUnlock = currentWallet.history.minutesToUnlock
             leftPanel.minutesToUnlockTxt = (timeToUnlock > 0)? qsTr("Unlocked balance (~%1 min)").arg(timeToUnlock) : qsTr("Unlocked balance");
 
             if(middlePanel.state == "History")
@@ -608,7 +602,6 @@ ApplicationWindow {
         currentDaemonAddress = persistentSettings.remoteNodeAddress;
         currentWallet.initAsync(currentDaemonAddress);
         walletManager.setDaemonAddressAsync(currentDaemonAddress);
-        remoteNodeConnected = true;
     }
 
     function disconnectRemoteNode() {
@@ -620,7 +613,6 @@ ApplicationWindow {
         currentDaemonAddress = localDaemonAddress
         currentWallet.initAsync(currentDaemonAddress);
         walletManager.setDaemonAddressAsync(currentDaemonAddress);
-        remoteNodeConnected = false;
     }
 
     function onHeightRefreshed(bcHeight, dCurrentBlock, dTargetBlock) {
@@ -1003,11 +995,21 @@ ApplicationWindow {
                     ", address: ", address,
                     ", message: ", message);
 
-        var result;
+        function spendProofFallback(txid, result){
+            if (!result || result.indexOf("error|") === 0) {
+                currentWallet.getSpendProofAsync(txid, message, txProofComputed);
+            } else {
+                txProofComputed(txid, result);
+            }
+        }
+
         if (address.length > 0)
-            result = currentWallet.getTxProof(txid, address, message);
-        if (!result || result.indexOf("error|") === 0)
-            result = currentWallet.getSpendProof(txid, message);
+            currentWallet.getTxProofAsync(txid, address, message, spendProofFallback);
+        else
+            spendProofFallback(txid, null);
+    }
+
+    function txProofComputed(txid, result){
         informationPopup.title  = qsTr("Payment proof") + translationManager.emptyString;
         if (result.indexOf("error|") === 0) {
             var errorString = result.split("|")[1];
@@ -1350,7 +1352,6 @@ ApplicationWindow {
         property bool   allow_background_mining : false
         property bool   miningIgnoreBattery : true
         property var    nettype: NetworkType.MAINNET
-        property string daemon_address: "localhost:" + getDefaultDaemonRpcPort(nettype)
         property string payment_id
         property int    restore_height : 0
         property bool   is_trusted_daemon : false
@@ -1384,6 +1385,7 @@ ApplicationWindow {
         property bool blackTheme: true
 
         property bool fiatPriceEnabled: false
+        property bool fiatPriceToggle: false
         property string fiatPriceProvider: "kraken"
         property string fiatPriceCurrency: "xmrusd"
 
@@ -1571,7 +1573,6 @@ ApplicationWindow {
         onRejected: {
             middlePanel.settingsView.settingsStateViewState = "Node";
             loadPage("Settings");
-            startLocalNodeCancelled = true
         }
 
     }
@@ -1734,8 +1735,6 @@ ApplicationWindow {
                 }
                 updateBalance();
             }
-
-            onKeysClicked: Utils.showSeedPage();
             
             onAccountClicked: {
                 middlePanel.state = "Account";
