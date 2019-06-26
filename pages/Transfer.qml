@@ -89,13 +89,7 @@ Rectangle {
 
     function isLongPidService(text) {
         // @TODO: remove after pid removal hardfork
-        return text.length == 95 &&
-               [ "44tLjmXrQNrWJ5NBsEj2R77ZBEgDa3fEe9GLpSf2FRmhexPvfYDUAB7EXX1Hdb3aMQ9FLqdJ56yaAhiXoRsceGJCRS3Jxkn", // Binance
-                 "4AQ3ZREb53FMYKBmpPn7BD7hphPk6G1ceinQX6gefAvhFJsNbeFsGwebZWCNxoJAbZhD9cjetBAqmLhfXmcNLBpPMsBL6yM", // KuCoin
-                 "47YzEcMrU2S42UitURo7ukUDaSaL485Z1QbmFgq1vSs5g3JesL4rChwWf2uWk1va99JAaRxt65jhX9uAqQnjeFM44ckgZtp", // AnycoinDirect
-                 "4BCeEPhodgPMbPWFN1dPwhWXdRX8q4mhhdZdA1dtSMLTLCEYvAj9QXjXAfF7CugEbmfBhgkqHbdgK9b2wKA6nqRZQCgvCDm", // Bitfinex
-                 "463tWEBn5XZJSxLU6uLQnQ2iY9xuNcDbjLSjkn3XAXHCbLrTTErJrBWYgHJQyrCwkNgYvyV3z8zctJLPCZy24jvb3NiTcTJ"  // Bittrex
-               ].indexOf(text) > -1
+        return false; //No known Swap exchange uses long pid
     }
 
     function clearFields() {
