@@ -63,7 +63,7 @@ RowLayout {
                 font.family: Style.fontLight.name
                 font.pixelSize: checkBox.fontSize
                 color: Style.defaultFontColor
-                wrapMode: Text.Wrap
+                wrapMode: Text.NoWrap
                 Layout.fillWidth: true
                 anchors.left: parent.left
             }
