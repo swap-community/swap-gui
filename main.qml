@@ -92,16 +92,16 @@ ApplicationWindow {
     property var fiatPriceAPIs: {
         return {
             "kraken": {
-                "xmrusd": "https://api.kraken.com/0/public/Ticker?pair=XMRUSD",
-                "xmreur": "https://api.kraken.com/0/public/Ticker?pair=XMREUR"
+                "xwpusd": "https://api.kraken.com/0/public/Ticker?pair=XWPUSD",
+                "xwpeur": "https://api.kraken.com/0/public/Ticker?pair=XWPEUR"
             },
             "coingecko": {
-                "xmrusd": "https://api.coingecko.com/api/v3/simple/price?ids=monero&vs_currencies=usd",
-                "xmreur": "https://api.coingecko.com/api/v3/simple/price?ids=monero&vs_currencies=eur"
+                "xwpusd": "https://api.coingecko.com/api/v3/simple/price?ids=swap&vs_currencies=usd",
+                "xwpeur": "https://api.coingecko.com/api/v3/simple/price?ids=swap&vs_currencies=eur"
             },
             "cryptocompare": {
-                "xmrusd": "https://min-api.cryptocompare.com/data/price?fsym=XMR&tsyms=USD",
-                "xmreur": "https://min-api.cryptocompare.com/data/price?fsym=XMR&tsyms=EUR",
+                "xwpusd": "https://min-api.cryptocompare.com/data/price?fsym=XWP&tsyms=USD",
+                "xwpeur": "https://min-api.cryptocompare.com/data/price?fsym=XWP&tsyms=EUR",
             }
         }
     }
@@ -116,7 +116,7 @@ ApplicationWindow {
         }
 
         // monero-gui workgroup maintained
-        return "https://autonode.xmr.pm/"
+        return "https://autonode.swap.fyi" //TODO: implement autonodes
     }
 
     // true if wallet ever synchronized
@@ -418,8 +418,8 @@ ApplicationWindow {
     }
 
     function onUriHandler(uri){
-        if(uri.startsWith("monero://")){
-            var address = uri.substring("monero://".length);
+        if(uri.startsWith("swap://")){
+            var address = uri.substring("swap://".length);
 
             var params = {}
             if(address.length === 0) return;
@@ -1167,18 +1167,18 @@ ApplicationWindow {
                 return;
             }
 
-            var key = currency === "xmreur" ? "XXMRZEUR" : "XXMRZUSD";
+            var key = currency === "xwpeur" ? "XXWPZEUR" : "XXWPZUSD";
             var ticker = resp.result[key]["o"];
             return ticker;
         } else if(resp._url.startsWith("https://api.coingecko.com/api/v3/")){
-            var key = currency === "xmreur" ? "eur" : "usd";
-            if(!resp.hasOwnProperty("monero") || !resp["monero"].hasOwnProperty(key)){
+            var key = currency === "xwpeur" ? "eur" : "usd";
+            if(!resp.hasOwnProperty("swap") || !resp["swap"].hasOwnProperty(key)){
                 appWindow.fiatApiError("Coingecko API has error(s)");
                 return;
             }
-            return resp["monero"][key];
+            return resp["swap"][key];
         } else if(resp._url.startsWith("https://min-api.cryptocompare.com/data/")){
-            var key = currency === "xmreur" ? "EUR" : "USD";
+            var key = currency === "xwpeur" ? "EUR" : "USD";
             if(!resp.hasOwnProperty(key)){
                 appWindow.fiatApiError("cryptocompare API has error(s)");
                 return;
@@ -1225,9 +1225,9 @@ ApplicationWindow {
             return;
         }
 
-        if(persistentSettings.fiatPriceCurrency === "xmrusd")
+        if(persistentSettings.fiatPriceCurrency === "xwpusd")
             appWindow.fiatPriceXMRUSD = ticker;
-        else if(persistentSettings.fiatPriceCurrency === "xmreur")
+        else if(persistentSettings.fiatPriceCurrency === "xwpeur")
             appWindow.fiatPriceXMREUR = ticker;
 
         appWindow.updateBalance();
@@ -1256,8 +1256,8 @@ ApplicationWindow {
 
     function fiatApiUpdateBalance(balance, unlocked_balance){
         // update balance card
-        var ticker = persistentSettings.fiatPriceCurrency === "xmrusd" ? appWindow.fiatPriceXMRUSD : appWindow.fiatPriceXMREUR;
-        var symbol = persistentSettings.fiatPriceCurrency === "xmrusd" ? "$" : "€"
+        var ticker = persistentSettings.fiatPriceCurrency === "xwpusd" ? appWindow.fiatPriceXMRUSD : appWindow.fiatPriceXMREUR;
+        var symbol = persistentSettings.fiatPriceCurrency === "xwpusd" ? "$" : "€"
         if(ticker <= 0){
             console.log(fiatApiError("Could not update balance card; invalid ticker value"));
             leftPanel.unlockedBalanceTextFiat = "N/A";
@@ -1357,7 +1357,7 @@ ApplicationWindow {
         property bool   is_trusted_daemon : false
         property bool   is_recovering : false
         property bool   is_recovering_from_device : false
-        property bool   customDecorations : false
+        property bool   customDecorations : true
         property string daemonFlags
         property int logLevel: 0
         property string logCategories: ""
@@ -1387,7 +1387,7 @@ ApplicationWindow {
         property bool fiatPriceEnabled: false
         property bool fiatPriceToggle: false
         property string fiatPriceProvider: "kraken"
-        property string fiatPriceCurrency: "xmrusd"
+        property string fiatPriceCurrency: "xwpusd"
 
         Component.onCompleted: {
             MoneroComponents.Style.blackTheme = persistentSettings.blackTheme
