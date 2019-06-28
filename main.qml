@@ -1369,8 +1369,8 @@ ApplicationWindow {
         property bool historyHumanDates: true
         property string blockchainDataDir: ""
         property bool useRemoteNode: true
-        property string remoteNodeAddress: "node.swap.fyi:19950"
-        property string bootstrapNodeAddress: "node.swap.fyi:19950"
+        property string remoteNodeAddress: "node.xwp.fyi:19950"
+        property string bootstrapNodeAddress: "node.xwp.fyi:19950"
         property string remoteNodeRegion: ""
         property bool segregatePreForkOutputs: true
         property bool keyReuseMitigation2: true
