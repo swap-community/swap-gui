@@ -129,7 +129,7 @@ int main(int argc, char *argv[])
         QStringList moneroAccountsRootDir = QStandardPaths::standardLocations(QStandardPaths::HomeLocation);
     #endif
     if (!moneroAccountsRootDir.empty()) {
-        moneroAccountsDir = moneroAccountsRootDir.at(0) + "/Monero/wallets";
+        moneroAccountsDir = moneroAccountsRootDir.at(0) + "/Swap/wallets";
     } else {
         qCritical() << "Error: accounts root directory could not be set";
         return 1;
