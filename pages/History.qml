@@ -412,22 +412,91 @@ Rectangle {
                     }
                 }
             }
-
-            Rectangle {
+            RowLayout {
+                id: historyStatusMessage
                 visible: !sortAndFilter.collapsed
+                spacing: 0
+                Layout.alignment: Qt.AlignLeft
+                Layout.preferredWidth: childrenRect.width
                 Layout.preferredHeight: 20
+                
+                Rectangle {
+                    color: "transparent"
+                    Layout.preferredWidth: childrenRect.width + 10
+                    Layout.preferredHeight: 20
 
-                MoneroComponents.TextPlain {
-                    // status message
-                    font.family: MoneroComponents.Style.fontRegular.name
-                    font.pixelSize: 15
-                    text: root.historyStatusMessage
+                    MoneroComponents.TextPlain {
+                        // status message
+                        font.family: MoneroComponents.Style.fontRegular.name
+                        font.pixelSize: 15
+                        text: root.historyStatusMessage
 
-                    color: MoneroComponents.Style.defaultFontColor
-                    anchors.verticalCenter: parent.verticalCenter
+                        color: MoneroComponents.Style.defaultFontColor
+                        anchors.verticalCenter: parent.verticalCenter
+                    }
+                }
+       
+                Rectangle {
+                    Layout.preferredWidth: 18
+                    Layout.preferredHeight: 20
+                    color: "transparent"
+                    opacity: enabled ? 1.0 : 0.2
+                    enabled: root.txMax > 5
+
+                    MoneroEffects.ImageMask {
+                        id: decreaseIcon
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.left: parent.left
+                        height: 8
+                        width: 12
+                        image: "qrc:///images/whiteDropIndicator.png"
+                        fontAwesomeFallbackIcon: FontAwesome.arrowDown
+                        fontAwesomeFallbackSize: 14
+                        color: MoneroComponents.Style.defaultFontColor
+                        rotation: 90
+                    }
+
+                    MouseArea {
+                        enabled: parent.enabled
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: {
+                            root.txMaxDecreaseClicked();
+                        }
+                    }
+                }
+
+                Rectangle {
+                    Layout.preferredWidth: 18
+                    Layout.preferredHeight: 20
+                    color: "transparent"
+                    opacity: enabled ? 1.0 : 0.2
+                    enabled:  root.txMax < 100
+
+                    MoneroEffects.ImageMask {
+                        id: increaseIcon
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.right: parent.right
+                        height: 8
+                        width: 12
+                        image: "qrc:///images/whiteDropIndicator.png"
+                        fontAwesomeFallbackIcon: FontAwesome.arrowDown
+                        fontAwesomeFallbackSize: 14
+                        rotation: 270
+                        color: MoneroComponents.Style.defaultFontColor
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        cursorShape: Qt.PointingHandCursor
+                        onClicked: {
+                            root.txMaxIncreaseClicked();
+                        }
+                    }
                 }
             }
-
             Item {
                 Layout.fillWidth: true
             }
@@ -1543,6 +1612,20 @@ Rectangle {
         }
         inputDialog.onRejectedCallback = null;
         inputDialog.open();
+    }
+    
+    function txMaxDecreaseClicked(){
+        if (root.txMax > 5)        
+            root.txMax -= 5;
+          
+        updateDisplay(root.txOffset, root.txMax);
+    }
+
+    function txMaxIncreaseClicked(){
+        if (root.txMax < 100)
+            root.txMax += 5;
+        
+        updateDisplay(root.txOffset, root.txMax);
     }
 
     function paginationPrevClicked(){
