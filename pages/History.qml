@@ -51,7 +51,7 @@ Rectangle {
     property var initialized: false
     property int txMax: 5
     property int txOffset: 0
-    property int txPage: (txOffset / 5) + 1
+    property int txPage: (txOffset / txMax) + 1
     property int txCount: 0
     property var sortSearchString: null
     property bool sortDirection: true  // true = desc, false = asc
@@ -1505,12 +1505,11 @@ Rectangle {
         // determine pagination button states
         var count = txData.length;
         if(count <= root.txMax) {
-            paginationPrev.enabled = false;
             paginationNext.enabled = false;
             return;
         }
 
-        if(root.txOffset < root.txMax)
+        if(root.txOffset == 0)
             paginationPrev.enabled = false;
         else
             paginationPrev.enabled = true;
@@ -1630,6 +1629,10 @@ Rectangle {
 
     function paginationPrevClicked(){
         root.txOffset -= root.txMax;
+        
+        if (root.txOffset < 0)
+          root.txOffset = 0;
+        
         updateDisplay(root.txOffset, root.txMax);
     }
 
