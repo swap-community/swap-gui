@@ -1402,7 +1402,9 @@ Rectangle {
 
     function updateSort(){
         // applying sorts
-        root.txOffset = 0;
+        if (root.txOffset > root.txCount)
+          root.txOffset = 0;
+        
         root.txData.sort(function(a, b) {
             return a[root.sortBy] - b[root.sortBy];
         });
