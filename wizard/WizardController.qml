@@ -619,12 +619,7 @@ Rectangle {
             });
         }
 
-        // 18089 has precedence
-        var filteredNodes = Utils.filterNodes(nodes, "18089");
-        if(filteredNodes.length > 0){
-            node = Utils.randomChoice(filteredNodes);
-            console.log('Choosing remote node \''+ node +'\' from a list of ' + filteredNodes.length);
-        } else if(nodes.length > 0){
+        if(nodes.length > 0){
             node = Utils.randomChoice(nodes);
             console.log('Choosing remote node \''+ node +'\' from a list of ' + nodes.length);
         } else {
