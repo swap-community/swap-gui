@@ -116,7 +116,7 @@ ApplicationWindow {
         }
 
         // monero-gui workgroup maintained
-        return "https://autonode.swap.fyi" //TODO: implement autonodes
+        return "https://node.xwp.fyi/"
     }
 
     // true if wallet ever synchronized
