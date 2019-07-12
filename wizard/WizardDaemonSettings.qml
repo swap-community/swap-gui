@@ -194,7 +194,7 @@ ColumnLayout {
 
             property var rna: persistentSettings.remoteNodeAddress
             daemonAddrText: rna.search(":") != -1 ? rna.split(":")[0].trim() : ""
-            daemonPortText: rna.search(":") != -1 ? (rna.split(":")[1].trim() == "") ? appWindow.getDefaultDaemonRpcPort(persistentSettings.nettype) : persistentSettings.remoteNodeAddress.split(":")[1] : ""
+            daemonPortText: rna.search(":") != -1 ? (rna.split(":")[1].trim() == "") ? appWindow.getDefaultDaemonRpcPort(persistentSettings.nettype) : rna.split(":")[1] : ""
         }
     }
 }

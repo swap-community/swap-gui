@@ -1363,7 +1363,7 @@ ApplicationWindow {
         property bool historyHumanDates: true
         property string blockchainDataDir: ""
         property bool useRemoteNode: true
-        property string remoteNodeAddress: "node.xwp.fyi:19950"
+        property string remoteNodeAddress: Utils.randomChoice(["node.xwp.fyi:19950", "node2.xwp.fyi:19950", "node3.xwp.fyi:19950", "node4.xwp.fyi:19950"])
         property string bootstrapNodeAddress: "node.xwp.fyi:19950"
         property string remoteNodeRegion: ""
         property bool segregatePreForkOutputs: true
