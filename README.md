@@ -5,9 +5,9 @@ Copyright (c) 2014-2019, The Monero Project
 ## Development & Production
 
 Active Branches:
-- Testing: N/A
+- Stable: master(release)
 - Unstable: master(latest)
-- Stable: master(tagged)
+- Testing: N/A
 
 To contribute to the Swap Project, please make all pull requests to the _master_ branch.<br/>
 For production, please use the _tagged release_ of the _master_ branch.
