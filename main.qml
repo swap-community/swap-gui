@@ -87,21 +87,13 @@ ApplicationWindow {
     property bool themeTransition: false
 
     // fiat price conversion
-    property int fiatPriceXMRUSD: 0
-    property int fiatPriceXMREUR: 0
+    property int fiatPriceXWPUSD: 0
+    property int fiatPriceXWPEUR: 0
     property var fiatPriceAPIs: {
         return {
-            "kraken": {
-                "xwpusd": "https://api.kraken.com/0/public/Ticker?pair=XWPUSD",
-                "xwpeur": "https://api.kraken.com/0/public/Ticker?pair=XWPEUR"
-            },
             "coingecko": {
                 "xwpusd": "https://api.coingecko.com/api/v3/simple/price?ids=swap&vs_currencies=usd",
                 "xwpeur": "https://api.coingecko.com/api/v3/simple/price?ids=swap&vs_currencies=eur"
-            },
-            "cryptocompare": {
-                "xwpusd": "https://min-api.cryptocompare.com/data/price?fsym=XWP&tsyms=USD",
-                "xwpeur": "https://min-api.cryptocompare.com/data/price?fsym=XWP&tsyms=EUR",
             }
         }
     }
@@ -1155,29 +1147,13 @@ ApplicationWindow {
 
     function fiatApiParseTicker(resp, currency){
         // parse & validate incoming JSON
-        if(resp._url.startsWith("https://api.kraken.com/0/")){
-            if(resp.hasOwnProperty("error") && resp.error.length > 0 || !resp.hasOwnProperty("result")){
-                appWindow.fiatApiError("Kraken API has error(s)");
-                return;
-            }
-
-            var key = currency === "xwpeur" ? "XXWPZEUR" : "XXWPZUSD";
-            var ticker = resp.result[key]["o"];
-            return ticker;
-        } else if(resp._url.startsWith("https://api.coingecko.com/api/v3/")){
+        if(resp._url.startsWith("https://api.coingecko.com/api/v3/")){
             var key = currency === "xwpeur" ? "eur" : "usd";
             if(!resp.hasOwnProperty("swap") || !resp["swap"].hasOwnProperty(key)){
                 appWindow.fiatApiError("Coingecko API has error(s)");
                 return;
             }
             return resp["swap"][key];
-        } else if(resp._url.startsWith("https://min-api.cryptocompare.com/data/")){
-            var key = currency === "xwpeur" ? "EUR" : "USD";
-            if(!resp.hasOwnProperty(key)){
-                appWindow.fiatApiError("cryptocompare API has error(s)");
-                return;
-            }
-            return resp[key];
         }
     }
 
@@ -1220,9 +1196,9 @@ ApplicationWindow {
         }
 
         if(persistentSettings.fiatPriceCurrency === "xwpusd")
-            appWindow.fiatPriceXMRUSD = ticker;
+            appWindow.fiatPriceXWPUSD = ticker * 10000;
         else if(persistentSettings.fiatPriceCurrency === "xwpeur")
-            appWindow.fiatPriceXMREUR = ticker;
+            appWindow.fiatPriceXWPEUR = ticker * 10000;
 
         appWindow.updateBalance();
     }
@@ -1250,7 +1226,7 @@ ApplicationWindow {
 
     function fiatApiUpdateBalance(balance, unlocked_balance){
         // update balance card
-        var ticker = persistentSettings.fiatPriceCurrency === "xwpusd" ? appWindow.fiatPriceXMRUSD : appWindow.fiatPriceXMREUR;
+        var ticker = persistentSettings.fiatPriceCurrency === "xwpusd" ? appWindow.fiatPriceXWPUSD / 10000 : appWindow.fiatPriceXWPEUR / 10000;
         var symbol = persistentSettings.fiatPriceCurrency === "xwpusd" ? "$" : "€"
         if(ticker <= 0){
             console.log(fiatApiError("Could not update balance card; invalid ticker value"));
@@ -1380,7 +1356,7 @@ ApplicationWindow {
 
         property bool fiatPriceEnabled: false
         property bool fiatPriceToggle: false
-        property string fiatPriceProvider: "kraken"
+        property string fiatPriceProvider: "coingecko"
         property string fiatPriceCurrency: "xwpusd"
 
         Component.onCompleted: {

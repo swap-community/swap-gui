@@ -283,7 +283,7 @@ Rectangle {
                     anchors.left: parent.left
                     anchors.leftMargin: 20
                     anchors.top: parent.top
-                    anchors.topMargin: 76
+                    anchors.topMargin: 86
                     font.family: "Arial"
                     color: "#FFFFFF"
                     text: "N/A"
@@ -355,7 +355,7 @@ Rectangle {
                     anchors.left: parent.left
                     anchors.leftMargin: 20
                     anchors.top: parent.top
-                    anchors.topMargin: 126
+                    anchors.topMargin: 136
                     font.family: "Arial"
                     color: "#FFFFFF"
                     text: "N/A"
