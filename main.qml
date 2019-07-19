@@ -1339,8 +1339,8 @@ ApplicationWindow {
         property bool historyHumanDates: true
         property string blockchainDataDir: ""
         property bool useRemoteNode: true
-        property string remoteNodeAddress: Utils.randomChoice(["node.swap.fyi:19950", "node.pocketwhale.info:19950", "node2.pocketwhale.info:19950", "node3.pocketwhale.info:19950", "node4.pocketwhale.info:19950", "58.185.155.109:19950", "node.bitkitten.xyz:18850"])
-        property string bootstrapNodeAddress: remoteNodeAddress
+        property string remoteNodeAddress: "autonode.xwp.fyi:19950"
+        property string bootstrapNodeAddress: "autonode.xwp.fyi:19950"
         property string remoteNodeRegion: ""
         property bool segregatePreForkOutputs: true
         property bool keyReuseMitigation2: true
