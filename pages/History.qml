@@ -49,9 +49,9 @@ Rectangle {
     property var model
     property int sideMargin: 50
     property var initialized: false
-    property int txMax: Math.max(5, ((appWindow.height - 250) / 60))
+    property int txMax: 5
     property int txOffset: 0
-    property int txPage: (txOffset / txMax) + 1
+    property int txPage: (txOffset / 5) + 1
     property int txCount: 0
     property var sortSearchString: null
     property bool sortDirection: true  // true = desc, false = asc
@@ -66,8 +66,6 @@ Rectangle {
     ListModel { id: txListViewModel }
 
     color: "transparent"
-
-    onTxMaxChanged: root.updateDisplay(root.txOffset, root.txMax);
 
     ColumnLayout {
         id: pageRoot
@@ -1416,6 +1414,7 @@ Rectangle {
 
     function reset(keepDate) {
         root.txOffset = 0;
+        root.txMax = 5;
 
         if (typeof root.model !== 'undefined' && root.model != null) {
             if (!keepDate) {
