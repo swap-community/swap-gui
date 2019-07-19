@@ -37,6 +37,7 @@
 #include <QPointer>
 #include <QWaitCondition>
 #include <QMutex>
+#include "qt/FutureScheduler.h"
 #include "NetworkType.h"
 
 class Wallet;
@@ -116,7 +117,7 @@ public:
     /*!
      * \brief closeWalletAsync - asynchronous version of "closeWallet"
      */
-    Q_INVOKABLE void closeWalletAsync();
+    Q_INVOKABLE void closeWalletAsync(const QJSValue& callback);
 
     //! checks is given filename is a wallet;
     Q_INVOKABLE bool walletExists(const QString &path) const;
@@ -151,7 +152,7 @@ public:
     Q_INVOKABLE bool localDaemonSynced() const;
     Q_INVOKABLE bool isDaemonLocal(const QString &daemon_address) const;
 
-    Q_INVOKABLE void miningStatusAsync() const;
+    Q_INVOKABLE void miningStatusAsync();
     Q_INVOKABLE bool startMining(const QString &address, quint32 threads, bool backgroundMining, bool ignoreBattery);
     Q_INVOKABLE bool stopMining();
 
@@ -175,7 +176,7 @@ public:
     Q_INVOKABLE bool parse_uri(const QString &uri, QString &address, QString &payment_id, uint64_t &amount, QString &tx_description, QString &recipient_name, QVector<QString> &unknown_parameters, QString &error) const;
     Q_INVOKABLE QVariantMap parse_uri_to_object(const QString &uri) const;
     Q_INVOKABLE bool saveQrCode(const QString &, const QString &) const;
-    Q_INVOKABLE void checkUpdatesAsync(const QString &software, const QString &subdir) const;
+    Q_INVOKABLE void checkUpdatesAsync(const QString &software, const QString &subdir);
     Q_INVOKABLE QString checkUpdates(const QString &software, const QString &subdir) const;
 
     // clear/rename wallet cache
@@ -191,7 +192,6 @@ signals:
     void walletPassphraseNeeded();
     void deviceButtonRequest(quint64 buttonCode);
     void deviceButtonPressed();
-    void walletClosed(const QString &walletAddress);
     void checkUpdatesComplete(const QString &result) const;
     void miningStatus(bool isMining) const;
 
@@ -200,6 +200,7 @@ private:
     friend class WalletPassphraseListenerImpl;
 
     explicit WalletManager(QObject *parent = 0);
+    ~WalletManager();
 
     bool isMining() const;
 
@@ -212,6 +213,8 @@ private:
     QMutex m_mutex_pass;
     QString m_passphrase;
     bool m_passphrase_abort;
+
+    FutureScheduler m_scheduler;
 };
 
 #endif // WALLETMANAGER_H
