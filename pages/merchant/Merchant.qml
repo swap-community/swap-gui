@@ -93,9 +93,8 @@ Item {
         anchors.right: parent.right
 
         Item {
-            height: 220
-            anchors.left: parent.left
-            anchors.right: parent.right
+            Layout.preferredHeight: 220
+            Layout.fillWidth: true
 
             Rectangle {
                 id: tracker
@@ -258,8 +257,7 @@ Item {
 
         Item {
             Layout.preferredHeight: 40
-            anchors.left: parent.left
-            anchors.right: parent.right
+            Layout.fillWidth: true
 
             Item {
                 width: (parent.width - qrImg.width) - (50)
@@ -524,8 +522,7 @@ Item {
         Item {
             Layout.topMargin: 32
             Layout.preferredHeight: 40
-            anchors.left: parent.left
-            anchors.right: parent.right
+            Layout.fillWidth: true
 
             ColumnLayout {
                 spacing: 16
@@ -630,7 +627,7 @@ Item {
                     in_txpool = true;
                 } else {
                     if (blockchainHeight == null)
-                        blockchainHeight = appWindow.currentWallet.blockChainHeight()
+                        blockchainHeight = walletManager.blockchainHeight()
                     confirmations = blockchainHeight - blockHeight - 1
                     displayAmount = model.data(idx, TransactionHistoryModel.TransactionDisplayAmountRole);
                 }

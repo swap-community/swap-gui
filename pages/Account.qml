@@ -101,8 +101,7 @@ Rectangle {
                     id: balanceAll
                     font.family: MoneroComponents.Style.fontMonoRegular.name;
                     font.pixelSize: 16
-                    color: MoneroComponents.Style.dimmedFontColor
-                    themeTransition: false
+                    color: MoneroComponents.Style.defaultFontColor
 
                     MouseArea {
                         hoverEnabled: true
@@ -135,8 +134,7 @@ Rectangle {
                     id: unlockedBalanceAll
                     font.family: MoneroComponents.Style.fontMonoRegular.name;
                     font.pixelSize: 16
-                    color: MoneroComponents.Style.dimmedFontColor
-                    themeTransition: false
+                    color: MoneroComponents.Style.defaultFontColor
 
                     MouseArea {
                         hoverEnabled: true
@@ -177,7 +175,7 @@ Rectangle {
                 ListView {
                     id: subaddressAccountListView
                     Layout.fillWidth: true
-                    anchors.fill: parent
+                    Layout.fillHeight: true
                     clip: true
                     boundsBehavior: ListView.StopAtBounds
                     interactive: false
@@ -365,6 +363,7 @@ Rectangle {
                         appWindow.currentWallet.subaddressAccount.addRow(inputDialog.inputText)
                         appWindow.currentWallet.switchSubaddressAccount(appWindow.currentWallet.numSubaddressAccounts() - 1)
                         current_subaddress_account_table_index = appWindow.currentWallet.numSubaddressAccounts() - 1
+                        subaddressAccountListView.currentIndex = current_subaddress_account_table_index
                         appWindow.onWalletUpdate();
                     }
                     inputDialog.onRejectedCallback = null;

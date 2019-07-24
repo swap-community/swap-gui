@@ -83,7 +83,7 @@ ColumnLayout {
 
     WizardHeader{
         title: qsTr("Give your wallet a password") + translationManager.emptyString
-        subtitle: qsTr("This password cannot be recovered. If you forget it then the wallet will have to be restored from its 25 word mnemonic seed.") + translationManager.emptyString
+        subtitle: qsTr("This password cannot be recovered. If you forget it then the wallet will have to be restored from your %1.").arg(!wizardController.walletOptionsIsRecoveringFromDevice ? qsTr("25 word mnemonic seed") : qsTr("hardware wallet"))+ translationManager.emptyString
     }
 
     MoneroComponents.WarningBox {
@@ -97,22 +97,11 @@ ColumnLayout {
 
         TextInput {
             id: progressText
-            anchors.top: parent.top
-            anchors.topMargin: 6
+            Layout.topMargin: 6
+            Layout.bottomMargin: 6
             font.family: MoneroComponents.Style.fontMedium.name
             font.pixelSize: 14
             font.bold: false
-            color: MoneroComponents.Style.defaultFontColor
-            text: root.passwordStrengthText + '-'
-            height: 18
-            passwordCharacter: "*"
-        }
-
-        TextInput {
-            id: progressTextValue
-            font.family: MoneroComponents.Style.fontMedium.name
-            font.pixelSize: 13
-            font.bold: true
             color: MoneroComponents.Style.defaultFontColor
             height: 18
             passwordCharacter: "*"
