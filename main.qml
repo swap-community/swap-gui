@@ -107,8 +107,8 @@ ApplicationWindow {
             return service;
         }
 
-        // monero-gui workgroup maintained
-        return "https://node.xwp.fyi/"
+        // swap-dev maintained
+        return "https://autonode.xwp.fyi/"
     }
 
     // true if wallet ever synchronized
