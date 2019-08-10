@@ -127,9 +127,9 @@ int main(int argc, char *argv[])
 
     MainApp app(argc, argv);
 
-    app.setApplicationName("monero-core");
-    app.setOrganizationDomain("getmonero.org");
-    app.setOrganizationName("monero-project");
+    app.setApplicationName("swap-core");
+    app.setOrganizationDomain("xwp.fyi");
+    app.setOrganizationName("swap-project");
 
     // Ask to enable Tails OS persistence mode, it affects:
     // - Log file location
