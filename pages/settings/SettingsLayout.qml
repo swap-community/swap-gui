@@ -151,7 +151,7 @@ Rectangle {
         }
 
         //! Manage pricing
-        RowLayout {
+        /*RowLayout {
             MoneroComponents.CheckBox {
                 id: enableConvertCurrency
                 text: qsTr("Enable displaying balance in other currencies") + translationManager.emptyString
@@ -164,7 +164,7 @@ Rectangle {
                     }
                 }
             }
-        }
+        }*/
 
         GridLayout {
             visible: enableConvertCurrency.checked

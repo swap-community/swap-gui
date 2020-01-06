@@ -711,7 +711,7 @@ Rectangle {
                                     font.pixelSize: 15
                                     text: {
                                         if(!isout && confirmationsRequired === 60) return qsTr("Yes") + translationManager.emptyString;
-                                        if(fee !== "") return fee + " XMR";
+                                        if(fee !== "") return fee + " XWP";
                                         return "-";
                                     }
 
@@ -1511,7 +1511,7 @@ Rectangle {
                 "i": i,
                 "isout": isout,
                 "amount": Number(amount),
-                "displayAmount": Utils.removeTrailingZeros(displayAmount.toFixed(12)) + " XMR",
+                "displayAmount": Utils.removeTrailingZeros(displayAmount.toFixed(12)) + " XWP",
                 "hash": hash,
                 "paymentId": paymentId,
                 "address": address,
