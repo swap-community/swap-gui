@@ -520,7 +520,7 @@ Rectangle {
                 anchors.right: parent.right
                 anchors.leftMargin: 20
             }
-
+/*
             // ------------- Mining tab ---------------
             MoneroComponents.MenuButton {
                 id: miningButton
@@ -543,7 +543,7 @@ Rectangle {
                 anchors.right: parent.right
                 anchors.leftMargin: 20
             }
-
+*/
             // ------------- TxKey tab ---------------
             MoneroComponents.MenuButton {
                 id: txkeyButton
@@ -566,7 +566,7 @@ Rectangle {
                 anchors.right: parent.right
                 anchors.leftMargin: 20
             }
-
+/*
             // ------------- Shared RingDB tab ---------------
             MoneroComponents.MenuButton {
                 id: sharedringdbButton
@@ -589,7 +589,7 @@ Rectangle {
                 anchors.right: parent.right
                 anchors.leftMargin: 20
             }
-
+*/
             // ------------- Sign/verify tab ---------------
             MoneroComponents.MenuButton {
                 id: signButton
