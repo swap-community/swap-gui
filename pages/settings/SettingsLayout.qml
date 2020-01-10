@@ -166,7 +166,7 @@ Rectangle {
                     }
                 }
             }
-        }*/
+        }
 
         GridLayout {
             visible: enableConvertCurrency.checked
@@ -251,7 +251,7 @@ Rectangle {
                 }
             }
         }
-
+*/
         MoneroComponents.StandardButton {
             visible: !persistentSettings.customDecorations
             Layout.topMargin: 10
