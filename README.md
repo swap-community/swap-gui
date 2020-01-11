@@ -6,19 +6,11 @@ Copyright (c) 2014-2019, The Monero Project
 ![Build-Mac](https://github.com/swap-dev/swap-gui/workflows/Build-Mac/badge.svg)
 ![Build-Windows](https://github.com/swap-dev/swap-gui/workflows/Build-Win/badge.svg)
 
-## Development & Production
-
-Active Branches:
-- Stable: master(release)
-- Unstable: master(latest)
-- Testing: N/A
-
-To contribute to the Swap Project, please make all pull requests to the _master_ branch.<br/>
-For production, please use the _tagged release_ of the _master_ branch.
-
 ## Resources
 
+- Homepage: [xwp.one](https://xwp.one/)
 - Discord: [discord.gg/SmcFCPu](https://discord.gg/SmcFCPu)
-- Explorer: [swap.coinscope.cc](https://swap.coinscope.cc/)
+- Explorer: [explorer.xwp.one](https://explorer.xwp.one/)
+- Reference Pool: [pool.xwp.one](https://pool.xwp.one/)
 - Pool List: [miningpoolstats.stream/swap](https://miningpoolstats.stream/swap)
-
+- Markets: [coinmarketcap.com](https://coinmarketcap.com/currencies/swap/markets/)
