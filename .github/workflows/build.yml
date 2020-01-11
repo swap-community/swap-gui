@@ -25,7 +25,7 @@ jobs:
     - name: build
       run: ${{ matrix.toolchain.cmd }}
     - name: test qml
-      run: build/release/bin/monero-wallet-gui.app/Contents/MacOS/monero-wallet-gui --test-qml
+      run: build/release/bin/swap-wallet-gui.app/Contents/MacOS/swap-wallet-gui --test-qml
 
   build-ubuntu:
 
@@ -60,7 +60,7 @@ jobs:
     - name: build
       run: ${{ matrix.toolchain.cmd }}
     - name: test qml
-      run: xvfb-run -a build/release/bin/monero-wallet-gui --test-qml
+      run: xvfb-run -a build/release/bin/swap-wallet-gui --test-qml
 
   build-windows:
 
@@ -91,4 +91,4 @@ jobs:
         sed -i 's/CONFIG\ +=\ qtquickcompiler//' monero-wallet-gui.pro
         ${{ matrix.toolchain.cmd }}
     - name: test qml
-      run: build/release/bin/monero-wallet-gui --test-qml
+      run: build/release/bin/swap-wallet-gui --test-qml
