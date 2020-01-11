@@ -15,7 +15,7 @@ QtObject {
     property QtObject fontMonoRegular: FontLoader { id: _fontMonoRegular; source: "qrc:/fonts/RobotoMono-Regular.ttf"; }
 
     property string grey: "#404040"
-    property string orange: "#FF6C3C"
+    property string orange: "#1c60cd"
     property string white: "#FFFFFF"
     property string green: "#2EB358"
     property string moneroGrey: "#4C4C4C"
@@ -92,32 +92,32 @@ QtObject {
     property string _b_inputBorderColorInActive: Qt.rgba(255, 255, 255, 0.32)
     property string _b_inputBorderColorInvalid: Qt.rgba(255, 0, 0, 0.40)
 
-    property string _b_buttonBackgroundColor: "#FA6800"
-    property string _b_buttonBackgroundColorHover: "#E65E00"
+    property string _b_buttonBackgroundColor: "#1c60cd"
+    property string _b_buttonBackgroundColorHover: "#1c60cd"
     property string _b_buttonBackgroundColorDisabled: "#707070"
     property string _b_buttonBackgroundColorDisabledHover: "#808080"
     property string _b_buttonInlineBackgroundColor: "#707070"
     property string _b_buttonTextColor: "white"
     property string _b_buttonTextColorDisabled: "black"
-    property string _b_dividerColor: "white"
-    property real _b_dividerOpacity: 0.20
+    property string _b_dividerColor: "#0d2449"
+    property real _b_dividerOpacity: 1
 
-    property string _b_titleBarBackgroundGradientStart: "#262626";
-    property string _b_titleBarBackgroundGradientStop: "#191919"
-    property string _b_titleBarBackgroundBorderColor: "#2f2f2f"
+    property string _b_titleBarBackgroundGradientStart: "#091a35";
+    property string _b_titleBarBackgroundGradientStop: "#091a35"
+    property string _b_titleBarBackgroundBorderColor: "#0d2449"
     property string _b_titleBarLogoSource: "qrc:///images/titlebarLogo.png"
     property string _b_titleBarMinimizeSource: "qrc:///images/minimize.svg"
     property string _b_titleBarFullscreenSource: "qrc:///images/fullscreen.svg"
     property string _b_titleBarCloseSource: "qrc:///images/close.svg"
     property string _b_titleBarButtonHoverColor: "#10FFFFFF"
 
-    property string _b_wizardBackgroundGradientStart: "#1e1e1e"
-    property string _b_middlePanelBackgroundGradientStart: "#232323"
-    property string _b_middlePanelBackgroundGradientStop: "#101010"
-    property string _b_middlePanelBackgroundColor: "#181818"
+    property string _b_wizardBackgroundGradientStart: "#091a35"
+    property string _b_middlePanelBackgroundGradientStart: "#091a35"
+    property string _b_middlePanelBackgroundGradientStop: "#091a35"
+    property string _b_middlePanelBackgroundColor: "#091a35"
     property string _b_menuButtonFallbackBackgroundColor: "#09FFFFFF"
-    property string _b_menuButtonGradientStart: "#11FFFFFF"
-    property string _b_menuButtonGradientStop: "#00000000"
+    property string _b_menuButtonGradientStart: "#09FFFFFF"
+    property string _b_menuButtonGradientStop: "#09FFFFFF"
     property string _b_menuButtonTextColor: "white"
     property string _b_menuButtonImageRightColorActive: "white"
     property string _b_menuButtonImageRightColor: "white"
@@ -126,16 +126,16 @@ QtObject {
     property string _b_inlineButtonTextColor: "black"
     property string _b_inlineButtonBorderColor: "black"
     property string _b_appWindowBackgroundColor: "white"
-    property string _b_appWindowBorderColor: "#313131"
+    property string _b_appWindowBorderColor: "#091a35"
     property bool _b_progressBarProgressTextBold: true
-    property string _b_progressBarBackgroundColor: "#24FFFFFF"
-    property string _b_leftPanelBackgroundGradientStart: "#222222"
-    property string _b_leftPanelBackgroundGradientStop: "#1a1a1a"
+    property string _b_progressBarBackgroundColor: "#1c60cd"
+    property string _b_leftPanelBackgroundGradientStart: "#0d2449"
+    property string _b_leftPanelBackgroundGradientStop: "#0d2449"
     property string _b_historyHeaderTextColor: "#C0C0C0"
 
     property string _w_defaultFontColor: "black"
     property string _w_dimmedFontColor: "#3f3f3f"
-    property string _w_lightGreyFontColor: "#515151"
+    property string _w_lightGreyFontColor: "#1c60cd"
     property string _w_errorColor: "#FA6800"
     property string _w_textSelectionColor: "#BBBBBB"
     property string _w_textSelectedColor: "black"
