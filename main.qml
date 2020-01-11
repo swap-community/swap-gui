@@ -93,10 +93,14 @@ ApplicationWindow {
     property bool themeTransition: false
 
     // fiat price conversion
-    property real fiatPriceXMRUSD: 0
-    property real fiatPriceXMREUR: 0
+    property real fiatPriceXWPUSD: 0
+    property real fiatPriceXWPEUR: 0
     property var fiatPriceAPIs: {
         return {
+             "coingecko": {
+                 "xwpusd": "https://api.coingecko.com/api/v3/simple/price?ids=swap&vs_currencies=usd",
+                 "xwpeur": "https://api.coingecko.com/api/v3/simple/price?ids=swap&vs_currencies=eur"
+            }
         }
     }
 
@@ -1148,6 +1152,14 @@ ApplicationWindow {
 
     function fiatApiParseTicker(url, resp, currency){
         // parse & validate incoming JSON
+        if(resp._url.startsWith("https://api.coingecko.com/api/v3/")){
+             var key = currency === "xwpeur" ? "eur" : "usd";
+             if(!resp.hasOwnProperty("swap") || !resp["swap"].hasOwnProperty(key)){
+                 appWindow.fiatApiError("Coingecko API has error(s)");
+                 return;
+             }
+             return resp["swap"][key];
+        }
     }
 
     function fiatApiGetCurrency(url) {
@@ -1193,10 +1205,10 @@ ApplicationWindow {
             return;
         }
 
-        if(persistentSettings.fiatPriceCurrency === "xmrusd")
-            appWindow.fiatPriceXMRUSD = ticker;
-        else if(persistentSettings.fiatPriceCurrency === "xmreur")
-            appWindow.fiatPriceXMREUR = ticker;
+        if(persistentSettings.fiatPriceCurrency === "xwpusd")
+            appWindow.fiatPriceXWPUSD = ticker;
+        else if(persistentSettings.fiatPriceCurrency === "xwpeur")
+            appWindow.fiatPriceXWPEUR = ticker;
 
         appWindow.updateBalance();
     }
@@ -1224,9 +1236,9 @@ ApplicationWindow {
 
     function fiatApiCurrencySymbol() {
         switch (persistentSettings.fiatPriceCurrency) {
-            case "xmrusd":
+            case "xwpusd":
                 return "USD";
-            case "xmreur":
+            case "xwpeur":
                 return "EUR";
             default:
                 console.error("unsupported currency", persistentSettings.fiatPriceCurrency);
@@ -1235,7 +1247,7 @@ ApplicationWindow {
     }
 
     function fiatApiConvertToFiat(amount) {
-        var ticker = persistentSettings.fiatPriceCurrency === "xmrusd" ? appWindow.fiatPriceXMRUSD : appWindow.fiatPriceXMREUR;
+        var ticker = persistentSettings.fiatPriceCurrency === "xwpusd" ? appWindow.fiatPriceXWPUSD : appWindow.fiatPriceXWPEUR;
         if(ticker <= 0){
             console.log(fiatApiError("Invalid ticker value: " + ticker));
             return "?.??";
@@ -1363,8 +1375,8 @@ ApplicationWindow {
 
         property bool fiatPriceEnabled: false
         property bool fiatPriceToggle: false
-        property string fiatPriceProvider: "kraken"
-        property string fiatPriceCurrency: "xmrusd"
+        property string fiatPriceProvider: "coingecko"
+        property string fiatPriceCurrency: "xwpusd"
 
         Component.onCompleted: {
             MoneroComponents.Style.blackTheme = persistentSettings.blackTheme
