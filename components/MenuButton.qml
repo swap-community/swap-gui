@@ -64,11 +64,11 @@ Rectangle {
     LinearGradient {
         visible: isOpenGL && (button.checked || buttonArea.containsMouse)
         height: parent.height
-        width: 260
+        width: 300
         anchors.verticalCenter: parent.verticalCenter
         anchors.right: parent.right
         anchors.rightMargin: -20
-        anchors.leftMargin: parent.getOffset()
+        anchors.leftMargin: parent.getOffset() 
         start: Qt.point(width, 0)
         end: Qt.point(0, 0)
         gradient: Gradient {

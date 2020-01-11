@@ -58,7 +58,7 @@ Rectangle {
             property int fontSize: 15
             property bool fontBold: true
             property var fontFamily: MoneroComponents.Style.fontRegular.name
-            property string borderColor: MoneroComponents.Style.blackTheme ? "#808080" : "#B9B9B9"
+            property string borderColor: MoneroComponents.Style.blackTheme ? "#1c60cd" : "#B9B9B9"
             property int textMargin: {
                 // left-right margins for a given cell
                 if(appWindow.width < 890){
