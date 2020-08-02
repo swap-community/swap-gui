@@ -1,6 +1,6 @@
 #!/bin/bash
-MONERO_URL=https://github.com/monero-project/monero.git
-MONERO_BRANCH=master
+MONERO_URL=https://github.com/swap-dev/swap.git
+MONERO_BRANCH=swap-v3.2dev
 
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -8,16 +8,16 @@ ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $ROOT_DIR/utils.sh
 
 INSTALL_DIR=$ROOT_DIR/wallet
-MONERO_DIR=$ROOT_DIR/monero
+MONERO_DIR=$ROOT_DIR/swap
 BUILD_LIBWALLET=false
 
 # init and update monero submodule
 if [ ! -d $MONERO_DIR/src ]; then
-    git submodule init monero
+    git submodule init swap
 fi
 git submodule update --remote
 git -C $MONERO_DIR fetch
-git -C $MONERO_DIR checkout master
+git -C $MONERO_DIR checkout $MONERO_BRANCH
 
 # get monero core tag
 pushd $MONERO_DIR
