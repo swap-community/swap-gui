@@ -164,7 +164,7 @@ Rectangle {
                     }
                 }
             }
-        }*/
+        }
 
         GridLayout {
             visible: enableConvertCurrency.checked
