@@ -1749,23 +1749,13 @@ ApplicationWindow {
 
         TitleBar {
             id: titleBar
-            visible: persistentSettings.customDecorations && middlePanel.state !== "Merchant"
+            visible: persistentSettings.customDecorations
             walletName: appWindow.walletName
             anchors.left: parent.left
             anchors.right: parent.right
             onCloseClicked: appWindow.close();
             onLanguageClicked: appWindow.toggleLanguageView();
             onCloseWalletClicked: appWindow.showWizard();
-            onMaximizeClicked: appWindow.visibility = appWindow.visibility !== Window.Maximized ? Window.Maximized : Window.Windowed
-            onMinimizeClicked: appWindow.visibility = Window.Minimized
-        }
-
-        MoneroMerchant.MerchantTitlebar {
-            id: titleBarOrange
-            visible: persistentSettings.customDecorations && middlePanel.state === "Merchant"
-            anchors.left: parent.left
-            anchors.right: parent.right
-            onCloseClicked: appWindow.close();
             onMaximizeClicked: appWindow.visibility = appWindow.visibility !== Window.Maximized ? Window.Maximized : Window.Windowed
             onMinimizeClicked: appWindow.visibility = Window.Minimized
         }

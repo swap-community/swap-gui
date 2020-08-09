@@ -351,7 +351,7 @@ Rectangle {
                         if (!sendButton.enabled || estimatedFee == null) {
                             return ""
                         }
-                        return "%1: ~%2 XMR".arg(qsTr("Fee")).arg(estimatedFee) +
+                        return "%1: ~%2 XWP".arg(qsTr("Fee")).arg(estimatedFee) +
                             estimatedFeeFiat +
                             translationManager.emptyString;
                     }
@@ -587,7 +587,7 @@ Rectangle {
                 console.log("Transfer: submit tx clicked")
                 submitTxDialog.open();
             }
-            helpTextLarge.text: qsTr("Spend XMR from a cold (offline) wallet") + translationManager.emptyString
+            helpTextLarge.text: qsTr("Spend XWP from a cold (offline) wallet") + translationManager.emptyString
             helpTextSmall.text: {
                 var errorMessage = "";
                 if (appWindow.viewOnly && !pageRoot.checkInformation(amountLine.text, addressLine.text, appWindow.persistentSettings.nettype)){
