@@ -1,6 +1,6 @@
 #!/bin/bash
 MONERO_URL=https://github.com/swap-dev/swap.git
-MONERO_BRANCH=swap-v3.2dev
+MONERO_BRANCH=master
 
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
