@@ -3,8 +3,6 @@
 Copyright (c) 2014-2019, The Monero Project
 
 ![Build-Linux](https://github.com/swap-dev/swap-gui/workflows/Build-Linux/badge.svg)
-![Build-Mac](https://github.com/swap-dev/swap-gui/workflows/Build-Mac/badge.svg)
-![Build-Windows](https://github.com/swap-dev/swap-gui/workflows/Build-Win/badge.svg)
 
 ## Resources
 
