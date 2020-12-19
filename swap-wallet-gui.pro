@@ -529,7 +529,6 @@ TRANSLATION_TARGET_DIR = $$OUT_PWD/translations
 PRE_TARGETDEPS += langupd compiler_langrel_make_all
 
 RESOURCES += qml.qrc
-CONFIG += qtquickcompiler
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH = fonts
