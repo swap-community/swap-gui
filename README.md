@@ -6,9 +6,9 @@ Copyright (c) 2014-2019, The Monero Project
 
 ## Resources
 
-- Homepage: [xwp.one](https://xwp.one/)
+- Homepage: [swap.foundation](https://swap.foundation/)
 - Discord: [discord.gg/SmcFCPu](https://discord.gg/SmcFCPu)
-- Explorer: [explorer.xwp.one](https://explorer.xwp.one/)
+- Explorer: [explorer.swap.foundation](https://explorer.swap.foundation/)
 - Reference Pool: [pool.xwp.one](https://pool.xwp.one/)
 - Pool List: [miningpoolstats.stream/swap](https://miningpoolstats.stream/swap)
 - Markets: [coinmarketcap.com](https://coinmarketcap.com/currencies/swap/markets/)
