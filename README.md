@@ -7,7 +7,7 @@ Copyright (c) 2014-2019, The Monero Project
 ## Resources
 
 - Homepage: [swap.foundation](https://swap.foundation/)
-- Discord: [discord.gg/SmcFCPu](https://discord.gg/SmcFCPu)
+- Discord: [https://discord.gg/VdbtGJNtzc](https://discord.gg/VdbtGJNtzc)
 - Explorer: [explorer.swap.foundation](https://explorer.swap.foundation/)
 - Reference Pool: [pool.xwp.one](https://pool.xwp.one/)
 - Pool List: [miningpoolstats.stream/swap](https://miningpoolstats.stream/swap)
